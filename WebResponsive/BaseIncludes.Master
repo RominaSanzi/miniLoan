@@ -1,0 +1,309 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="BaseIncludes.master.vb" Inherits="di.financiera.webResponsive.BaseIncludes" %>
+
+<!DOCTYPE html>
+
+<html style="overflow-x: hidden">
+
+<head runat="server">
+    <meta charset="utf-8" />
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png">
+    <link rel="icon" type="image/png" href="assets/img/favicon.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>Loan</title>
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
+    <link href="assets/css/css.css" rel="stylesheet" />
+    <%--<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />--%>
+    <link rel="stylesheet" href="assets/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/css/now-ui-dashboard.css?v=1.4.1" rel="stylesheet" />
+    <link href="assets/css/select.min.css" rel="stylesheet" />
+
+    <link href="assets/css/Site.css" rel="stylesheet" />
+    <script src="PopUpModal.js"></script>
+    <script src="assets/js/core/jquery.min.js"></script>
+
+    <script type="text/javascript">
+        function quitarSeleccion() {
+            PageMethods.borarrSessionControlesNiveles();
+        };
+    </script>
+    <asp:ContentPlaceHolder ID="Head" runat="server"></asp:ContentPlaceHolder>
+</head>
+
+<body onsubmit="cargando();">
+    <div class="wrapper">
+        <div id="loading" class="cargando text-center loading" style="display: none">
+            <img src="assets/img/Loan_Loading.gif" style="margin-top: -15%" />
+        </div>
+        <div id="modal" class="wrapper cargando text-center collapse">
+            <div class="modal fade ps show" id="noticeModal" tabindex="-1" role="dialog" style="display: block;">
+                <div class="modal-dialog modal-notice">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <div class="swal2-icon swal2-success swal2-animate-success-icon" style="display: flex;">
+                                <div class="swal2-success-circular-line-left" style="background-color: rgb(255, 255, 255);"></div>
+                                <span class="swal2-success-line-tip"></span><span class="swal2-success-line-long"></span>
+                                <div class="swal2-success-ring"></div>
+                                <div class="swal2-success-fix" style="background-color: rgb(255, 255, 255);"></div>
+                                <div class="swal2-success-circular-line-right" style="background-color: rgb(255, 255, 255);"></div>
+                            </div>
+                        </div>
+                        <div class="modal-body">
+                            <p id="modalMensaje">La operación se realizo correctamente</p>
+                        </div>
+                        <div class="modal-footer justify-content-center">
+                            <a id="aModal" class="btn btn-primary entrada-sin-label" href="DashboardIframe.aspx" target="basefrm">Aceptar</a>
+                            <button id="btnModal" class="btn btn-primary entrada-sin-label" onclick="window.close()">Aceptar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="modalError" class="wrapper cargando text-center collapse">
+            <div class="modal fade ps show" id="noticeModalError" tabindex="-1" role="dialog" style="display: block;">
+                <div class="modal-dialog modal-notice">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <div class="swal2-icon swal2-warning swal2-animate-warning-icon" style="display: flex;"><span class="swal2-icon-text">!</span></div>
+                        </div>
+                        <div class="modal-body">
+                            <p id="modalErrorMensaje">La operacion se realizo correctamente</p>
+                        </div>
+                        <div class="modal-footer justify-content-center">
+                            <a id="aModalError" class="btn btn-primary entrada-sin-label" href="#" onclick="ocultarModalError();">Aceptar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="modalAyuda" class="wrapper cargando text-center collapse">
+            <div class="modal fade ps show" tabindex="-1" role="dialog" style="display: block;">
+                <div class="modal-dialog modal-notice">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <div class="swal2-icon swal2-success swal2-animate-success-icon" style="display: flex;">
+                                <div class="swal2-success-circular-line-left" style="background-color: rgb(255, 255, 255);"></div>
+                                <span class="swal2-success-line-tip"></span><span class="swal2-success-line-long"></span>
+                                <div class="swal2-success-ring"></div>
+                                <div class="swal2-success-fix" style="background-color: rgb(255, 255, 255);"></div>
+                                <div class="swal2-success-circular-line-right" style="background-color: rgb(255, 255, 255);"></div>
+                            </div>
+                        </div>
+                        <div class="modal-body">
+                            <p id="modalMensajeAyuda">La operación se realizo correctamente</p>
+                        </div>
+                        <div class="modal-footer justify-content-center">
+                            <div>
+                                <%--<iframe id="iframeAyuda" width="640" height="360" src="https://www.youtube.com/embed/Ti6qhk3tX2s?autoplay=1&amp;mute=1" frameborder="0"></iframe>--%>
+                            </div>
+                            <a id="aModalAyuda" class="btn btn-primary entrada-sin-label" href="DashboardIframe.aspx" target="basefrm">Aceptar</a>
+                            <button id="btnModalAyuda" class="btn btn-primary entrada-sin-label" onclick="window.close()">Aceptar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <asp:ContentPlaceHolder ID="Body" runat="server">
+            <asp:ScriptManager ID="ScriptManager2" runat="server" EnablePageMethods="true"></asp:ScriptManager>
+        </asp:ContentPlaceHolder>
+    </div>
+
+    <script src="assets/js/core/popper.min.js"></script>
+    <script src="assets/js/core/bootstrap.min.js"></script>
+    <script src="assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
+    <script src="assets/js/plugins/moment.min.js"></script>
+    <script src="assets/js/plugins/moment-es.js"></script>
+    <script src="assets/js/plugins/bootstrap-switch.js"></script>
+    <script src="assets/js/plugins/sweetalert2.min.js"></script>
+    <script src="assets/js/plugins/jquery.validate.min.js"></script>
+    <script src="assets/js/plugins/jquery.bootstrap-wizard.js"></script>
+    <script src="assets/js/plugins/bootstrap-selectpicker.js"></script>
+    <script src="assets/js/plugins/bootstrap-datetimepicker.js"></script>
+    <script src="assets/js/plugins/jquery.dataTables.min.js"></script>
+    <script src="assets/js/plugins/bootstrap-tagsinput.js"></script>
+    <script src="assets/js/plugins/jasny-bootstrap.min.js"></script>
+    <script src="assets/js/plugins/fullcalendar.min.js"></script>
+    <script src="assets/js/plugins/jquery-jvectormap.js"></script>
+    <script src="assets/js/plugins/nouislider.min.js"></script>
+    <script src="assets/js/plugins/chartjs.min.js"></script>
+    <script src="assets/js/plugins/bootstrap-notify.js"></script>
+    <script src="assets/js/now-ui-dashboard.js?v=1.4.1" type="text/javascript"></script>
+    <script src="assets/js/select.js"></script>
+    <script src="assets/site/site.js"></script>
+    <script src="assets/js/CombosTareasSinPostback.js"></script>
+    <script>
+        //capturo cuando se crea el div del validation
+        $(document).on('DOMNodeInserted', function (e) {
+            if ($(e.target).hasClass('alert-dismissable') && !$(e.target).hasClass('close')) {
+                //le agrego el boton para cerrarse
+                $(e.target).append("<button type='button' class='close' data-hide='alert'>&times;</button>");
+
+                //agrego el evento para ocultarse
+                $('.close').click(function () {
+                    $('.alert-dismissable').hide();
+                })
+
+                $(".validator").each(function () {
+                    if ($(e.target).prop("outerText").indexOf($(this).prop("errormessage")) >= 0) {
+                        $("#" + $(this).prop("controltovalidate")).focus();
+                        return false
+                    }
+                });
+            }
+        });
+
+        $(document).ready(function () {
+            window.parent.parent.$('html').removeClass('nav-open');
+            $('html').removeClass('nav-open');
+            window.parent.parent.$('#bodyClick').remove();
+            $('#bodyClick').remove();
+            window.parent.parent.$("#loading").hide();
+            window.parent.$("#loading").hide();
+            $("#loading").hide();
+            site.initDateTimePicker();
+            site.showSwal();
+
+            validarMenu();
+        });
+
+        function ocultarCargando() {
+            window.parent.parent.$("#loading").hide();
+            window.parent.$("#loading").hide();
+            $("#loading").hide();
+        }
+
+        var tieneNiveles = false;
+        function pageLoad(sender, args) {
+            var ccd;
+            if ($find("ccdGrupoEmpresa") != null) {
+                cdd = $find("ccdGrupoEmpresa");
+                cdd.add_populated(onPopulatedGrupoEmpresa);
+                tieneNiveles = true;
+            }
+            if ($find("ccdEmpresaGrupo") != null) {
+                cdd = $find("ccdEmpresaGrupo");
+                cdd.add_populated(onPopulatedEmpresaGrupo);
+                tieneNiveles = true;
+
+            }
+            if ($find("ccdUnidadDeNegocios") != null) {
+                cdd = $find("ccdUnidadDeNegocios");
+                cdd.add_populated(onPopulatedUnidadDeNegocios);
+                tieneNiveles = true;
+
+            }
+            if ($find("ccdSucursal") != null) {
+                cdd = $find("ccdSucursal");
+                cdd.add_populated(onPopulatedSucursal);
+                tieneNiveles = true;
+            }
+            if (!tieneNiveles) {
+                ocultarCargando();
+            }
+
+        }
+
+        function onPopulatedGrupoEmpresa() {
+            if ($find("ccdEmpresaGrupo") != null) {
+                // cargando();
+            }
+            else {
+                //console.log("ocultagrupo");
+                ocultarCargando();
+            }
+        }
+
+        function onPopulatedEmpresaGrupo() {
+            if ($find("ccdUnidadDeNegocios") != null) {
+                //  cargando();
+            }
+            else {
+                //console.log("ocultaempresa");
+                ocultarCargando();
+            }
+        }
+
+        function onPopulatedUnidadDeNegocios() {
+            if ($find("ccdSucursal") != null) {
+                //  cargando();
+            }
+            else {
+                //console.log("ocultaunidad");
+                ocultarCargando();
+            }
+        }
+
+
+        function onPopulatedSucursal() {
+            //console.log("ocultasucursal");
+            ocultarCargando();
+        }
+
+             $('.solonumeros').keypress(function (event) {
+                if ((event.which < 48 || event.which > 57)) {
+                    event.preventDefault();
+                }
+            }); 
+
+
+        $(document).ready(function () {
+            if (tieneNiveles) {
+                //cargando();
+            }
+
+            //  $(':focus').addClass('highlight');
+
+            $(document).on("focus", ".form-control", function () {
+                $(this).addClass('highlight');
+            }).on("blur", ".form-control", function () {
+                $(this).removeClass('highlight');
+            })
+
+            $(document).on("focus", ".btn", function () {
+                $(this).addClass('highlight');
+            }).on("blur", ".btn", function () {
+                $(this).removeClass('highlight');
+            })
+
+
+            $(function () {
+                var current_page_URL = location.href;
+
+                $("a").each(function () {
+
+                    if ($(this).attr("href") !== "#") {
+
+                        var target_URL = $(this).prop("href");
+
+                        if (target_URL == current_page_URL) {
+                            $('nav a').parents('li,ul,div').removeClass('active');
+                            $(this).parent('li,ul,div').addClass('active');
+                            $(this).parent('li,ul,div').parent('li,ul,div').parent('li,ul,div').parent('li,ul,div').addClass('active');
+                            $(this).parent('li,ul,div').parent('li,ul,div').parent('li,ul,div').addClass('collapse show');
+                            $(this).parent('li,ul,div').parent('li,ul,div').parent('li,ul,div').parent('li,ul,div').children('li,ul,div').addClass('collapse show');
+                            return false;
+                        }
+                    }
+                });
+            });
+        });
+
+        $("#aModal").on('click', function () {
+            $("#modal").hide();
+        });
+
+        $("#aModalError").on('click', function () {
+            $("#modalError").hide();
+        });
+
+
+    </script>
+
+    <asp:ContentPlaceHolder ID="Script" runat="server"></asp:ContentPlaceHolder>
+
+</body>
+
+</html>

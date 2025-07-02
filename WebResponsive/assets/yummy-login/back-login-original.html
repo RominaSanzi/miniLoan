@@ -1,0 +1,68 @@
+<div class="top-content">
+        <div class="inner-bg">
+            <div class="container">
+<%--                <div class="row">
+                    <div class="col-sm-8 col-sm-offset-2 text title">--%>
+                        <%--<h1><strong>Loan collection</strong> Login</h1>
+                            <div class="description">
+                            	<p>
+	                            	Mensaje de bienvenida para el usuario
+                            	</p>
+                            </div>--%>
+<%--                        <img src="imagenes/collection.png" border="0" align="top" width="400px">
+                    </div>
+                </div>--%>
+                <div class="row">
+                    <div class="col-sm-6 col-sm-offset-3 form-box">
+                        <div class="form-top">
+                            <div class="form-top-left">
+                                <h3>Login en Loan collection</h3>
+                                <asp:Label runat="server" ID="lblSubtitulo" Text="Ingrese su Usuario y Password:"></asp:Label>
+                            </div>
+                            <div class="form-top-right">
+                                <i class="fa fa-lock"></i>
+                            </div>
+                        </div>
+                        <div class="form-bottom">
+                            <form runat="server" role="form" class="login-form">
+                                <div class="form-group">
+                                    <label class="sr-only" for="form-username">Username</label>
+                                    <cc1:TextBoxUp ID="txtLogin" name="form-username" Width="100%" runat="server" placeholder="Usuario..." class="form-username form-control" AutoComplete="False"></cc1:TextBoxUp>
+                                </div>
+                                <div class="form-group">
+                                    <label class="sr-only" for="form-password">Password</label>
+                                    <cc1:TextBoxUp ID="txtContrasenia" name="form-password" Width="100%" placeholder="Password..." class="form-password form-control" runat="server" AutoComplete="False" TextMode="Password"></cc1:TextBoxUp>
+                                </div>
+                                <div class="form-group">
+                                    <label class="sr-only" for="form-mail" visible="False">Email</label>
+                                    <cc1:TextBoxUp MaxLength="50" ID="txtMail" Visible="False" name="form-mail" Width="100%" placeholder="ejemplo@ejemplo.com" class="form-control" runat="server" AutoComplete="False" TextMode="Email"></cc1:TextBoxUp>
+                                </div>
+                                <%-- Cambio de password --%>
+                                <div class="form-group">
+                                    <label class="sr-only" for="form-nuevapassword" visible="False">Nuevo password</label>
+                                    <cc1:TextBoxUp Visible="False" ID="txtNuevaContrasenia" name="form-nuevapassword" Width="100%" placeholder="Nuevo password..." class="form-password form-control" runat="server" AutoComplete="False" TextMode="Password"></cc1:TextBoxUp>
+                                </div>
+                                <div class="form-group">
+                                    <label class="sr-only" for="form-repetirnuevapassword" visible="False">Repetir nuevo password</label>
+                                    <cc1:TextBoxUp ID="txtRepetirContrasenia" Visible="False" name="form-repetirnuevapassword" Width="100%" placeholder="Repetir nuevo password..." class="form-password form-control" runat="server" AutoComplete="False" TextMode="Password"></cc1:TextBoxUp>
+                                </div>
+
+                                <asp:Button ID="btnIngresar" CssClass="btn" runat="server" Width="100%" ToolTip="Ingresar" Text="Login"></asp:Button>
+                                <asp:LinkButton ID="btnOlvidoContrasenia" CssClass="btn" runat="server" Width="100%" ToolTip="Olvidé mi contraseña" Text="Olvidé mi contraseña"></asp:LinkButton>
+                                <div class="form-group">
+                                    <p>
+                                        <asp:Label ID="lblVersion" runat="server" CssClass="mensajealertalogin"></asp:Label></p>
+                                </div>
+                                <p>
+                                    <asp:Label ID="lblMensajeError" Visible="False" runat="server" CssClass="text-danger"></asp:Label></p>
+                            </form>
+                            <div class="text-right">
+                                <a href="http://www.divinf.com.ar">
+                                    <img src="imagenes/collection.png" border="0" align="top" width="150px"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

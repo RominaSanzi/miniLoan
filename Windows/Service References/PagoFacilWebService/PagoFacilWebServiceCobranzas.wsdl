@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.miscuotitas.com.ar/PagoFacilWebService" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://www.miscuotitas.com.ar/PagoFacilWebService" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Servicio para consultas y pago ONLINE desde PagoFácil (SEPSA).</wsdl:documentation>
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://www.miscuotitas.com.ar/PagoFacilWebService">
+      <s:element name="consulta">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sXML" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="consultaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="consultaResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="directa">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sXML" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="directaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="directaResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="reversa">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sXML" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="reversaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="reversaResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="consultaSoapIn">
+    <wsdl:part name="parameters" element="tns:consulta" />
+  </wsdl:message>
+  <wsdl:message name="consultaSoapOut">
+    <wsdl:part name="parameters" element="tns:consultaResponse" />
+  </wsdl:message>
+  <wsdl:message name="directaSoapIn">
+    <wsdl:part name="parameters" element="tns:directa" />
+  </wsdl:message>
+  <wsdl:message name="directaSoapOut">
+    <wsdl:part name="parameters" element="tns:directaResponse" />
+  </wsdl:message>
+  <wsdl:message name="reversaSoapIn">
+    <wsdl:part name="parameters" element="tns:reversa" />
+  </wsdl:message>
+  <wsdl:message name="reversaSoapOut">
+    <wsdl:part name="parameters" element="tns:reversaResponse" />
+  </wsdl:message>
+  <wsdl:message name="consultaHttpGetIn">
+    <wsdl:part name="sXML" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="consultaHttpGetOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="directaHttpGetIn">
+    <wsdl:part name="sXML" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="directaHttpGetOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="reversaHttpGetIn">
+    <wsdl:part name="sXML" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="reversaHttpGetOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="consultaHttpPostIn">
+    <wsdl:part name="sXML" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="consultaHttpPostOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="directaHttpPostIn">
+    <wsdl:part name="sXML" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="directaHttpPostOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="reversaHttpPostIn">
+    <wsdl:part name="sXML" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="reversaHttpPostOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:portType name="PagoFacilWebServiceCobranzasSoap">
+    <wsdl:operation name="consulta">
+      <wsdl:input message="tns:consultaSoapIn" />
+      <wsdl:output message="tns:consultaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="directa">
+      <wsdl:input message="tns:directaSoapIn" />
+      <wsdl:output message="tns:directaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="reversa">
+      <wsdl:input message="tns:reversaSoapIn" />
+      <wsdl:output message="tns:reversaSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="PagoFacilWebServiceCobranzasHttpGet">
+    <wsdl:operation name="consulta">
+      <wsdl:input message="tns:consultaHttpGetIn" />
+      <wsdl:output message="tns:consultaHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="directa">
+      <wsdl:input message="tns:directaHttpGetIn" />
+      <wsdl:output message="tns:directaHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="reversa">
+      <wsdl:input message="tns:reversaHttpGetIn" />
+      <wsdl:output message="tns:reversaHttpGetOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="PagoFacilWebServiceCobranzasHttpPost">
+    <wsdl:operation name="consulta">
+      <wsdl:input message="tns:consultaHttpPostIn" />
+      <wsdl:output message="tns:consultaHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="directa">
+      <wsdl:input message="tns:directaHttpPostIn" />
+      <wsdl:output message="tns:directaHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="reversa">
+      <wsdl:input message="tns:reversaHttpPostIn" />
+      <wsdl:output message="tns:reversaHttpPostOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="PagoFacilWebServiceCobranzasSoap" type="tns:PagoFacilWebServiceCobranzasSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="consulta">
+      <soap:operation soapAction="http://www.miscuotitas.com.ar/PagoFacilWebService/consulta" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="directa">
+      <soap:operation soapAction="http://www.miscuotitas.com.ar/PagoFacilWebService/directa" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="reversa">
+      <soap:operation soapAction="http://www.miscuotitas.com.ar/PagoFacilWebService/reversa" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="PagoFacilWebServiceCobranzasSoap12" type="tns:PagoFacilWebServiceCobranzasSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="consulta">
+      <soap12:operation soapAction="http://www.miscuotitas.com.ar/PagoFacilWebService/consulta" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="directa">
+      <soap12:operation soapAction="http://www.miscuotitas.com.ar/PagoFacilWebService/directa" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="reversa">
+      <soap12:operation soapAction="http://www.miscuotitas.com.ar/PagoFacilWebService/reversa" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="PagoFacilWebServiceCobranzasHttpGet" type="tns:PagoFacilWebServiceCobranzasHttpGet">
+    <http:binding verb="GET" />
+    <wsdl:operation name="consulta">
+      <http:operation location="/consulta" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="directa">
+      <http:operation location="/directa" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="reversa">
+      <http:operation location="/reversa" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="PagoFacilWebServiceCobranzasHttpPost" type="tns:PagoFacilWebServiceCobranzasHttpPost">
+    <http:binding verb="POST" />
+    <wsdl:operation name="consulta">
+      <http:operation location="/consulta" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="directa">
+      <http:operation location="/directa" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="reversa">
+      <http:operation location="/reversa" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="PagoFacilWebServiceCobranzas">
+    <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Servicio para consultas y pago ONLINE desde PagoFácil (SEPSA).</wsdl:documentation>
+    <wsdl:port name="PagoFacilWebServiceCobranzasSoap" binding="tns:PagoFacilWebServiceCobranzasSoap">
+      <soap:address location="http://190.210.190.215/test/serviciosweb/PagoFacilWebServiceCobranzas.asmx" />
+    </wsdl:port>
+    <wsdl:port name="PagoFacilWebServiceCobranzasSoap12" binding="tns:PagoFacilWebServiceCobranzasSoap12">
+      <soap12:address location="http://190.210.190.215/test/serviciosweb/PagoFacilWebServiceCobranzas.asmx" />
+    </wsdl:port>
+    <wsdl:port name="PagoFacilWebServiceCobranzasHttpGet" binding="tns:PagoFacilWebServiceCobranzasHttpGet">
+      <http:address location="http://190.210.190.215/test/serviciosweb/PagoFacilWebServiceCobranzas.asmx" />
+    </wsdl:port>
+    <wsdl:port name="PagoFacilWebServiceCobranzasHttpPost" binding="tns:PagoFacilWebServiceCobranzasHttpPost">
+      <http:address location="http://190.210.190.215/test/serviciosweb/PagoFacilWebServiceCobranzas.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

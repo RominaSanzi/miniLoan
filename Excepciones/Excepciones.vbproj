@@ -1,0 +1,785 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0359FE95-AEB7-4B2D-BCDC-58696C5FDEF0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>di.financiera.excepciones</RootNamespace>
+    <AssemblyName>Excepciones</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Excepciones.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Excepciones.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccesoDirectoNoCreadoException.vb" />
+    <Compile Include="AccesoDirectoNoEliminadoException.vb" />
+    <Compile Include="AccesoDirectoNoEncontradoException.vb" />
+    <Compile Include="AccesoDirectoNoModificadoException.vb" />
+    <Compile Include="AccionNoCreadaException.vb" />
+    <Compile Include="AccionNoEliminadaException.vb" />
+    <Compile Include="AccionNoEncontradaException.vb" />
+    <Compile Include="AccionNoModificadaException.vb" />
+    <Compile Include="AccionTipoOperacionException.vb" />
+    <Compile Include="ActividadNoCreadaException.vb" />
+    <Compile Include="ActividadNoEliminadaException.vb" />
+    <Compile Include="ActividadNoEncontradaException.vb" />
+    <Compile Include="ActividadNoModificadaException.vb" />
+    <Compile Include="AcuerdoComercialArchivoNoCreadoException.vb" />
+    <Compile Include="AcuerdoComercialArchivoNoEliminadoException.vb" />
+    <Compile Include="AcuerdoComercialArchivoNoEncontradoException.vb" />
+    <Compile Include="AcuerdoComercialArchivoNoModificadoException.vb" />
+    <Compile Include="AcuerdoComercialNoCreadoException.vb" />
+    <Compile Include="AcuerdoComercialNoEliminadoException.vb" />
+    <Compile Include="AcuerdoComercialNoEncontradoException.vb" />
+    <Compile Include="AcuerdoComercialNoModificadoException.vb" />
+    <Compile Include="AcuerdoComercialPlanesNoCreadoException.vb" />
+    <Compile Include="AcuerdoComercialPlanesNoEncontradoException.vb" />
+    <Compile Include="AcuerdoComercialRangoNoCreadoException.vb" />
+    <Compile Include="AcuerdoComercialRangoNoEliminadoException.vb" />
+    <Compile Include="AcuerdoComercialRangoNoEncontradoException.vb" />
+    <Compile Include="AcuerdoComercialRangoNoModificadoException.vb" />
+    <Compile Include="AdicionalNoCreadoException.vb" />
+    <Compile Include="AdicionalNoEliminadoException.vb" />
+    <Compile Include="AdicionalNoEncontradoException.vb" />
+    <Compile Include="AdicionalNoModificadoException.vb" />
+    <Compile Include="AndLiraNoEncontrado.vb" />
+    <Compile Include="AnticipoDetalleNoCreadoException.vb" />
+    <Compile Include="AnticipoDetalleNoEliminadoException.vb" />
+    <Compile Include="AnticipoDetalleNoEncontradoException.vb" />
+    <Compile Include="AnticipoDetalleNoModificadoException.vb" />
+    <Compile Include="AnticipoNoCreadoException.vb" />
+    <Compile Include="AnticipoNoEliminadoException.vb" />
+    <Compile Include="AnticipoNoEncontradoException.vb" />
+    <Compile Include="AnticipoNoModificadoException.vb" />
+    <Compile Include="AperturaNoCreadaException.vb" />
+    <Compile Include="AperturaNoEncontradaException.vb" />
+    <Compile Include="AplicacionMobileNoCreadaException.vb" />
+    <Compile Include="AplicacionMobileNoEliminadaException.vb" />
+    <Compile Include="AplicacionMobileNoEncontradaException.vb" />
+    <Compile Include="AplicacionMobileNoModificadaException.vb" />
+    <Compile Include="AplicacionMobileRequisitoRegistroNoCreadoException.vb" />
+    <Compile Include="AplicacionMobileRequisitoRegistroNoEliminadoException.vb" />
+    <Compile Include="AplicacionMobileRequisitoRegistroNoEncontradoException.vb" />
+    <Compile Include="AplicacionMobileRequisitoRegistroNoModificadoException.vb" />
+    <Compile Include="AppWebServiceLogNoCreadoException.vb" />
+    <Compile Include="AppWebServiceLogNoEliminadoException.vb" />
+    <Compile Include="AppWebServiceLogNoEncontradoException.vb" />
+    <Compile Include="ArchivoDebitoTemplateNoCreadoException.vb" />
+    <Compile Include="ArchivoDebitoTemplateNoEliminadoException.vb" />
+    <Compile Include="ArchivoDebitoTemplateNoEncontradoException.vb" />
+    <Compile Include="ArchivoDebitoTemplateNoModificadoException.vb" />
+    <Compile Include="ArchivoDebitoTemplatePersonaNoCreadoException.vb" />
+    <Compile Include="ArchivoDebitoTemplatePersonaNoEliminadoException.vb" />
+    <Compile Include="ArchivoDebitoTemplatePersonaNoEncontradoException.vb" />
+    <Compile Include="ArchivoDebitoTemplatePersonaNoModificadoException.vb" />
+    <Compile Include="ArchivoDebitoTemplateRangoNoCreadoException.vb" />
+    <Compile Include="ArchivoDebitoTemplateRangoNoEliminadoException.vb" />
+    <Compile Include="ArchivoDebitoTemplateRangoNoEncontradoException.vb" />
+    <Compile Include="ArchivoDebitoTemplateRangoNoModificadoException.vb" />
+    <Compile Include="ArchivoNoDeszipeadoException.vb" />
+    <Compile Include="ArchivoNoZipeadoException.vb" />
+    <Compile Include="ArchivoYaProcesadoException.vb" />
+    <Compile Include="ArqueoNoCradoException.vb" />
+    <Compile Include="ArqueoNoEliminadoException.vb" />
+    <Compile Include="ArqueoNoEncontradoException.vb" />
+    <Compile Include="ArqueoNoModificadoException.vb" />
+    <Compile Include="AsientosModelosDetalleException.vb" />
+    <Compile Include="AsientosModelosDetalleNoCreadoException.vb" />
+    <Compile Include="AsientosModelosDetalleNoEliminadoException.vb" />
+    <Compile Include="AsientosModelosDetalleNoEncontradoException.vb" />
+    <Compile Include="AsientosModelosDetalleNoModificadoException.vb" />
+    <Compile Include="AsientosModelosException.vb" />
+    <Compile Include="AsientosModelosNoCreadoException.vb" />
+    <Compile Include="AsientosModelosNoEliminadoException.vb" />
+    <Compile Include="AsientosModelosNoEncontradoException.vb" />
+    <Compile Include="AsientosModelosNoModificadoException.vb" />
+    <Compile Include="AsientosModelosTipoReciboNoCreadoException.vb" />
+    <Compile Include="AsientosModelosTipoReciboNoEncontradoException.vb" />
+    <Compile Include="AutogestionWebServiceLogNoCreadoException.vb" />
+    <Compile Include="AutogestionWebServiceLogNoEliminadoException.vb" />
+    <Compile Include="AutogestionWebServiceLogNoEncontradoException.vb" />
+    <Compile Include="AutogestionWebServiceNoEjecutado.vb" />
+    <Compile Include="BancoDebitoNoCreadoException.vb" />
+    <Compile Include="BancoDebitoNoEliminadoException.vb" />
+    <Compile Include="BancoDebitoNoEncontradoException.vb" />
+    <Compile Include="BancoDebitoNoModificadoException.vb" />
+    <Compile Include="BancoNoCreadoException.vb" />
+    <Compile Include="BancoNoEliminadoException.vb" />
+    <Compile Include="BancoNoEncontradoException.vb" />
+    <Compile Include="BancoNoModificadoException.vb" />
+    <Compile Include="BancoSaenzException.vb" />
+    <Compile Include="BancoSaenzNoCreadoException.vb" />
+    <Compile Include="BancoSaenzNoModificadoException.vb" />
+    <Compile Include="BancoSucursalEquivalenciaNoEncontradaException.vb" />
+    <Compile Include="BancoSucursalNoCreadaException.vb" />
+    <Compile Include="BancoSucursalNoEliminadaException.vb" />
+    <Compile Include="BancoSucursalNoEncontradaException.vb" />
+    <Compile Include="BancoSucursalNoModificadaException.vb" />
+    <Compile Include="BandejaManualPreMarcaException.vb" />
+    <Compile Include="BandejaNoEncontradaException.vb" />
+    <Compile Include="BankNoEncontradoException.vb" />
+    <Compile Include="BasePucafipNoEncontradaException.vb" />
+    <Compile Include="BasePucafipNoInsertadaException.vb" />
+    <Compile Include="BCRADeudoresNoCreadoException.vb" />
+    <Compile Include="BCRADeudoresNoEliminadoException.vb" />
+    <Compile Include="BCRADeudoresNoEncontradoException.vb" />
+    <Compile Include="BCRADeudoresNoModificadoException.vb" />
+    <Compile Include="BCRAMaestroEntidadNoCreadoException.vb" />
+    <Compile Include="BCRAMaestroEntidadNoEliminadoException.vb" />
+    <Compile Include="BCRAMaestroEntidadNoEncontradoException.vb" />
+    <Compile Include="BCRAMaestroEntidadNoModificadoException.vb" />
+    <Compile Include="BCRAMorososNoCreadoException.vb" />
+    <Compile Include="BCRAMorososNoEliminadoException.vb" />
+    <Compile Include="BCRAMorososNoEncontradoException.vb" />
+    <Compile Include="BCRAMorososNoModificadoException.vb" />
+    <Compile Include="BCRANoInsertadaException.vb" />
+    <Compile Include="BCRAPadronNoCreadoException.vb" />
+    <Compile Include="BCRAPadronNoEliminadoException.vb" />
+    <Compile Include="BCRAPadronNoEncontradoException.vb" />
+    <Compile Include="BCRAPadronNoModificadoException.vb" />
+    <Compile Include="BindNoEncontrado.vb" />
+    <Compile Include="BocaNoCreadoException.vb" />
+    <Compile Include="BocaNoEliminadoException.vb" />
+    <Compile Include="BocaNoEncontradoException.vb" />
+    <Compile Include="BocaNoModificadoException.vb" />
+    <Compile Include="BoletinCruceNoRealizadoException.vb" />
+    <Compile Include="BoletinInternoNoEncontradoException.vb" />
+    <Compile Include="BonificacionComercioNoCreadaException.vb" />
+    <Compile Include="BonificacionComercioNoEliminadaException.vb" />
+    <Compile Include="BonificacionComercioNoEncontradaException.vb" />
+    <Compile Include="BonificacionComercioNoModificadaException.vb" />
+    <Compile Include="BotWebServiceLogNoCreadoException.vb" />
+    <Compile Include="BotWebServiceLogNoEliminadoException.vb" />
+    <Compile Include="BotWebServiceLogNoEncontradoException.vb" />
+    <Compile Include="BstBaseClientesNoCreadaException.vb" />
+    <Compile Include="BstBaseClientesNoEncontradaException.vb" />
+    <Compile Include="BstCentralRiesgosNoCreadaException.vb" />
+    <Compile Include="BstCentralRiesgosNoEncontradaException.vb" />
+    <Compile Include="BstCentralRiesgos_HistNoCreadaException.vb" />
+    <Compile Include="BstCentralRiesgos_HistNoEncontradaException.vb" />
+    <Compile Include="BuzonNoCreadoException.vb" />
+    <Compile Include="BuzonNoEncontradoException.vb" />
+    <Compile Include="BuzonNoModificadoException.vb" />
+    <Compile Include="CabalException.vb" />
+    <Compile Include="CabalLiquidacionNoCreadaException.vb" />
+    <Compile Include="CabalLiquidacionNoEliminadaException.vb" />
+    <Compile Include="CabalLiquidacionNoEncontradaException.vb" />
+    <Compile Include="CabalLiquidacionNoModificadaException.vb" />
+    <Compile Include="CajaException.vb" />
+    <Compile Include="CajaListadoNoEncontradoException.vb" />
+    <Compile Include="CajaNoCreadaException.vb" />
+    <Compile Include="CajaNoEliminadaException.vb" />
+    <Compile Include="CajaNoEncontradaException.vb" />
+    <Compile Include="CajaNoHabilitadaException.vb" />
+    <Compile Include="CajaNoModificadaException.vb" />
+    <Compile Include="CampaniaMarketingAnexoNoCreadoException.vb" />
+    <Compile Include="CampaniaMarketingAnexoNoEliminadoException.vb" />
+    <Compile Include="CampaniaMarketingDetalleNoCreadoException.vb" />
+    <Compile Include="CampaniaMarketingDetalleNoEliminadoException.vb" />
+    <Compile Include="CampaniaMarketingDetalleNoEncontradoException.vb" />
+    <Compile Include="CampaniaMarketingDetalleNoModificadoException.vb" />
+    <Compile Include="CampaniaMarketingNoCreadaException.vb" />
+    <Compile Include="CampaniaMarketingNoEliminadaException.vb" />
+    <Compile Include="CampaniaMarketingNoEncontradaException.vb" />
+    <Compile Include="CampaniaMarketingNoModificadaException.vb" />
+    <Compile Include="CampaniaNoEncontradoException.vb" />
+    <Compile Include="CapituloCabalNoEncontradaException.vb" />
+    <Compile Include="CartaNoCreadaException.vb" />
+    <Compile Include="CartaNoEliminadaException.vb" />
+    <Compile Include="CartaNoEncontradaException.vb" />
+    <Compile Include="CartaNoModificadaException.vb" />
+    <Compile Include="CarteraCedidaInterfaceExportacionException.vb" />
+    <Compile Include="CarteraNoCreadaException.vb" />
+    <Compile Include="CarteraNoEliminadaException.vb" />
+    <Compile Include="CarteraNoEncontradaException.vb" />
+    <Compile Include="CarteraNoModificadaException.vb" />
+    <Compile Include="CategoriaComercioNoCreadaException.vb" />
+    <Compile Include="CategoriaComercioNoEliminadaException.vb" />
+    <Compile Include="CategoriaComercioNoEncontradaException.vb" />
+    <Compile Include="CategoriaComercioNoModificadaException.vb" />
+    <Compile Include="CategoriaCuotaSocialNoCreadaException.vb" />
+    <Compile Include="CategoriaCuotaSocialNoEliminadaException.vb" />
+    <Compile Include="CategoriaCuotaSocialNoEncontradaException.vb" />
+    <Compile Include="CategoriaCuotaSocialNoModificadaException.vb" />
+    <Compile Include="CategoriaLimiteCreditoNoEncotradaException.vb" />
+    <Compile Include="CategoriaNoCreadaException.vb" />
+    <Compile Include="CategoriaNoEliminadaException.vb" />
+    <Compile Include="CategoriaNoEncontradaException.vb" />
+    <Compile Include="CategoriaNoModificadaException.vb" />
+    <Compile Include="CategoriaNoValidaException.vb" />
+    <Compile Include="CategoriaPotencialNoCreadaException.vb" />
+    <Compile Include="CategoriaPotencialNoEliminadaException.vb" />
+    <Compile Include="CategoriaPotencialNoEncontradaException.vb" />
+    <Compile Include="CategoriaPotencialNoModificadaException.vb" />
+    <Compile Include="CategoriaProductoNoCreadaException.vb" />
+    <Compile Include="CategoriaProductoNoEliminadaException.vb" />
+    <Compile Include="CategoriaProductoNoEncontradaException.vb" />
+    <Compile Include="CategoriaProductoNoModificadaException.vb" />
+    <Compile Include="CategoriaValorNoCreadaException.vb" />
+    <Compile Include="CategoriaValorNoEliminadaException.vb" />
+    <Compile Include="CategoriaValorNoEncontradaException.vb" />
+    <Compile Include="CategoriaValorNoModificadaException.vb" />
+    <Compile Include="CategoriaVIPNoCreadaException.vb" />
+    <Compile Include="CategoriaVIPNoEliminadaException.vb" />
+    <Compile Include="CategoriaVIPNoEncontradaException.vb" />
+    <Compile Include="CategoriaVIPNoModificadaException.vb" />
+    <Compile Include="CentroCostoNoCreadoException.vb" />
+    <Compile Include="CentroCostoNoEliminadoException.vb" />
+    <Compile Include="CentroCostoNoEncontradoException.vb" />
+    <Compile Include="CentroCostoNoModificadoException.vb" />
+    <Compile Include="CertificadoPrecancelacionNoCreadoException.vb" />
+    <Compile Include="CertificadoPrecancelacionNoEliminadoException.vb" />
+    <Compile Include="CertificadoPrecancelacionNoEncontradoException.vb" />
+    <Compile Include="CertificadoPrecancelacionNoModificadoException.vb" />
+    <Compile Include="CertificadoPrecancelacionTemplateNoCreadoException.vb" />
+    <Compile Include="CertificadoPrecancelacionTemplateNoEliminadoException.vb" />
+    <Compile Include="CertificadoPrecancelacionTemplateNoEncontradoException.vb" />
+    <Compile Include="CertificadoPrecancelacionTemplateNoModificadoException.vb" />
+    <Compile Include="CierreNoCreadoException.vb" />
+    <Compile Include="CierreNoEncontradoException.vb" />
+    <Compile Include="CircuitoControlNoEncontradoException.vb" />
+    <Compile Include="ClearException.vb" />
+    <Compile Include="ClearingNoCreadoException.vb" />
+    <Compile Include="ClearingNoEliminadoException.vb" />
+    <Compile Include="ClearingNoEncontradoException.vb" />
+    <Compile Include="ClearingNoModificadoException.vb" />
+    <Compile Include="ClienteBaseOrigenNoEncontradoException.vb" />
+    <Compile Include="ClienteCabalNoCreadoException.vb" />
+    <Compile Include="ClienteCabalNoEliminadoException.vb" />
+    <Compile Include="ClienteCabalNoEncontradoException.vb" />
+    <Compile Include="ClienteCabalNoModificadoException.vb" />
+    <Compile Include="ClienteDadoDeBajaException.vb" />
+    <Compile Include="ClienteEcommerceNoEncontradaException.vb" />
+    <Compile Include="ClienteEspecialNoCreadoException.vb" />
+    <Compile Include="ClienteEspecialNoEliminadoException.vb" />
+    <Compile Include="ClienteEspecialNoEncontradoException.vb" />
+    <Compile Include="ClienteEspecialNoModificadoException.vb" />
+    <Compile Include="ClienteException.vb" />
+    <Compile Include="ClienteNoCreadoException.vb" />
+    <Compile Include="ClienteNoEliminadoException.vb" />
+    <Compile Include="ClienteNoEncontradoException.vb" />
+    <Compile Include="ClienteNoModificadoException.vb" />
+    <Compile Include="ClienteRechazadoException.vb" />
+    <Compile Include="CodigoOperacionNoEncontradoException.vb" />
+    <Compile Include="CodigoTarjetaNoEncontradoException.vb" />
+    <Compile Include="CodigoVinculacionNoEncontradoException.vb" />
+    <Compile Include="CollectionWebServiceLogNoCreadoException.vb" />
+    <Compile Include="CollectionWebServiceLogNoEliminadoException.vb" />
+    <Compile Include="CollectionWebServiceLogNoEncontradoException.vb" />
+    <Compile Include="ColorNoEncontradoException.vb" />
+    <Compile Include="ComercializadorNoCreadaException.vb" />
+    <Compile Include="ComercializadorNoEliminadaException.vb" />
+    <Compile Include="ComercializadorNoEncontradaException.vb" />
+    <Compile Include="ComercializadorNoModificadaException.vb" />
+    <Compile Include="ComercializadorOrigenNoEncontradoException.vb" />
+    <Compile Include="ComercioBocaNoCreadoException.vb" />
+    <Compile Include="ComercioBocaNoEliminadoException.vb" />
+    <Compile Include="ComercioBocaNoEncontradoException.vb" />
+    <Compile Include="ComercioEnteNoCreadoException.vb" />
+    <Compile Include="ComercioEnteNoEliminadoException.vb" />
+    <Compile Include="ComercioEnteNoEncontradoException.vb" />
+    <Compile Include="ComercioException.vb" />
+    <Compile Include="ComercioNoCreadoException.vb" />
+    <Compile Include="ComercioNoEliminadoException.vb" />
+    <Compile Include="ComercioNoEncontradoException.vb" />
+    <Compile Include="ComercioNoModificadoException.vb" />
+    <Compile Include="ComercioReCargoNoCreadoException.vb" />
+    <Compile Include="ComercioReCargoNoEliminadoException.vb" />
+    <Compile Include="ComercioReCargoNoEncontradoException.vb" />
+    <Compile Include="ComercioVacioException.vb" />
+    <Compile Include="ComercioVencimientoNoCreadoException.vb" />
+    <Compile Include="ComercioVencimientoNoEliminadoException.vb" />
+    <Compile Include="ComercioVencimientoNoEncontradoException.vb" />
+    <Compile Include="ComercioWebServiceLogNoCreadoException.vb" />
+    <Compile Include="ComercioWebServiceLogNoEliminadoException.vb" />
+    <Compile Include="ComercioWebServiceLogNoEncontradoException.vb" />
+    <Compile Include="ComisionNoCreadaException.vb" />
+    <Compile Include="ComisionNoEliminadaException.vb" />
+    <Compile Include="ComisionNoEncontradaException.vb" />
+    <Compile Include="ComisionNoModificadaException.vb" />
+    <Compile Include="CompaniaAseguradoraNoCreadaException.vb" />
+    <Compile Include="CompaniaAseguradoraNoEliminadaException.vb" />
+    <Compile Include="CompaniaAseguradoraNoEncontradoException.vb" />
+    <Compile Include="CompaniaAseguradoraNoModificadaException.vb" />
+    <Compile Include="CompradorCarteraNoCreadoException.vb" />
+    <Compile Include="CompradorCarteraNoEliminadoException.vb" />
+    <Compile Include="CompradorCarteraNoEncontradoException.vb" />
+    <Compile Include="CompradorCarteraNoModificadoException.vb" />
+    <Compile Include="ComprobanteException.vb" />
+    <Compile Include="ComprobanteIVANoCreadoException.vb" />
+    <Compile Include="ComprobanteIVANoEliminadoException.vb" />
+    <Compile Include="ComprobanteIVANoEncontradoException.vb" />
+    <Compile Include="ComprobanteIVANoModificadoException.vb" />
+    <Compile Include="ComprobanteNoAnuladoException.vb" />
+    <Compile Include="ComprobanteNoCreadoException.vb" />
+    <Compile Include="ComprobanteNoEliminadoException.vb" />
+    <Compile Include="ComprobanteNoEncontradoException.vb" />
+    <Compile Include="ComprobanteNoModificadoException.vb" />
+    <Compile Include="ComunException.vb" />
+    <Compile Include="ConceptoComisionNoCreadoException.vb" />
+    <Compile Include="ConceptoComisionNoEliminadoException.vb" />
+    <Compile Include="ConceptoComisionNoEncontradosException.vb" />
+    <Compile Include="ConceptoComisionNoModificadoException.vb" />
+    <Compile Include="ConceptoIVANoCreadoException.vb" />
+    <Compile Include="ConceptoIVANoEliminadoException.vb" />
+    <Compile Include="ConceptoIVANoEncontradoException.vb" />
+    <Compile Include="ConceptoIVANoModificadoException.vb" />
+    <Compile Include="ConceptoJubiladoNoCreadoException.vb" />
+    <Compile Include="ConceptoJubiladoNoEliminadoException.vb" />
+    <Compile Include="ConceptoJubiladoNoEncontradoException.vb" />
+    <Compile Include="ConceptoJubiladoNoModificadoException.vb" />
+    <Compile Include="ConceptoMandanteNoCreadoException.vb" />
+    <Compile Include="ConceptoMandanteNoEliminadoException.vb" />
+    <Compile Include="ConceptoMandanteNoEncontradoException.vb" />
+    <Compile Include="ConceptoMandanteNoModificadoException.vb" />
+    <Compile Include="ConceptoNoCreadoException.vb" />
+    <Compile Include="ConceptoNoEliminadoException.vb" />
+    <Compile Include="ConceptoNoEncontradoException.vb" />
+    <Compile Include="ConceptoNoModificadoException.vb" />
+    <Compile Include="CondicionClienteNoEncontradaException.vb" />
+    <Compile Include="CondicionCreditoNoEncontradaException.vb" />
+    <Compile Include="ConexionReporteBINoCreadaException.vb" />
+    <Compile Include="ConexionReporteBINoEliminadaException.vb" />
+    <Compile Include="ConexionReporteBINoEncontradaException.vb" />
+    <Compile Include="ConexionReporteBINoModificadaException.vb" />
+    <Compile Include="ConsumoCabalNoCreadoException.vb" />
+    <Compile Include="ConsumoCabalNoEliminadoException.vb" />
+    <Compile Include="ConsumoCabalNoEncontradoException.vb" />
+    <Compile Include="ConsumoCabalNoModificadoException.vb" />
+    <Compile Include="ContactoAutogestionNoCreadoException.vb" />
+    <Compile Include="ContactoAutogestionNoEliminadoException.vb" />
+    <Compile Include="ContactoAutogestionNoEncontradoException.vb" />
+    <Compile Include="ContactoAutogestionNoModificadoException.vb" />
+    <Compile Include="ContadorNoCreadoException.vb" />
+    <Compile Include="ContadorNoEliminadoException.vb" />
+    <Compile Include="ContadorNoEncontradoException.vb" />
+    <Compile Include="ContadorNoModificadoException.vb" />
+    <Compile Include="ControlLegajoNoEncontradoException.vb" />
+    <Compile Include="ConvenioNoCreadoException.vb" />
+    <Compile Include="ConvenioNoEliminadoException.vb" />
+    <Compile Include="ConvenioNoEncontradoException.vb" />
+    <Compile Include="ConvenioNoModificadoException.vb" />
+    <Compile Include="ConveniosolicitudNoCreadoException.vb" />
+    <Compile Include="ConveniosolicitudNoEliminadoException.vb" />
+    <Compile Include="ConveniosolicitudNoEncontradoException.vb" />
+    <Compile Include="CreditekApiException.vb" />
+    <Compile Include="CreditekApiLogNoCreadoException.vb" />
+    <Compile Include="CreditekApiLogNoEliminadoException.vb" />
+    <Compile Include="CreditekApiLogNoEncontradoException.vb" />
+    <Compile Include="CredixsaNoEncontradoException.vb" />
+    <Compile Include="CuentacorrienteconvenioNoCreadoException.vb" />
+    <Compile Include="CuentacorrienteconvenioNoEliminadoException.vb" />
+    <Compile Include="CuentacorrienteconvenioNoEncontradoException.vb" />
+    <Compile Include="CuentacorrienteconvenioNoModificadoException.vb" />
+    <Compile Include="CuentacorrienteServicioReciboServicioNoCreadoException.vb" />
+    <Compile Include="CuentacorrienteServicioReciboServicioNoEliminadoException.vb" />
+    <Compile Include="CuentacorrienteServicioReciboServicioNoEncontradoException.vb" />
+    <Compile Include="CuentacorrienteServicioReciboServicioNoModificadoException.vb" />
+    <Compile Include="CuentaEcommerceNoEncontradaException.vb" />
+    <Compile Include="CuentaNoCreadoException.vb" />
+    <Compile Include="CuentaNoEliminadoException.vb" />
+    <Compile Include="CuentaNoEncontradoException.vb" />
+    <Compile Include="CuentaNoModificadoException.vb" />
+    <Compile Include="CuenteEcommerceNoCreadaException.vb" />
+    <Compile Include="CumplimientoNoEncontradoException.vb" />
+    <Compile Include="DashboardNoCreadoException.vb" />
+    <Compile Include="DashboardNoEliminadoException.vb" />
+    <Compile Include="DashboardNoEncontradoException.vb" />
+    <Compile Include="DashboardNoModificadoException.vb" />
+    <Compile Include="DatoAnexoNoCreadoException.vb" />
+    <Compile Include="DatoAnexoNoEliminadoException.vb" />
+    <Compile Include="DatoAnexoNoEncontradoException.vb" />
+    <Compile Include="DatoAnexoNoModificadoException.vb" />
+    <Compile Include="DatosVaciosException.vb" />
+    <Compile Include="DepartamentoNoCreadoException.vb" />
+    <Compile Include="DepartamentoNoEliminadoException.vb" />
+    <Compile Include="DepartamentoNoEncontradoException.vb" />
+    <Compile Include="DestinoEmpleoNoEliminadoException.vb" />
+    <Compile Include="DestinoEmpleoNoEncontradoException.vb" />
+    <Compile Include="DestinoEmpleoNoModificadoException.vb" />
+    <Compile Include="DestionoEmpleoNoCreadoException.vb" />
+    <Compile Include="DetalleArqueoNoCreadoException.vb" />
+    <Compile Include="DetalleArqueoNoEliminadoException.vb" />
+    <Compile Include="DetalleArqueoNoEncontradoException.vb" />
+    <Compile Include="DetalleArqueoNoModificadoException.vb" />
+    <Compile Include="DetalleCertificadoPrecancelacionNoCreadoException.vb" />
+    <Compile Include="DetalleCertificadoPrecancelacionNoEliminadoException.vb" />
+    <Compile Include="DetalleCertificadoPrecancelacionNoEncontradoException.vb" />
+    <Compile Include="DetalleCertificadoPrecancelacionNoModificadoException.vb" />
+    <Compile Include="DetalleComprobanteNoCreadoException.vb" />
+    <Compile Include="DetalleComprobanteNoEncontradoException.vb" />
+    <Compile Include="DetalleDistribucionNoCreadoException.vb" />
+    <Compile Include="DetalleDistribucionNoEliminadoException.vb" />
+    <Compile Include="DetalleDistribucionNoEncontradoException.vb" />
+    <Compile Include="DetalleDistribucionNoModificadoException.vb" />
+    <Compile Include="DetalleGestionOperadorNoCreadoException.vb" />
+    <Compile Include="DetalleGestionOperadorNoEliminadoException.vb" />
+    <Compile Include="DetalleGestionOperadorNoEncontradoException.vb" />
+    <Compile Include="DetalleGestionOperadorNoModificadoException.vb" />
+    <Compile Include="DetalleMonedaNoCreadoException.vb" />
+    <Compile Include="DetalleMonedaNoEncontradoException.vb" />
+    <Compile Include="DetalleMovimientoContableNoCreadoException.vb" />
+    <Compile Include="DetalleMovimientoContableNoELiminadoException.vb" />
+    <Compile Include="DetalleMovimientoContableNoEncontradoException.vb" />
+    <Compile Include="DetalleMovimientoMonedaNoCreadoException.vb" />
+    <Compile Include="DetalleMovimientoMonedaNoEliminadaException.vb" />
+    <Compile Include="DetalleMovimientoMonedaNoEncontradoException.vb" />
+    <Compile Include="DetalleMovimientoNoCreadoException.vb" />
+    <Compile Include="DetalleMovimientoNoEliminadoException.vb" />
+    <Compile Include="DetalleMovimientoNoEncontradoException.vb" />
+    <Compile Include="DetallereciboconvenioNoCreadoException.vb" />
+    <Compile Include="DetallereciboconvenioNoEliminadoException.vb" />
+    <Compile Include="DetallereciboconvenioNoEncontradoException.vb" />
+    <Compile Include="DetallereciboCuotaSocialNoEliminadoException.vb" />
+    <Compile Include="DetallereciboServicioNoEliminadoException.vb" />
+    <Compile Include="DetalleResumenTarjetaNoCreadoException.vb" />
+    <Compile Include="DetalleResumenTarjetaNoEliminadoException.vb" />
+    <Compile Include="DetallesCreditosInsercionExternaException.vb" />
+    <Compile Include="DeudorNoCreadoException.vb" />
+    <Compile Include="DeudorNoEliminadoException.vb" />
+    <Compile Include="DeudorNoEncontradoException.vb" />
+    <Compile Include="DeudorNoInsertadoException.vb" />
+    <Compile Include="DevengamientoNoCreadoException.vb" />
+    <Compile Include="DevengamientoNoEncontradoException.vb" />
+    <Compile Include="DiasNoEncontradoException.vb" />
+    <Compile Include="DigitoVerificadorNoCalculadoException.vb" />
+    <Compile Include="DistribucionNoCreadaException.vb" />
+    <Compile Include="DistribucionNoEncontradoException.vb" />
+    <Compile Include="DistribucionNoModificadaException.vb" />
+    <Compile Include="DocumentacionEscaneadaNoCreadaException.vb" />
+    <Compile Include="DocumentacionEscaneadaNoEliminadaException.vb" />
+    <Compile Include="DocumentacionEscaneadaNoEncontradaException.vb" />
+    <Compile Include="DocumentacionEscaneadaNoModificadaException.vb" />
+    <Compile Include="DomicilioNoCreadoException.vb" />
+    <Compile Include="DomicilioNoEliminadoException.vb" />
+    <Compile Include="DomicilioNoEncontradoException.vb" />
+    <Compile Include="DomicilioNoModificadoException.vb" />
+    <Compile Include="ECommerceErrorInterfaceException.vb" />
+    <Compile Include="EcommerceWebServiceLogNoCreadoException.vb" />
+    <Compile Include="EcommerceWebServiceLogNoEliminadoException.vb" />
+    <Compile Include="EcommerceWebServiceLogNoEncontradoException.vb" />
+    <Compile Include="EjercicioContableNoCreadoException.vb" />
+    <Compile Include="EjercicioContableNoEliminadoException.vb" />
+    <Compile Include="EjercicioContableNoEncontradoException.vb" />
+    <Compile Include="EjercicioContableNoModificadoException.vb" />
+    <Compile Include="EmailMasivoDetalleNoCreadoException.vb" />
+    <Compile Include="EmailMasivoDetalleNoEliminadoException.vb" />
+    <Compile Include="EmailMasivoDetalleNoEncontradoException.vb" />
+    <Compile Include="EmailMasivoDetalleNoModificadoException.vb" />
+    <Compile Include="EmailMasivoNoCreadoException.vb" />
+    <Compile Include="EmailMasivoNoEliminadoException.vb" />
+    <Compile Include="EmailMasivoNoEncontradoException.vb" />
+    <Compile Include="EmailMasivoNoModificadoException.vb" />
+    <Compile Include="EmailNoCreadoException.vb" />
+    <Compile Include="EmailNoEliminadoException.vb" />
+    <Compile Include="EmailNoEncontradoException.vb" />
+    <Compile Include="EmailNoModificadoException.vb" />
+    <Compile Include="EmpleadoPadronException.vb" />
+    <Compile Include="EmpleadorNoCreadoException.vb" />
+    <Compile Include="EmpleadorNoEliminadoException.vb" />
+    <Compile Include="EmpleadorNoEncontradoException.vb" />
+    <Compile Include="EmpleadorNoModificadoException.vb" />
+    <Compile Include="EmpleoHistorialNoCreadoException.vb" />
+    <Compile Include="EmpleoHistorialNoEncontradoException.vb" />
+    <Compile Include="EmpleoNoCreadoException.vb" />
+    <Compile Include="EmpleoNoEliminadoException.vb" />
+    <Compile Include="EmpleoNoEncontradoException.vb" />
+    <Compile Include="EmpleoNoModificadoException.vb" />
+    <Compile Include="EmpresaFalsaNoCreadaException.vb" />
+    <Compile Include="EmpresaFalsaNoEliminadaException.vb" />
+    <Compile Include="EmpresaFalsaNoEncontradaException.vb" />
+    <Compile Include="EmpresaFalsaNoModificadaException.vb" />
+    <Compile Include="EmpresaGrupoNoCreadaException.vb" />
+    <Compile Include="EmpresaGrupoNoEliminadaException.vb" />
+    <Compile Include="EmpresaGrupoNoEncontradaException.vb" />
+    <Compile Include="EmpresaGrupoNoModificadaException.vb" />
+    <Compile Include="EmpresaNoCreadaException.vb" />
+    <Compile Include="EmpresaNoEliminadaException.vb" />
+    <Compile Include="EmpresaNoEncontradaException.vb" />
+    <Compile Include="EmpresaNoModificadaException.vb" />
+    <Compile Include="EnacomException.vb" />
+    <Compile Include="EncuadreFiscalNoEncontradoException.vb" />
+    <Compile Include="EnteNoCreadoException.vb" />
+    <Compile Include="EnteNoEliminadoException.vb" />
+    <Compile Include="EnteNoEncontradoException.vb" />
+    <Compile Include="EnteNoModificadoException.vb" />
+    <Compile Include="EntePagadorNoCreadoException.vb" />
+    <Compile Include="EntePagadorNoEliminadoException.vb" />
+    <Compile Include="EntePagadorNoEncontradoException.vb" />
+    <Compile Include="EntePagadorNoModificadoException.vb" />
+    <Compile Include="EntidadConceptosException.vb" />
+    <Compile Include="EntidadConceptosNoCreadaException.vb" />
+    <Compile Include="EntidadConceptosNoEliminadaException.vb" />
+    <Compile Include="EntidadConceptosNoEncontradaException.vb" />
+    <Compile Include="EntidadConceptosNoModificadaException.vb" />
+    <Compile Include="EntidadFinancieraNoCreadaException.vb" />
+    <Compile Include="EntidadFinancieraNoEliminadaException.vb" />
+    <Compile Include="EntidadFinancieraNoEncontradaException.vb" />
+    <Compile Include="EntidadFinancieraNoModificadaException.vb" />
+    <Compile Include="EntidadMutualCategoriaCuotaSocialNoCreadaException.vb" />
+    <Compile Include="EntidadMutualCategoriaCuotaSocialNoEliminadaException.vb" />
+    <Compile Include="EntidadMutualCategoriaCuotaSocialNoEncontradaException.vb" />
+    <Compile Include="EntidadMutualCategoriaCuotaSocialNoModificadaException.vb" />
+    <Compile Include="EntidadMutualNoCreadaException.vb" />
+    <Compile Include="EntidadMutualNoEliminadaException.vb" />
+    <Compile Include="EntidadMutualNoEncontradaException.vb" />
+    <Compile Include="EntidadMutualNoModificadaException.vb" />
+    <Compile Include="EntidadRedSocialNoCreadaException.vb" />
+    <Compile Include="EntidadRedSocialNoEliminadaException.vb" />
+    <Compile Include="EntidadRedSocialNoEncontradaException.vb" />
+    <Compile Include="EntidadRedSocialNoModificadaException.vb" />
+    <Compile Include="EntidadTarjetaNoCreadaException.vb" />
+    <Compile Include="EntidadTarjetaNoEliminadaException.vb" />
+    <Compile Include="EntidadTarjetaNoEncontradaException.vb" />
+    <Compile Include="EntidadTarjetaNoModificadaException.vb" />
+    <Compile Include="EntidadVentaNoCreadaException.vb" />
+    <Compile Include="EntidadVentaNoEliminadaException.vb" />
+    <Compile Include="EntidadVentaNoEncontradaException.vb" />
+    <Compile Include="EntidadVentaNoModificadaException.vb" />
+    <Compile Include="EntidadVerazNoCreadaException.vb" />
+    <Compile Include="EntidadVerazNoEliminadaException.vb" />
+    <Compile Include="EntidadVerazNoEncontradaException.vb" />
+    <Compile Include="EntidadVerazNoModificadaException.vb" />
+    <Compile Include="EnvioArchivosCartaTarjetaNoGeneradoException.vb" />
+    <Compile Include="EnvioBaproNoGeneradoException.vb" />
+    <Compile Include="EnvioCabalNoRealizadoException.vb" />
+    <Compile Include="EnvioComercioNoGeneradoException.vb" />
+    <Compile Include="EnvioDebitoNoGeneradoException.vb" />
+    <Compile Include="EnvioestudioNoCreadoException.vb" />
+    <Compile Include="EnvioestudioNoEliminadoException.vb" />
+    <Compile Include="EnvioestudioNoEncontradoException.vb" />
+    <Compile Include="EnvioestudioNoModificadoException.vb" />
+    <Compile Include="EnvioException.vb" />
+    <Compile Include="EnvioInterfaceException.vb" />
+    <Compile Include="EstadisticaException.vb" />
+    <Compile Include="EstadoNoEncontradoException.vb" />
+    <Compile Include="EstadoUsuarioNoEncontradoException.vb" />
+    <Compile Include="ExternoException.vb" />
+    <Compile Include="FTPNoConectadoException.vb" />
+    <Compile Include="GrupoComercialNoCreadoException.vb" />
+    <Compile Include="GrupoComercialNoEliminadoException.vb" />
+    <Compile Include="GrupoComercialNoEncontradoException.vb" />
+    <Compile Include="GrupoComercialNoModificadoException.vb" />
+    <Compile Include="GrupoEmpresasNoEncontradoException.vb" />
+    <Compile Include="GrupoNoCreadoException.vb" />
+    <Compile Include="GrupoNoEliminadoException.vb" />
+    <Compile Include="GrupoNoEncontradoException.vb" />
+    <Compile Include="GrupoNoModificadoException.vb" />
+    <Compile Include="GrupoPlanComercialEntidadNoCreadoException.vb" />
+    <Compile Include="GrupoPlanComercialEntidadNoEliminadoException.vb" />
+    <Compile Include="GrupoPlanComercialEntidadNoEncontradoException.vb" />
+    <Compile Include="GrupoPlanComercialNoCreadoException.vb" />
+    <Compile Include="GrupoPlanComercialNoEliminadoException.vb" />
+    <Compile Include="GrupoPlanComercialNoEncontradoException.vb" />
+    <Compile Include="GrupoPlanComercialNoModificadoException.vb" />
+    <Compile Include="IconoNoEncontradoException.vb" />
+    <Compile Include="LocalidadNoCreadaException.vb" />
+    <Compile Include="LocalidadNoEliminadaException.vb" />
+    <Compile Include="LocalidadNoEncontradaException.vb" />
+    <Compile Include="LocalidadNoModificadaException.vb" />
+    <Compile Include="LogNoCreadoException.vb" />
+    <Compile Include="LogNoEliminadoException.vb" />
+    <Compile Include="LogNoEncontradoException.vb" />
+    <Compile Include="MailNoEnviadoException.vb" />
+    <Compile Include="MedioAccesoSistemaNoEncontradoException.vb" />
+    <Compile Include="MenuNoCreadoException.vb" />
+    <Compile Include="MenuNoEliminadoException.vb" />
+    <Compile Include="MenuNoEncontradoException.vb" />
+    <Compile Include="MenuNoModificadoException.vb" />
+    <Compile Include="MoniteroProcesosNoCreadoException.vb" />
+    <Compile Include="MoniteroProcesosNoEliminadoException.vb" />
+    <Compile Include="MoniteroProcesosNoEncontradoException.vb" />
+    <Compile Include="MoniteroProcesosNoModificadoException.vb" />
+    <Compile Include="MotivoBloqueoException.vb" />
+    <Compile Include="MotivoBloqueoNoCreadaException.vb" />
+    <Compile Include="MotivoBloqueoNoEliminadaException.vb" />
+    <Compile Include="MotivoBloqueoNoEncontradaException.vb" />
+    <Compile Include="MotivoBloqueoNoModificadaException.vb" />
+    <Compile Include="MovimientoNoCreadoException.vb" />
+    <Compile Include="MovimientoNoEliminadoException.vb" />
+    <Compile Include="MovimientoNoEncontradoException.vb" />
+    <Compile Include="MovimientoNoImpresoException.vb" />
+    <Compile Include="MovimientoNoModificadoException.vb" />
+    <Compile Include="MovimientoStockException.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="NivelNoCreadoException.vb" />
+    <Compile Include="NivelNoEliminadoException.vb" />
+    <Compile Include="NivelNoEncontradoException.vb" />
+    <Compile Include="NivelNoModificadoException.vb" />
+    <Compile Include="NotificacionNoEnviadaException.vb" />
+    <Compile Include="PaisNoCreadoException.vb" />
+    <Compile Include="PaisNoEliminadoException.vb" />
+    <Compile Include="PaisNoEncontradoException.vb" />
+    <Compile Include="PaisNoModificadoException.vb" />
+    <Compile Include="ParametroEntidadRecaudadoraNoActualizadoException.vb" />
+    <Compile Include="ParametroEntidadRecaudadoraNoCreadoException.vb" />
+    <Compile Include="ParametroEntidadRecaudadoraNoEncontradoException.vb" />
+    <Compile Include="ParametroEnvioInterfaceNoCreadoException.vb" />
+    <Compile Include="ParametroEnvioInterfaceNoEliminadoException.vb" />
+    <Compile Include="ParametroEnvioInterfaceNoEncontradoException.vb" />
+    <Compile Include="ParametroEnvioInterfaceNoModificadoException.vb" />
+    <Compile Include="ParametroMensajeNoCreadoException.vb" />
+    <Compile Include="ParametroMensajeNoEliminadoException.vb" />
+    <Compile Include="ParametroMensajeNoEncontradoException.vb" />
+    <Compile Include="ParametroMensajeNoModificadoException.vb" />
+    <Compile Include="ParametroNoActualizadoException.vb" />
+    <Compile Include="ParametroNoCreadoException.vb" />
+    <Compile Include="ParametroNoEliminadoException.vb" />
+    <Compile Include="ParametroNoEncontradoException.vb" />
+    <Compile Include="ParametroSeguroNoCreadoException.vb" />
+    <Compile Include="ParametroSeguroNoEliminadoException.vb" />
+    <Compile Include="ParametroSeguroNoEncontradoException.vb" />
+    <Compile Include="ParametroSeguroNoModificadoException.vb" />
+    <Compile Include="PerfilNoCreadoException.vb" />
+    <Compile Include="PerfilNoEliminadoException.vb" />
+    <Compile Include="PerfilNoEncontradoException.vb" />
+    <Compile Include="PerfilNoModificadoException.vb" />
+    <Compile Include="PersonaDatoDocumentoNoCreadoException.vb" />
+    <Compile Include="PersonaDatoDocumentoNoEliminadoException.vb" />
+    <Compile Include="PersonaDatoDocumentoNoEncontradoException.vb" />
+    <Compile Include="PersonaDatoDocumentoNoModificadoException.vb" />
+    <Compile Include="PersonaNoCreadaException.vb" />
+    <Compile Include="PersonaNoEliminadaException.vb" />
+    <Compile Include="PersonaNoEncontradaException.vb" />
+    <Compile Include="PersonaNoModificadaException.vb" />
+    <Compile Include="RolNoCreadoException.vb" />
+    <Compile Include="RolNoEncontradoException.vb" />
+    <Compile Include="RolNoHabilitadoException.vb" />
+    <Compile Include="RootException.vb" />
+    <Compile Include="SegmentoNoCreadoException.vb" />
+    <Compile Include="SegmentoNoEliminadoException.vb" />
+    <Compile Include="SegmentoNoEncontradoException.vb" />
+    <Compile Include="SegmentoNoModificadoException.vb" />
+    <Compile Include="SeguridadException.vb" />
+    <Compile Include="SexoNoEncontradoException.vb" />
+    <Compile Include="SFTPNoConectadoException.vb" />
+    <Compile Include="SucursalClienteNoEncontradoException.vb" />
+    <Compile Include="SucursalNoCreadaException.vb" />
+    <Compile Include="SucursalNoEliminadaException.vb" />
+    <Compile Include="SucursalNoEncontradaException.vb" />
+    <Compile Include="SucursalNoModificadaException.vb" />
+    <Compile Include="SucursalPuntosException.vb" />
+    <Compile Include="TelefonoNoEncontradoException.vb" />
+    <Compile Include="TipoActividadNoCreadaException.vb" />
+    <Compile Include="TipoActividadNoEliminadaException.vb" />
+    <Compile Include="TipoActividadNoEncontradaException.vb" />
+    <Compile Include="TipoActividadNoModificadaException.vb" />
+    <Compile Include="TipoDatoAnexoNoCreadoException.vb" />
+    <Compile Include="TipoDatoAnexoNoEliminadoException.vb" />
+    <Compile Include="TipoDatoAnexoNoEncontradoException.vb" />
+    <Compile Include="TipoDatoAnexoNoModificadoException.vb" />
+    <Compile Include="TipoDocumentoException.vb" />
+    <Compile Include="TipoDocumentoNoEncontradoException.vb" />
+    <Compile Include="TipoEntidadNoEncontradaException.vb" />
+    <Compile Include="TipoMensajeNoEncontradoException.vb" />
+    <Compile Include="TipoNivelNoEncontradoException.vb" />
+    <Compile Include="TipoParametroNoEncontradoException.vb" />
+    <Compile Include="TipoProcesoNoEncontradoException.vb" />
+    <Compile Include="UnidadDeNegociosNoCreadaException.vb" />
+    <Compile Include="UnidadDeNegociosNoEliminadaException.vb" />
+    <Compile Include="UnidadDeNegociosNoEncontradaException.vb" />
+    <Compile Include="UnidadDeNegociosNoModificadaException.vb" />
+    <Compile Include="UnidadMedidaNoEncontradoException.vb" />
+    <Compile Include="UsuarioBloqueadoException.vb" />
+    <Compile Include="UsuarioClaveErroneaException.vb" />
+    <Compile Include="UsuarioException.vb" />
+    <Compile Include="UsuarioGeneraContraseniaNoEnviadaException.vb" />
+    <Compile Include="UsuarioGeneraContraseniaNoGeneradaException.vb" />
+    <Compile Include="UsuarioNoCreadoException.vb" />
+    <Compile Include="UsuarioNoEliminadoException.vb" />
+    <Compile Include="UsuarioNoEncontradoException.vb" />
+    <Compile Include="UsuarioNoHabilitadoException.vb" />
+    <Compile Include="UsuarioNoModificadoException.vb" />
+    <Compile Include="VersionNoCreadaException.vb" />
+    <Compile Include="VersionNoEncontradaException.vb" />
+    <Compile Include="VisualizacionNoEncontradaException.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>

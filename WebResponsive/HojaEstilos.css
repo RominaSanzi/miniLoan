@@ -1,0 +1,275 @@
+
+.textBoxURL { font-family: Verdana; font-size: 7pt; font-style: normal; font-weight: lighter; color: #012770; margin-left: 0px; text-align: left; letter-spacing: 0mm ; line-height: 8.5pt;}
+.formulario {  font-family: Verdana; font-size: 8pt; font-style: normal; font-weight: normal; color: #00008F; text-decoration: none; margin-left: 0px; text-align: left; text-transform: lowercase; letter-spacing: 0mm; line-height: 26pt; text-indent: 0px;}
+.filaGrisClaro {  font-family: Verdana; font-size: 8pt; font-style: normal; font-weight: normal; color: #00008F; text-decoration: none; margin-left: 0px; text-align: left; text-transform: lowercase; letter-spacing: 0mm; line-height: 26pt; text-indent: 0px;background-color:#f3f3f3;}
+.filaGrisOscuro {  font-family: Verdana; font-size: 8pt; font-style: normal; font-weight: normal; color: #00008F; text-decoration: none; margin-left: 0px; text-align: left; text-transform: lowercase; letter-spacing: 0mm; line-height: 26pt; text-indent: 0px;  background-color:#e8e8e8;}
+.titulo {  font-family: Verdana; font-size: 9pt; font-style: normal; font-weight: bold; text-transform: uppercase; color: #012770; letter-spacing: 2px; text-align: left; word-spacing: normal; clip:   rect(   ); margin-left: 10px; text-decoration: none;}
+.subtitulo {  font-family: Verdana; font-size: 8pt; font-style: normal; font-weight: bold; text-transform: uppercase; color: #012770; letter-spacing: 2px; text-align: left; word-spacing: normal; clip:   rect(   ); margin-left: 5px; text-decoration: none;}
+.subtitulo2 {  font-family: Verdana; font-size: 7pt; font-style: normal; font-weight: bold; text-transform: uppercase; color: #012770; letter-spacing: 1px; text-align: left; word-spacing: normal; clip:   rect(   ); margin-left: 5px; text-decoration: none;}
+.subtituloRojo {  font-family: Verdana; background-color:#FFFF00 ; font-size: 8pt; font-style: normal; font-weight: bold; text-transform: uppercase; color: #FF0000; letter-spacing: 2px; text-align: left; word-spacing: normal; clip:   rect(   ); margin-left: 5px; text-decoration: none;}
+.label {font-family: Verdana; font-size: 7pt; font-style: normal; font-weight: lighter; color: #012770; margin-left: 0px; text-align: left; letter-spacing: 0mm; line-height: 23px; text-transform: lowercase; margin-bottom: 0px;}
+.cargando { background-color: #C0C0C0; border-style: solid; border-width: 1px; font-family: Verdana; font-size: large;}
+.formularioGrilla {  font-family: Verdana; font-size: 8pt; font-style: normal; font-weight: normal; color: #00008F; text-decoration: none; margin-left: 0px; text-align: left; text-transform: lowercase; letter-spacing: 0mm; line-height: 12pt; text-indent: 0px;}
+.labelFormato { font-family: Verdana; font-size: 7pt; font-style: normal; font-weight: bold; color: #012770; margin-left: 0px; text-align: left; letter-spacing: 0mm; line-height: 8.5pt; text-transform: lowercase;
+    height: 20px;
+}
+.labelFormato1 { padding-left:10px;    font-family: Verdana;    font-size: 8pt;    font-style: normal;    font-weight: bold;    color: #012770;    margin-left: 0px;    text-align: left;    letter-spacing: 0mm;    line-height: 10.5pt;    text-transform: lowercase;}
+.labelFormatochk {
+    padding-left:10px;
+    font-family: Verdana;
+    font-size: 8pt;
+    font-style: normal;
+    font-weight: bold;
+    color: #012770;
+    margin-left: 0px;
+    text-align: left;
+    letter-spacing: 0mm;
+    line-height: 10.5pt;
+    text-transform: lowercase;
+}
+.textBox { font-family: Verdana; font-size: 7pt; font-style: normal; font-weight: lighter; color: #012770; margin-left: 0px; text-align: left; letter-spacing: 0mm; line-height: 8.5pt; text-transform: uppercase;margin-bottom: 0px;}
+.textBoxComun { font-family: Verdana; font-size: 7pt; font-style: normal; font-weight: lighter; color: #012770; margin-left: 0px; text-align: left; letter-spacing: 0mm; line-height: 8.5pt;margin-bottom: 0px;}
+.textBoxMargenes { font-family: Verdana; font-size: 7pt; font-style: normal; font-weight: lighter; color: #012770; margin-left: 0px; text-align: left; letter-spacing: 0mm; line-height: 8.5pt; text-transform: uppercase;;margin-top: 8px;margin-bottom: 8px;}
+.dropdownlist { font-family: Verdana; font-size: 7pt; font-style: normal; font-weight: lighter; color: #012770; margin-left: 0px; text-align: left; letter-spacing: 0mm; line-height: 8.5pt; text-transform: uppercase;}
+.validator { font-family: Verdana; font-size: 7pt; font-style: normal; font-weight: lighter; color: #012770; margin-left: 0px; text-align: left; letter-spacing: 0mm ; line-height: 8.5pt; text-transform: capitalize;}
+.boton {  font-family: Verdana; font-size: 7pt; font-style: normal; font-weight: bold; text-transform: uppercase; color: #012770; letter-spacing: 0px; text-align: center; word-spacing: normal; margin-left: 0px; text-decoration: none;
+    margin-bottom: 0px;
+}
+.link { font-family: Verdana; font-size: 7pt; font-style: normal; font-weight: lighter;margin-left: 1px; text-align: left; letter-spacing: 0mm ; line-height: 8.5pt; text-transform: capitalize; color: #012770;}
+.linkRojo { font-family: Verdana; font-size: 7pt; font-style: normal; font-weight: bold;margin-left: 1px; text-align: left; letter-spacing: 0mm ; line-height: 8.5pt; text-transform: uppercase;color: red; text-decoration:none}
+.labelCambioPass { font-family: Verdana; font-size: 7pt; font-style:  normal ; font-weight:  bold ; color: White ; margin-left: 1px; text-align: right; letter-spacing: 0.5mm ; line-height: 8.5pt; text-transform: uppercase;}
+.solicitudImpresion {color:buttontext; background-color:Transparent; font-family:Verdana; font-size:7pt;height:14px;}
+.solicitudImpresion2 {color:buttontext; background-color:Transparent; text-transform:lowercase; font-family:Verdana; font-size:7pt; height:12px;}
+.solicitudImpresion3 {color:buttontext; background-color:Transparent; font-family:Verdana; font-size:10pt; height:14px;}
+.solicitudImpresion4 {font-weight: bold; color:buttontext; background-color:Transparent; font-family:Verdana; font-size:7pt; height:14px;}
+.reciboImpresionMatricial {color:buttontext; background-color:Transparent; font-family:sans-serif; font-size:7pt;height:12px;}
+.reciboImpresionMatricialNegrita {font-weight:bold; color:buttontext; background-color:Transparent; font-family:sans-serif; font-size:7pt;height:12px;}
+.reciboImpresionMatricial1 {color:buttontext; background-color:Transparent; font-family:sans-serif; font-size:7pt; height:14px;}
+.grillaReciboMatricial { font-family:sans-serif; font-size:8pt; text-transform:lowercase;}
+.solicitudVaucher {color:buttontext; background-color:Transparent; font-family:Arial; font-size:13pt;}
+.solicitudVaucher2 {color:buttontext; background-color:Transparent; font-family:Arial; font-size:10pt;}
+.comprobante {  font-family: Verdana; font-size: 8pt; font-style: normal; text-transform: uppercase; letter-spacing: 0mm; text-align: left; word-spacing: normal; clip:   rect(   ); margin-left: 5px; text-decoration: none;}
+.filaMensaje {  font-family: Verdana; font-size: 7pt; font-style: normal; font-weight: normal; color: #00008F; text-decoration: none; margin-left: 0px; text-align: left; text-transform: lowercase; letter-spacing: 0mm; line-height: 15pt; text-indent: 0px;  background-color:#e8e8e8;}
+.mensajeComun {  font-family: Verdana; font-size: 7pt; font-style: normal; font-weight: bold; text-transform: uppercase; color: #012770;  letter-spacing: 2px; text-align: left; word-spacing: normal; margin-left: 5px; text-decoration: none;}
+.mensajealerta {  font-family: Verdana; font-size: 7pt; font-style: normal; font-weight: bold; text-transform: uppercase; color: #005697; letter-spacing: 2px; text-align: left; word-spacing: normal; margin-left: 5px; text-decoration: none;}
+.mensajealertaRojo {  font-family: Verdana; font-size: 7pt; font-style: normal; font-weight: bold; text-transform: uppercase; color: red; letter-spacing: 2px; text-align: left; word-spacing: normal; margin-left: 5px; text-decoration: none;}
+.datoRecibo {color:buttontext;background-color:Transparent;font-family:Verdana;font-size:7pt;height:14px;}
+.datoRecibo2 {font-weight: bold;color:buttontext;background-color:Transparent;font-family:Verdana;font-size:8pt;height:14px;}
+.grilla {  border: 1px None #999999; letter-spacing: 0mm; line-height: 11pt; background-color: White; font-family: Verdana;
+}
+.grillaChica{  Border-Color: #999999; Border-Style: None; background-color: White; font-family: Verdana; font-size: 6pt; Border-Width: 1px; Width: 600px; Height: 0px;}
+.SelectedItemStyle {Font-Size :XX-Small;  font-family: Verdana;  font-weight: bold; color: White; Background-Color:silver; text-transform:uppercase;}
+.EditItemStyle {Font-Size:XX-Small; Font-family:Verdana; Color:Black; Background-Color:#F3F3F3; text-transform:uppercase;}
+.AlternatingItemStyle {Font-Size:XX-small; Font-family:Verdana;  background-color:#E8E8E8; text-transform:uppercase;}
+.ItemStyle {Font-Size :XX-Small; Font-family: Verdana; Color: Black; Background-Color: #F3F3F3; text-transform: uppercase;}
+.ItemStyle2 {border-style: solid;border-width: 1px; font-size: XX-Small; font-family: Verdana; color: Black; background-color: #F3F3F3;  text-transform: uppercase;}
+.HeaderStyle {Font-family:Verdana; Font-Size:XX-small; font-weight: bold; Color:White; Background-Color:#012770;}
+.FooterStyle {Font-Size:XX-Small; Color:Black; Background-Color:silver; font-weight: bold; text-transform:uppercase;}
+.PagerStyle {Font-Size:XX-Small; Font-family:Verdana; text-align:center; Color:Black;  background-color:#E8E8E8;}
+.linea {border-top: black 1px solid;}
+.lineaInferior {border-bottom: black 1px solid;}
+.tituloReporte{ font-family:Verdana; font-size:9pt ; text-transform:uppercase ; font-weight:bold;}
+.grillaReporte { font-family:Verdana; font-size:6pt; text-transform:lowercase;}
+.grillaReporteGrande { font-family:Verdana; font-size:7pt; text-transform:lowercase;}
+.grillaReporteGrande2 { font-family:Verdana; font-size:9pt; text-transform:lowercase;}
+.grillareportegrandeMayuscula { font-family:Verdana; font-size:7pt; text-transform:uppercase;}
+.subtitulosReporte { font-family:Verdana; font-size:7pt; text-transform:uppercase; font-weight:bold;}
+.subtitulosGrilaReporte { font-family:Verdana; font-size:6pt; text-transform:uppercase;}
+.datosReporte { font-family:Verdana; font-size:7pt; text-transform:lowercase;}
+.solicitud { font-family:Verdana; font-size:6pt;}
+.datosReporteGrande { font-family:Verdana; font-size:7pt; text-transform:lowercase;}
+.datosCarta { font-family:Verdana; font-size:8pt;}
+.datosCartaNegrita { font-family:Verdana; font-size:8pt; font-weight:bold;}
+.datosCartaGrandes { font-family:Verdana; font-size:9pt; text-transform:uppercase;}
+.datosCartaNegritaGrandes { font-family:Verdana; font-size:9pt; font-weight:bold; text-transform:uppercase;}
+.parametrosReporte { font-family:Verdana; font-size:7pt; text-transform:uppercase;}
+.parametrosReporte2 { font-family:Verdana; font-size:7pt; text-transform:uppercase; font-weight:bold;}
+.parametrosReporte3 { font-family:Verdana; font-size:10pt; text-transform:uppercase; font-weight:bold;}
+.publicidadCarta { font-family:Verdana; font-size:11pt; text-transform:uppercase; font-weight:bold;}
+.publicidadCarta2 { font-family:Verdana; font-size:11pt; text-transform:uppercase; font-weight:bold; text-decoration: underline;}
+.labelSubtitulosReporte { font-family:Verdana; font-size:8pt; text-transform:uppercase; font-weight:bold ; color:black;}
+.labelReporte { font-family:Verdana; font-size:7pt; text-transform:uppercase; color:black;}
+.labelDatosReporte { font-family:Verdana; font-size:7pt; text-transform:lowercase; color:black;}
+
+.labelInformeClientes { font-family:Verdana; font-size:8pt; color:black; font-weight:bold;}
+.labelInformeClientesDatos { font-family:Verdana; font-size:8pt; color:white; text-transform:none;}
+
+.datosChequera { font-family:Verdana; font-size:7pt; text-transform:lowercase;}
+
+#progressBackgroundFilter, #progressBackgroundFilters {
+    position:fixed;
+    top:0px;
+    bottom:0px;
+    left:0px;
+    right:0px;
+    overflow:hidden;
+    padding:0;
+    margin:0;
+    filter:alpha(opacity=50);
+    opacity:0.5;
+    z-index:1000;
+}
+
+#processMessage {
+    position:fixed;
+    top:35%;
+    left:40%;
+    padding:3px;
+    height:3%;
+    width:15%;
+    border:solid 1px black;
+    background:silver;
+    z-index:1000;
+    }
+
+.progressBackgroundFilter {
+    position:fixed;
+    top:0px;
+    left:0px;
+    right:0px;
+    overflow:hidden;
+    padding:0;
+    margin:0;
+    background: #fafafa;
+    filter:alpha(opacity=50);
+    opacity:0.5;
+    z-index:1000;
+    height:100%;
+    width:100%;
+}
+
+.processMessage {
+    horiz-align: center;
+    font-size: 2em;
+    font-family: sans-serif;
+    width: 200px;
+    margin-left: 20%;
+    margin-top: 30%;
+    position:fixed;
+    padding:3px;
+    border: solid 1px #fafafa;
+    color:#1c1c1c;
+    background: transparent;
+    text-align: center;
+    font-weight: bold;
+    z-index:1001;
+    /*background-image: url("/Imagenes/loading.gif");*/   
+    }
+    
+.completionList {border:solid 1px #444444; margin:0px; padding:2px; overflow:auto; font-family: Verdana;  font-size: 7pt; color: #012770; background-color: white;}
+.listItem {color: #1C1C1C;}
+.itemHighlighted {background-color: beige;}
+
+.overlayContent
+{
+    width: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 0;
+    margin: 0;
+    z-index: 1001;
+    visibility: visible;
+}
+
+.modalPopup 
+{
+    background-color:#FAFAFA;
+    filter: alpha(opacity=20);
+    opacity: 0.7;
+    xindex:-1;
+}
+.labelFormatoCargando { font-family: Verdana; font-size: 12pt; font-style: normal; font-weight: bold; color:Black; margin-left: 1px; text-align: left; letter-spacing: 0mm ; line-height: 12pt; text-transform: lowercase;}
+
+ .overlay { 
+  position:fixed; 
+  top:0px; 
+  bottom:0px; 
+  left:0px; 
+  right:0px; 
+  overflow:hidden; 
+  padding:0; 
+  margin:0; 
+  width:auto;
+  background-color:#FAFAFA;  
+  filter:alpha(opacity=20); 
+  opacity:0.5; 
+  z-index:1000;
+}
+
+/* EXCEL */
+
+button.excel, .buttons a.excel{
+    color:#336699;
+    background:url(../images/excel.png) 4px center no-repeat;
+    text-align:right;
+    -moz-border-radius: 4px; 
+    -webkit-border-radius: 4px; 
+    -ms-border-radius: 4px;
+    border-radius: 4px;
+    height: 27px;
+}
+.buttons a.excel:hover, button.excel:hover{
+    background-color:#dff4ff;
+    border:1px solid #c2e1ef;
+    color:#336699;
+}
+.buttons a.excel:active{
+    background-color:#6299c5;
+    border:1px solid #6299c5;
+    color:#fff;
+}
+
+
+.Ntooltip {
+position: relative; /* es la posición normal */
+text-decoration: none !important; /* forzar sin subrayado */
+color:#0080C0 !important; /* forzar color del texto */
+/*font-weight:bold !important;  forzar negritas */
+font-size: 10px;
+letter-spacing:0mm;
+}
+
+ .Ntooltip:hover {
+z-index:999; /* va a estar por encima de todo */
+/*    background-color:#000000;  DEBE haber un color de fondo */
+}
+
+.Ntooltip span {
+display: none; /* el elemento va a estar oculto */
+}
+
+.Ntooltip:hover span {
+display: block; /* se fuerza a mostrar el bloque */
+position: absolute; /* se fuerza a que se ubique en un lugar de la pantalla */
+/* top:-15em; right:20px;  donde va a estar */
+font-family: Verdana; 
+font-size: 9pt; 
+line-height:2;
+/*width:250px;  el ancho por defecto que va a tener */
+padding:2px; /* la separación entre el contenido y los bordes */
+background-color: #0080C0; /* el color de fondo por defecto */
+color: #FFFFFF; /* el color de los textos por defecto */
+}
+
+.descargaArchivo {
+    float: left;
+    width: 300px;    
+}
+
+.ajax__tab_tab {
+    line-height: 16px;}
+
+    .tablaRayada tr:nth-child(even) {
+    background-color: #f3f3f3
+}
+
+       .tablaRayada  tr:nth-child(odd) {
+    background-color: #e8e8e8
+}
+
+table.cuentas td,
+table.cuentas tr  {
+  border: 1px solid black !important;
+}
+

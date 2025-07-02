@@ -1,0 +1,1636 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.1.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.1.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{A2347861-073A-430F-8465-5471EE744ECE}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>di.financiera.webResponsive</RootNamespace>
+    <AssemblyName>WebResponsive</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <MyType>Custom</MyType>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44346</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>WebResponsive.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>WebResponsive.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=20.1.0.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <HintPath>..\packages\AjaxControlToolkit.20.1.0\lib\net40\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="BouncyCastle.Cryptography, Version=2.0.0.0, Culture=neutral, PublicKeyToken=072edcf4a5328938, processorArchitecture=MSIL">
+      <HintPath>..\packages\BouncyCastle.Cryptography.2.2.1\lib\net461\BouncyCastle.Cryptography.dll</HintPath>
+    </Reference>
+    <Reference Include="CKEditor.NET, Version=3.6.2.0, Culture=neutral, PublicKeyToken=e379cdf2f8354999, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Referenciasdll\CKEditor.NET.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="FreeTextBox, Version=3.0.5000.25537, Culture=neutral, PublicKeyToken=5962a4e684a48b87">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Referenciasdll\FreeTextBox.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Protobuf, Version=3.21.9.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Protobuf.3.21.9\lib\net45\Google.Protobuf.dll</HintPath>
+    </Reference>
+    <Reference Include="K4os.Compression.LZ4, Version=1.3.5.0, Culture=neutral, PublicKeyToken=2186fa9121ef231d, processorArchitecture=MSIL">
+      <HintPath>..\packages\K4os.Compression.LZ4.1.3.5\lib\netstandard2.0\K4os.Compression.LZ4.dll</HintPath>
+    </Reference>
+    <Reference Include="K4os.Compression.LZ4.Streams, Version=1.3.5.0, Culture=neutral, PublicKeyToken=2186fa9121ef231d, processorArchitecture=MSIL">
+      <HintPath>..\packages\K4os.Compression.LZ4.Streams.1.3.5\lib\netstandard2.0\K4os.Compression.LZ4.Streams.dll</HintPath>
+    </Reference>
+    <Reference Include="K4os.Hash.xxHash, Version=1.0.8.0, Culture=neutral, PublicKeyToken=32cd54395057cec3, processorArchitecture=MSIL">
+      <HintPath>..\packages\K4os.Hash.xxHash.1.0.8\lib\netstandard2.0\K4os.Hash.xxHash.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=7.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.7.0.0\lib\netstandard2.0\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Panoramic, Version=1.0.1568.43087, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Referenciasdll\Panoramic.DLL</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="QRCoder, Version=1.4.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\QRCoder.1.4.1\lib\net40\QRCoder.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Configuration.ConfigurationManager, Version=6.0.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Configuration.ConfigurationManager.6.0.1\lib\net461\System.Configuration.ConfigurationManager.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Diagnostics.DiagnosticSource, Version=7.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Diagnostics.DiagnosticSource.7.0.2\lib\netstandard2.0\System.Diagnostics.DiagnosticSource.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.IO.Pipelines, Version=5.0.0.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.Pipelines.5.0.2\lib\net461\System.IO.Pipelines.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Management" />
+    <Reference Include="System.Memory, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.5\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.6.0.0\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Loader, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.Loader.4.3.0\lib\netstandard1.5\System.Runtime.Loader.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security" />
+    <Reference Include="System.Security.AccessControl, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.AccessControl.6.0.0\lib\net461\System.Security.AccessControl.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Permissions, Version=7.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Permissions.7.0.0\lib\netstandard2.0\System.Security.Permissions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Principal.Windows, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Principal.Windows.5.0.0\lib\net461\System.Security.Principal.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Text.Encoding.CodePages, Version=7.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Encoding.CodePages.7.0.0\lib\netstandard2.0\System.Text.Encoding.CodePages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encodings.Web, Version=7.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Encodings.Web.7.0.0\lib\netstandard2.0\System.Text.Encodings.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Json, Version=7.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Json.7.0.1\lib\netstandard2.0\System.Text.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="ZstdSharp, Version=0.7.1.0, Culture=neutral, PublicKeyToken=8d151af33a4ad5cf, processorArchitecture=MSIL">
+      <HintPath>..\packages\ZstdSharp.Port.0.7.1\lib\net461\ZstdSharp.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="assets\css\all.css" />
+    <Content Include="assets\css\bootstrap-pincode-input.css" />
+    <Content Include="assets\css\bootstrap.min.css" />
+    <Content Include="assets\css\croppie.css" />
+    <Content Include="assets\css\css.css" />
+    <Content Include="assets\css\documento.css" />
+    <Content Include="assets\css\fontawesome\all.min.css" />
+    <Content Include="assets\css\form-elements.css" />
+    <Content Include="assets\css\gijgo.min.css" />
+    <Content Include="assets\css\login.css" />
+    <Content Include="assets\css\material-dashboard.css" />
+    <Content Include="assets\css\now-ui-dashboard.css" />
+    <Content Include="assets\css\now-ui-dashboard.min.css" />
+    <Content Include="assets\css\rangeslider.css" />
+    <Content Include="assets\css\select.min.css" />
+    <Content Include="assets\css\Site.css" />
+    <Content Include="assets\demo\demo.css" />
+    <Content Include="assets\demo\demo.js" />
+    <Content Include="assets\img\agregar_archivo.png" />
+    <Content Include="assets\img\android-chrome-192x192.png" />
+    <Content Include="assets\img\android-chrome-256x256.png" />
+    <Content Include="assets\img\apple-icon.png" />
+    <Content Include="assets\img\apple-touch-icon.png" />
+    <Content Include="assets\img\ARG.png" />
+    <Content Include="assets\img\AU.png" />
+    <Content Include="assets\img\back.png" />
+    <Content Include="assets\img\backgrounds\1%402x.jpg" />
+    <Content Include="assets\img\backgrounds\1.jpg" />
+    <Content Include="assets\img\backgrounds\2-desenfocado 2.jpg" />
+    <Content Include="assets\img\backgrounds\2-desenfocado.jpg" />
+    <Content Include="assets\img\balmain.jpg" />
+    <Content Include="assets\img\bg1.jpg" />
+    <Content Include="assets\img\bg13.jpg" />
+    <Content Include="assets\img\bg14.jpg" />
+    <Content Include="assets\img\bg15.jpg" />
+    <Content Include="assets\img\bg16.jpg" />
+    <Content Include="assets\img\bg3.jpg" />
+    <Content Include="assets\img\bg5.jpg" />
+    <Content Include="assets\img\BR.png" />
+    <Content Include="assets\img\cbu.png" />
+    <Content Include="assets\img\certificado_solicitudcompleta.png" />
+    <Content Include="assets\img\check-icono.png" />
+    <Content Include="assets\img\circulo.png" />
+    <Content Include="assets\img\collection.png" />
+    <Content Include="assets\img\Collection_Loading.gif" />
+    <Content Include="assets\img\comprobante.png" />
+    <Content Include="assets\img\DE.png" />
+    <Content Include="assets\img\default-avatar.png" />
+    <Content Include="assets\img\dni_dorso.png" />
+    <Content Include="assets\img\dni_frente.png" />
+    <Content Include="assets\img\dni_hombre.png" />
+    <Content Include="assets\img\dni_mujer.png" />
+    <Content Include="assets\img\dorso.png" />
+    <Content Include="assets\img\emilyz.jpg" />
+    <Content Include="assets\img\favicon-16x16.png" />
+    <Content Include="assets\img\favicon-32x32.png" />
+    <Content Include="assets\img\favicon.ico" />
+    <Content Include="assets\img\favicon.png" />
+    <Content Include="assets\img\firma.png" />
+    <Content Include="assets\img\foto-cargada.png" />
+    <Content Include="assets\img\fotos.png" />
+    <Content Include="assets\img\frente.png" />
+    <Content Include="assets\img\GB.png" />
+    <Content Include="assets\img\header.jpg" />
+    <Content Include="assets\img\image_placeholder.jpg" />
+    <Content Include="assets\img\james.jpg" />
+    <Content Include="assets\img\Loan-Collection_logo_Original.png" />
+    <Content Include="assets\img\Loan_Loading.gif" />
+    <Content Include="assets\img\Logo.png" />
+    <Content Include="assets\img\mike.jpg" />
+    <Content Include="assets\img\mstile-150x150.png" />
+    <Content Include="assets\img\now-logo.png" />
+    <Content Include="assets\img\otros.png" />
+    <Content Include="assets\img\otros_2.png" />
+    <Content Include="assets\img\placeholder.jpg" />
+    <Content Include="assets\img\prada.jpg" />
+    <Content Include="assets\img\recibo.png" />
+    <Content Include="assets\img\RO.png" />
+    <Content Include="assets\img\safari-pinned-tab.svg" />
+    <Content Include="assets\img\saint-laurent.jpg" />
+    <Content Include="assets\img\selfie.png" />
+    <Content Include="assets\img\servicio.png" />
+    <Content Include="assets\img\sidebar-1.jpg" />
+    <Content Include="assets\img\solicitud.png" />
+    <Content Include="assets\img\spinner.gif" />
+    <Content Include="assets\img\US.png" />
+    <Content Include="assets\js\card.js" />
+    <Content Include="assets\js\CombosTareasSinPostback.js" />
+    <Content Include="assets\js\core\bootstrap.min.js" />
+    <Content Include="assets\js\core\jquery.min.js" />
+    <Content Include="assets\js\core\popper.min.js" />
+    <Content Include="assets\js\croppie.min.js" />
+    <Content Include="assets\js\fingerprint2.js" />
+    <Content Include="assets\js\fontawesome\all.min.js" />
+    <Content Include="assets\js\forms.js" />
+    <Content Include="assets\js\gijgo.min.js" />
+    <Content Include="assets\js\jquery.backstretch.min.js" />
+    <Content Include="assets\js\jquery.searchable-1.1.0.min.js" />
+    <Content Include="assets\js\jSignature.min.js" />
+    <Content Include="assets\js\load-image.js" />
+    <Content Include="assets\js\login.js" />
+    <Content Include="assets\js\now-ui-dashboard.js" />
+    <Content Include="assets\js\now-ui-dashboard.min.js" />
+    <Content Include="assets\js\plugins\bootstrap-datetimepicker.js" />
+    <Content Include="assets\js\plugins\bootstrap-notify.js" />
+    <Content Include="assets\js\plugins\bootstrap-pincode-input.js" />
+    <Content Include="assets\js\plugins\bootstrap-selectpicker.js" />
+    <Content Include="assets\js\plugins\bootstrap-switch.js" />
+    <Content Include="assets\js\plugins\bootstrap-tagsinput.js" />
+    <Content Include="assets\js\plugins\chartjs-plugin-piechart-outlabels.js" />
+    <Content Include="assets\js\plugins\chartjs.min.js" />
+    <Content Include="assets\js\plugins\datatables\buttons.colVis.min.js" />
+    <Content Include="assets\js\plugins\datatables\buttons.flash.min.js" />
+    <Content Include="assets\js\plugins\datatables\buttons.html5.min.js" />
+    <Content Include="assets\js\plugins\datatables\buttons.print.min.js" />
+    <Content Include="assets\js\plugins\datatables\dataTables.bootstrap.js" />
+    <Content Include="assets\js\plugins\datatables\dataTables.bootstrap.min.js" />
+    <Content Include="assets\js\plugins\datatables\dataTables.buttons.min.js" />
+    <Content Include="assets\js\plugins\datatables\dataTables.responsive.min.js" />
+    <Content Include="assets\js\plugins\datatables\dataTables.select.min.js" />
+    <Content Include="assets\js\plugins\datatables\dataTables.tableTools.js" />
+    <Content Include="assets\js\plugins\datatables\jszip.min.js" />
+    <Content Include="assets\js\plugins\datatables\pdfmake.min.js" />
+    <Content Include="assets\js\plugins\datatables\responsive.bootstrap.min.js" />
+    <Content Include="assets\js\plugins\datatables\vfs_fonts.js" />
+    <Content Include="assets\js\plugins\fullcalendar.min.js" />
+    <Content Include="assets\js\plugins\jasny-bootstrap.min.js" />
+    <Content Include="assets\js\plugins\jquery-jvectormap.js" />
+    <Content Include="assets\js\plugins\jquery.bootstrap-wizard.js" />
+    <Content Include="assets\js\plugins\jquery.dataTables.min.js" />
+    <Content Include="assets\js\plugins\jquery.validate.min.js" />
+    <Content Include="assets\js\plugins\moment-es.js" />
+    <Content Include="assets\js\plugins\moment.min.js" />
+    <Content Include="assets\js\plugins\nouislider.min.js" />
+    <Content Include="assets\js\plugins\perfect-scrollbar.jquery.min.js" />
+    <Content Include="assets\js\plugins\sweetalert2.min.js" />
+    <Content Include="assets\js\powerbi.js" />
+    <Content Include="assets\js\powerbi.min.js" />
+    <Content Include="assets\js\rangeslider.min.js" />
+    <Content Include="assets\js\select.js" />
+    <Content Include="assets\js\tablas-index-es.js" />
+    <Content Include="assets\js\uuidv4.js" />
+    <Content Include="assets\js\vubrowserfp.js" />
+    <Content Include="assets\material\css\materialize.css" />
+    <Content Include="assets\material\css\materialize.min.css" />
+    <Content Include="assets\material\index.html" />
+    <Content Include="assets\material\js\materialize.js" />
+    <Content Include="assets\material\js\materialize.min.js" />
+    <Content Include="assets\site\documento.js" />
+    <Content Include="assets\site\localidad.js" />
+    <Content Include="assets\site\niveles.js" />
+    <Content Include="assets\site\site.js" />
+    <Content Include="assets\webfonts\fa-brands-400.svg" />
+    <Content Include="assets\webfonts\fa-regular-400.svg" />
+    <Content Include="assets\webfonts\fa-solid-900.svg" />
+    <Content Include="assets\yummy-login\back-login-original.html" />
+    <Content Include="assets\yummy-login\bootstrap-show-password\assets\bootstrap-v2\css\bootstrap-responsive.css" />
+    <Content Include="assets\yummy-login\bootstrap-show-password\assets\bootstrap-v2\css\bootstrap-responsive.min.css" />
+    <Content Include="assets\yummy-login\bootstrap-show-password\assets\bootstrap-v2\css\bootstrap.css" />
+    <Content Include="assets\yummy-login\bootstrap-show-password\assets\bootstrap-v2\css\bootstrap.min.css" />
+    <Content Include="assets\yummy-login\bootstrap-show-password\assets\bootstrap-v2\img\glyphicons-halflings-white.png" />
+    <Content Include="assets\yummy-login\bootstrap-show-password\assets\bootstrap-v2\img\glyphicons-halflings.png" />
+    <Content Include="assets\yummy-login\bootstrap-show-password\assets\bootstrap-v2\js\bootstrap.js" />
+    <Content Include="assets\yummy-login\bootstrap-show-password\assets\bootstrap-v2\js\bootstrap.min.js" />
+    <Content Include="assets\yummy-login\bootstrap-show-password\assets\bootstrap-v3\css\bootstrap-theme.css" />
+    <Content Include="assets\yummy-login\bootstrap-show-password\assets\bootstrap-v3\css\bootstrap-theme.min.css" />
+    <Content Include="assets\yummy-login\bootstrap-show-password\assets\bootstrap-v3\css\bootstrap.css" />
+    <Content Include="assets\yummy-login\bootstrap-show-password\assets\bootstrap-v3\css\bootstrap.min.css" />
+    <Content Include="assets\yummy-login\bootstrap-show-password\assets\bootstrap-v3\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="assets\yummy-login\bootstrap-show-password\assets\bootstrap-v3\js\bootstrap.js" />
+    <Content Include="assets\yummy-login\bootstrap-show-password\assets\bootstrap-v3\js\bootstrap.min.js" />
+    <Content Include="assets\yummy-login\bootstrap-show-password\assets\jquery.min.js" />
+    <Content Include="assets\yummy-login\bootstrap-show-password\bootstrap-show-password.js" />
+    <Content Include="assets\yummy-login\bootstrap-show-password\bootstrap-show-password.min.js" />
+    <Content Include="assets\yummy-login\bootstrap-show-password\gulpfile.js" />
+    <Content Include="assets\yummy-login\bootstrap-show-password\index.html" />
+    <Content Include="assets\yummy-login\bootstrap-show-password\v2.html" />
+    <Content Include="assets\yummy-login\bootstrap-show-password\v3.html" />
+    <Content Include="assets\yummy-login\bootstrap\dist\css\bootstrap.css" />
+    <Content Include="assets\yummy-login\bootstrap\dist\css\bootstrap.min.css" />
+    <Content Include="assets\yummy-login\bootstrap\dist\js\bootstrap.js" />
+    <Content Include="assets\yummy-login\bootstrap\dist\js\bootstrap.min.js" />
+    <Content Include="assets\yummy-login\bootstrap\dist\js\npm.js" />
+    <Content Include="assets\yummy-login\bootstrap\dist\js\umd\alert.js" />
+    <Content Include="assets\yummy-login\bootstrap\dist\js\umd\button.js" />
+    <Content Include="assets\yummy-login\bootstrap\dist\js\umd\carousel.js" />
+    <Content Include="assets\yummy-login\bootstrap\dist\js\umd\collapse.js" />
+    <Content Include="assets\yummy-login\bootstrap\dist\js\umd\dropdown.js" />
+    <Content Include="assets\yummy-login\bootstrap\dist\js\umd\modal.js" />
+    <Content Include="assets\yummy-login\bootstrap\dist\js\umd\popover.js" />
+    <Content Include="assets\yummy-login\bootstrap\dist\js\umd\scrollspy.js" />
+    <Content Include="assets\yummy-login\bootstrap\dist\js\umd\tab.js" />
+    <Content Include="assets\yummy-login\bootstrap\dist\js\umd\tooltip.js" />
+    <Content Include="assets\yummy-login\bootstrap\dist\js\umd\util.js" />
+    <Content Include="assets\yummy-login\bootstrap\Gruntfile.js" />
+    <Content Include="assets\yummy-login\bootstrap\grunt\bs-commonjs-generator.js" />
+    <Content Include="assets\yummy-login\bootstrap\grunt\bs-sass-compile\libsass.js" />
+    <Content Include="assets\yummy-login\bootstrap\grunt\bs-sass-compile\sass.js" />
+    <Content Include="assets\yummy-login\bootstrap\grunt\change-version.js" />
+    <Content Include="assets\yummy-login\bootstrap\js\dist\alert.js" />
+    <Content Include="assets\yummy-login\bootstrap\js\dist\button.js" />
+    <Content Include="assets\yummy-login\bootstrap\js\dist\carousel.js" />
+    <Content Include="assets\yummy-login\bootstrap\js\dist\collapse.js" />
+    <Content Include="assets\yummy-login\bootstrap\js\dist\dropdown.js" />
+    <Content Include="assets\yummy-login\bootstrap\js\dist\modal.js" />
+    <Content Include="assets\yummy-login\bootstrap\js\dist\popover.js" />
+    <Content Include="assets\yummy-login\bootstrap\js\dist\scrollspy.js" />
+    <Content Include="assets\yummy-login\bootstrap\js\dist\tab.js" />
+    <Content Include="assets\yummy-login\bootstrap\js\dist\tooltip.js" />
+    <Content Include="assets\yummy-login\bootstrap\js\dist\util.js" />
+    <Content Include="assets\yummy-login\bootstrap\js\src\alert.js" />
+    <Content Include="assets\yummy-login\bootstrap\js\src\button.js" />
+    <Content Include="assets\yummy-login\bootstrap\js\src\carousel.js" />
+    <Content Include="assets\yummy-login\bootstrap\js\src\collapse.js" />
+    <Content Include="assets\yummy-login\bootstrap\js\src\dropdown.js" />
+    <Content Include="assets\yummy-login\bootstrap\js\src\modal.js" />
+    <Content Include="assets\yummy-login\bootstrap\js\src\popover.js" />
+    <Content Include="assets\yummy-login\bootstrap\js\src\scrollspy.js" />
+    <Content Include="assets\yummy-login\bootstrap\js\src\tab.js" />
+    <Content Include="assets\yummy-login\bootstrap\js\src\tooltip.js" />
+    <Content Include="assets\yummy-login\bootstrap\js\src\util.js" />
+    <Content Include="assets\yummy-login\bootstrap\package.js" />
+    <Content Include="assets\yummy-login\common\css\main.min.css" />
+    <Content Include="assets\yummy-login\common\css\source\apps\calendar.css" />
+    <Content Include="assets\yummy-login\common\css\source\apps\gallery.css" />
+    <Content Include="assets\yummy-login\common\css\source\apps\mail.css" />
+    <Content Include="assets\yummy-login\common\css\source\apps\messaging.css" />
+    <Content Include="assets\yummy-login\common\css\source\apps\profile.css" />
+    <Content Include="assets\yummy-login\common\css\source\components\badges-labels.css" />
+    <Content Include="assets\yummy-login\common\css\source\components\carousel.css" />
+    <Content Include="assets\yummy-login\common\css\source\components\collapse.css" />
+    <Content Include="assets\yummy-login\common\css\source\components\modal.css" />
+    <Content Include="assets\yummy-login\common\css\source\components\notifications-alerts.css" />
+    <Content Include="assets\yummy-login\common\css\source\components\pagination.css" />
+    <Content Include="assets\yummy-login\common\css\source\components\progress-bars.css" />
+    <Content Include="assets\yummy-login\common\css\source\components\steps.css" />
+    <Content Include="assets\yummy-login\common\css\source\components\tables.css" />
+    <Content Include="assets\yummy-login\common\css\source\components\tabs.css" />
+    <Content Include="assets\yummy-login\common\css\source\components\tooltips-popovers.css" />
+    <Content Include="assets\yummy-login\common\css\source\components\utilities.css" />
+    <Content Include="assets\yummy-login\common\css\source\components\widgets.css" />
+    <Content Include="assets\yummy-login\common\css\source\forms\autocomplete.css" />
+    <Content Include="assets\yummy-login\common\css\source\forms\basic-form-elements.css" />
+    <Content Include="assets\yummy-login\common\css\source\forms\buttons.css" />
+    <Content Include="assets\yummy-login\common\css\source\forms\checkboxes-radio.css" />
+    <Content Include="assets\yummy-login\common\css\source\forms\dropdowns.css" />
+    <Content Include="assets\yummy-login\common\css\source\forms\form-validation.css" />
+    <Content Include="assets\yummy-login\common\css\source\forms\selectboxes.css" />
+    <Content Include="assets\yummy-login\common\css\source\helpers\base.default.css" />
+    <Content Include="assets\yummy-login\common\css\source\helpers\base.responsive.css" />
+    <Content Include="assets\yummy-login\common\css\source\helpers\fonts.css" />
+    <Content Include="assets\yummy-login\common\css\source\helpers\rtl.version.css" />
+    <Content Include="assets\yummy-login\common\css\source\helpers\typography.css" />
+    <Content Include="assets\yummy-login\common\css\source\main.css" />
+    <Content Include="assets\yummy-login\common\css\source\pages\pricing-table.css" />
+    <Content Include="assets\yummy-login\common\css\source\themes\theme-blue.css" />
+    <Content Include="assets\yummy-login\common\css\source\themes\theme-dark.css" />
+    <Content Include="assets\yummy-login\common\css\source\themes\theme-green.css" />
+    <Content Include="assets\yummy-login\common\css\source\themes\theme-inverse.css" />
+    <Content Include="assets\yummy-login\common\css\source\themes\theme-orange.css" />
+    <Content Include="assets\yummy-login\common\css\source\themes\theme-red.css" />
+    <Content Include="assets\yummy-login\common\css\source\vendors\chartist-tooltip-plugin.css" />
+    <Content Include="assets\yummy-login\common\css\source\vendors\chartist.css" />
+    <Content Include="assets\yummy-login\common\css\source\vendors\datatables-fixedcolumns.css" />
+    <Content Include="assets\yummy-login\common\css\source\vendors\datatables-responsive.css" />
+    <Content Include="assets\yummy-login\common\css\source\vendors\editable-table.css" />
+    <Content Include="assets\yummy-login\common\css\source\vendors\eonasdan-bootstrap-datetimepicker.css" />
+    <Content Include="assets\yummy-login\common\css\source\vendors\fullcalendar.css" />
+    <Content Include="assets\yummy-login\common\css\source\vendors\ionrangeslider.css" />
+    <Content Include="assets\yummy-login\common\css\source\vendors\jscrollpane.css" />
+    <Content Include="assets\yummy-login\common\css\source\vendors\nestable.css" />
+    <Content Include="assets\yummy-login\common\css\source\vendors\select2.css" />
+    <Content Include="assets\yummy-login\common\css\source\vendors\summernote.css" />
+    <Content Include="assets\yummy-login\common\fonts\fontawesome-webfont.svg" />
+    <Content Include="assets\yummy-login\common\fonts\icomoon-ultimate.svg" />
+    <Content Include="assets\yummy-login\common\img\favicon.114x114.png" />
+    <Content Include="assets\yummy-login\common\img\favicon.144x144.png" />
+    <Content Include="assets\yummy-login\common\img\favicon.57x57.png" />
+    <Content Include="assets\yummy-login\common\img\favicon.72x72.png" />
+    <Content Include="assets\yummy-login\common\img\favicon.png" />
+    <Content Include="assets\yummy-login\common\img\gray.png" />
+    <Content Include="assets\yummy-login\common\img\logo-inverse.png" />
+    <Content Include="assets\yummy-login\common\img\logo.png" />
+    <Content Include="assets\yummy-login\common\img\temp\amazon.jpg" />
+    <Content Include="assets\yummy-login\common\img\temp\avatars\1.jpg" />
+    <Content Include="assets\yummy-login\common\img\temp\avatars\2.jpg" />
+    <Content Include="assets\yummy-login\common\img\temp\avatars\3.jpg" />
+    <Content Include="assets\yummy-login\common\img\temp\avatars\4.jpg" />
+    <Content Include="assets\yummy-login\common\img\temp\avatars\5.jpg" />
+    <Content Include="assets\yummy-login\common\img\temp\login\1.jpg" />
+    <Content Include="assets\yummy-login\common\img\temp\login\2.jpg" />
+    <Content Include="assets\yummy-login\common\img\temp\login\3.jpg" />
+    <Content Include="assets\yummy-login\common\img\temp\login\4.jpg" />
+    <Content Include="assets\yummy-login\common\img\temp\photos\1.jpeg" />
+    <Content Include="assets\yummy-login\common\img\temp\photos\10.jpeg" />
+    <Content Include="assets\yummy-login\common\img\temp\photos\2.jpeg" />
+    <Content Include="assets\yummy-login\common\img\temp\photos\3.jpeg" />
+    <Content Include="assets\yummy-login\common\img\temp\photos\4.jpeg" />
+    <Content Include="assets\yummy-login\common\img\temp\photos\5.jpeg" />
+    <Content Include="assets\yummy-login\common\img\temp\photos\6.jpeg" />
+    <Content Include="assets\yummy-login\common\img\temp\photos\7.jpeg" />
+    <Content Include="assets\yummy-login\common\img\temp\photos\8.jpeg" />
+    <Content Include="assets\yummy-login\common\img\temp\photos\9.jpeg" />
+    <Content Include="assets\yummy-login\common\js\common.js" />
+    <Content Include="assets\yummy-login\common\js\demo.temp.js" />
+    <Content Include="assets\yummy-login\common\js\version_angular\app.js" />
+    <Content Include="assets\yummy-login\gsap\src\minified\easing\EasePack.min.js" />
+    <Content Include="assets\yummy-login\gsap\src\minified\jquery.gsap.min.js" />
+    <Content Include="assets\yummy-login\gsap\src\minified\plugins\AttrPlugin.min.js" />
+    <Content Include="assets\yummy-login\gsap\src\minified\plugins\BezierPlugin.min.js" />
+    <Content Include="assets\yummy-login\gsap\src\minified\plugins\ColorPropsPlugin.min.js" />
+    <Content Include="assets\yummy-login\gsap\src\minified\plugins\CSSPlugin.min.js" />
+    <Content Include="assets\yummy-login\gsap\src\minified\plugins\CSSRulePlugin.min.js" />
+    <Content Include="assets\yummy-login\gsap\src\minified\plugins\DirectionalRotationPlugin.min.js" />
+    <Content Include="assets\yummy-login\gsap\src\minified\plugins\EaselPlugin.min.js" />
+    <Content Include="assets\yummy-login\gsap\src\minified\plugins\EndArrayPlugin.min.js" />
+    <Content Include="assets\yummy-login\gsap\src\minified\plugins\ModifiersPlugin.min.js" />
+    <Content Include="assets\yummy-login\gsap\src\minified\plugins\RaphaelPlugin.min.js" />
+    <Content Include="assets\yummy-login\gsap\src\minified\plugins\RoundPropsPlugin.min.js" />
+    <Content Include="assets\yummy-login\gsap\src\minified\plugins\ScrollToPlugin.min.js" />
+    <Content Include="assets\yummy-login\gsap\src\minified\plugins\TextPlugin.min.js" />
+    <Content Include="assets\yummy-login\gsap\src\minified\TimelineLite.min.js" />
+    <Content Include="assets\yummy-login\gsap\src\minified\TimelineMax.min.js" />
+    <Content Include="assets\yummy-login\gsap\src\minified\TweenLite.min.js" />
+    <Content Include="assets\yummy-login\gsap\src\minified\TweenMax.min.js" />
+    <Content Include="assets\yummy-login\gsap\src\minified\utils\Draggable.min.js" />
+    <Content Include="assets\yummy-login\gsap\src\uncompressed\easing\EasePack.js" />
+    <Content Include="assets\yummy-login\gsap\src\uncompressed\jquery.gsap.js" />
+    <Content Include="assets\yummy-login\gsap\src\uncompressed\plugins\AttrPlugin.js" />
+    <Content Include="assets\yummy-login\gsap\src\uncompressed\plugins\BezierPlugin.js" />
+    <Content Include="assets\yummy-login\gsap\src\uncompressed\plugins\ColorPropsPlugin.js" />
+    <Content Include="assets\yummy-login\gsap\src\uncompressed\plugins\CSSPlugin.js" />
+    <Content Include="assets\yummy-login\gsap\src\uncompressed\plugins\CSSRulePlugin.js" />
+    <Content Include="assets\yummy-login\gsap\src\uncompressed\plugins\DirectionalRotationPlugin.js" />
+    <Content Include="assets\yummy-login\gsap\src\uncompressed\plugins\EaselPlugin.js" />
+    <Content Include="assets\yummy-login\gsap\src\uncompressed\plugins\EndArrayPlugin.js" />
+    <Content Include="assets\yummy-login\gsap\src\uncompressed\plugins\ModifiersPlugin.js" />
+    <Content Include="assets\yummy-login\gsap\src\uncompressed\plugins\RaphaelPlugin.js" />
+    <Content Include="assets\yummy-login\gsap\src\uncompressed\plugins\RoundPropsPlugin.js" />
+    <Content Include="assets\yummy-login\gsap\src\uncompressed\plugins\ScrollToPlugin.js" />
+    <Content Include="assets\yummy-login\gsap\src\uncompressed\plugins\TEMPLATE_Plugin.js" />
+    <Content Include="assets\yummy-login\gsap\src\uncompressed\plugins\TextPlugin.js" />
+    <Content Include="assets\yummy-login\gsap\src\uncompressed\TimelineLite.js" />
+    <Content Include="assets\yummy-login\gsap\src\uncompressed\TimelineMax.js" />
+    <Content Include="assets\yummy-login\gsap\src\uncompressed\TweenLite.js" />
+    <Content Include="assets\yummy-login\gsap\src\uncompressed\TweenMax.js" />
+    <Content Include="assets\yummy-login\gsap\src\uncompressed\utils\Draggable.js" />
+    <Content Include="assets\yummy-login\html5-form-validation\dist\jquery.validation.js" />
+    <Content Include="assets\yummy-login\html5-form-validation\dist\jquery.validation.min.js" />
+    <Content Include="assets\yummy-login\html5-form-validation\example\demo.html" />
+    <Content Include="assets\yummy-login\html5-form-validation\example\jquery.validation.css" />
+    <Content Include="assets\yummy-login\html5-form-validation\example\loader-medium.gif" />
+    <Content Include="assets\yummy-login\html5-form-validation\Gruntfile.js" />
+    <Content Include="assets\yummy-login\html5-form-validation\src\jquery.validation.js" />
+    <Content Include="assets\yummy-login\img\logo-dark.png" />
+    <Content Include="assets\yummy-login\img\logo.png" />
+    <Content Include="assets\yummy-login\img\PuertoMadero.mp4" />
+    <Content Include="assets\yummy-login\jquery\AUTHORS.txt" />
+    <Content Include="assets\yummy-login\jquery\build\release-notes.js" />
+    <Content Include="assets\yummy-login\jquery\build\release.js" />
+    <Content Include="assets\yummy-login\jquery\Gruntfile.js" />
+    <Content Include="assets\yummy-login\jquery\jquery-migrate.js" />
+    <Content Include="assets\yummy-login\jquery\jquery-migrate.min.js" />
+    <Content Include="assets\yummy-login\jquery\jquery.js" />
+    <Content Include="assets\yummy-login\jquery\jquery.min.js" />
+    <Content Include="assets\yummy-login\jquery\MIT-LICENSE.txt" />
+    <Content Include="assets\yummy-login\jquery\speed\benchmark.js" />
+    <Content Include="assets\yummy-login\jquery\speed\benchmarker.css" />
+    <Content Include="assets\yummy-login\jquery\speed\benchmarker.js" />
+    <Content Include="assets\yummy-login\jquery\speed\closest.html" />
+    <Content Include="assets\yummy-login\jquery\speed\css.html" />
+    <Content Include="assets\yummy-login\jquery\speed\event.html" />
+    <Content Include="assets\yummy-login\jquery\speed\filter.html" />
+    <Content Include="assets\yummy-login\jquery\speed\find.html" />
+    <Content Include="assets\yummy-login\jquery\speed\index.html" />
+    <Content Include="assets\yummy-login\jquery\speed\jquery-basis.js" />
+    <Content Include="assets\yummy-login\jquery\speed\slice.vs.concat.html" />
+    <Content Include="assets\yummy-login\jquery\src\ajax.js" />
+    <Content Include="assets\yummy-login\jquery\src\ajax\jsonp.js" />
+    <Content Include="assets\yummy-login\jquery\src\ajax\script.js" />
+    <Content Include="assets\yummy-login\jquery\src\ajax\xhr.js" />
+    <Content Include="assets\yummy-login\jquery\src\attributes.js" />
+    <Content Include="assets\yummy-login\jquery\src\callbacks.js" />
+    <Content Include="assets\yummy-login\jquery\src\core.js" />
+    <Content Include="assets\yummy-login\jquery\src\css.js" />
+    <Content Include="assets\yummy-login\jquery\src\data.js" />
+    <Content Include="assets\yummy-login\jquery\src\deferred.js" />
+    <Content Include="assets\yummy-login\jquery\src\deprecated.js" />
+    <Content Include="assets\yummy-login\jquery\src\dimensions.js" />
+    <Content Include="assets\yummy-login\jquery\src\effects.js" />
+    <Content Include="assets\yummy-login\jquery\src\event-alias.js" />
+    <Content Include="assets\yummy-login\jquery\src\event.js" />
+    <Content Include="assets\yummy-login\jquery\src\exports.js" />
+    <Content Include="assets\yummy-login\jquery\src\intro.js" />
+    <Content Include="assets\yummy-login\jquery\src\manipulation.js" />
+    <Content Include="assets\yummy-login\jquery\src\offset.js" />
+    <Content Include="assets\yummy-login\jquery\src\outro.js" />
+    <Content Include="assets\yummy-login\jquery\src\queue.js" />
+    <Content Include="assets\yummy-login\jquery\src\serialize.js" />
+    <Content Include="assets\yummy-login\jquery\src\sizzle-jquery.js" />
+    <Content Include="assets\yummy-login\jquery\src\support.js" />
+    <Content Include="assets\yummy-login\jquery\src\traversing.js" />
+    <Content Include="assets\yummy-login\jquery\src\wrap.js" />
+    <Content Include="assets\yummy-login\jquery\test\data\1x1.jpg" />
+    <Content Include="assets\yummy-login\jquery\test\data\ajax\unreleasedXHR.html" />
+    <Content Include="assets\yummy-login\jquery\test\data\badcall.js" />
+    <Content Include="assets\yummy-login\jquery\test\data\badjson.js" />
+    <Content Include="assets\yummy-login\jquery\test\data\cleanScript.html" />
+    <Content Include="assets\yummy-login\jquery\test\data\core\cc_on.html" />
+    <Content Include="assets\yummy-login\jquery\test\data\dashboard.xml" />
+    <Content Include="assets\yummy-login\jquery\test\data\dimensions\documentLarge.html" />
+    <Content Include="assets\yummy-login\jquery\test\data\dimensions\documentSmall.html" />
+    <Content Include="assets\yummy-login\jquery\test\data\event\focusElem.html" />
+    <Content Include="assets\yummy-login\jquery\test\data\event\promiseReady.html" />
+    <Content Include="assets\yummy-login\jquery\test\data\event\syncReady.html" />
+    <Content Include="assets\yummy-login\jquery\test\data\iframe.html" />
+    <Content Include="assets\yummy-login\jquery\test\data\jquery-1.9.1.ajax_xhr.min.js" />
+    <Content Include="assets\yummy-login\jquery\test\data\json_obj.js" />
+    <Content Include="assets\yummy-login\jquery\test\data\manipulation\iframe-denied.html" />
+    <Content Include="assets\yummy-login\jquery\test\data\name.html" />
+    <Content Include="assets\yummy-login\jquery\test\data\offset\absolute.html" />
+    <Content Include="assets\yummy-login\jquery\test\data\offset\body.html" />
+    <Content Include="assets\yummy-login\jquery\test\data\offset\fixed.html" />
+    <Content Include="assets\yummy-login\jquery\test\data\offset\relative.html" />
+    <Content Include="assets\yummy-login\jquery\test\data\offset\scroll.html" />
+    <Content Include="assets\yummy-login\jquery\test\data\offset\static.html" />
+    <Content Include="assets\yummy-login\jquery\test\data\offset\table.html" />
+    <Content Include="assets\yummy-login\jquery\test\data\readywaitasset.js" />
+    <Content Include="assets\yummy-login\jquery\test\data\readywaitloader.js" />
+    <Content Include="assets\yummy-login\jquery\test\data\selector\html5_selector.html" />
+    <Content Include="assets\yummy-login\jquery\test\data\selector\sizzle_cache.html" />
+    <Content Include="assets\yummy-login\jquery\test\data\support\bodyBackground.html" />
+    <Content Include="assets\yummy-login\jquery\test\data\support\boxSizing.html" />
+    <Content Include="assets\yummy-login\jquery\test\data\support\csp.js" />
+    <Content Include="assets\yummy-login\jquery\test\data\support\shrinkWrapBlocks.html" />
+    <Content Include="assets\yummy-login\jquery\test\data\support\testElementCrash.html" />
+    <Content Include="assets\yummy-login\jquery\test\data\test.html" />
+    <Content Include="assets\yummy-login\jquery\test\data\test.js" />
+    <Content Include="assets\yummy-login\jquery\test\data\test2.html" />
+    <Content Include="assets\yummy-login\jquery\test\data\test3.html" />
+    <Content Include="assets\yummy-login\jquery\test\data\testinit.js" />
+    <Content Include="assets\yummy-login\jquery\test\data\testrunner.js" />
+    <Content Include="assets\yummy-login\jquery\test\data\testsuite.css" />
+    <Content Include="assets\yummy-login\jquery\test\data\ua.txt" />
+    <Content Include="assets\yummy-login\jquery\test\data\with_fries.xml" />
+    <Content Include="assets\yummy-login\jquery\test\delegatetest.html" />
+    <Content Include="assets\yummy-login\jquery\test\hovertest.html" />
+    <Content Include="assets\yummy-login\jquery\test\index.html" />
+    <Content Include="assets\yummy-login\jquery\test\jquery.js" />
+    <Content Include="assets\yummy-login\jquery\test\localfile.html" />
+    <Content Include="assets\yummy-login\jquery\test\networkerror.html" />
+    <Content Include="assets\yummy-login\jquery\test\readywait.html" />
+    <Content Include="assets\yummy-login\jquery\test\unit\ajax.js" />
+    <Content Include="assets\yummy-login\jquery\test\unit\attributes.js" />
+    <Content Include="assets\yummy-login\jquery\test\unit\callbacks.js" />
+    <Content Include="assets\yummy-login\jquery\test\unit\core.js" />
+    <Content Include="assets\yummy-login\jquery\test\unit\css.js" />
+    <Content Include="assets\yummy-login\jquery\test\unit\data.js" />
+    <Content Include="assets\yummy-login\jquery\test\unit\deferred.js" />
+    <Content Include="assets\yummy-login\jquery\test\unit\deprecated.js" />
+    <Content Include="assets\yummy-login\jquery\test\unit\dimensions.js" />
+    <Content Include="assets\yummy-login\jquery\test\unit\effects.js" />
+    <Content Include="assets\yummy-login\jquery\test\unit\event.js" />
+    <Content Include="assets\yummy-login\jquery\test\unit\exports.js" />
+    <Content Include="assets\yummy-login\jquery\test\unit\manipulation.js" />
+    <Content Include="assets\yummy-login\jquery\test\unit\offset.js" />
+    <Content Include="assets\yummy-login\jquery\test\unit\queue.js" />
+    <Content Include="assets\yummy-login\jquery\test\unit\selector.js" />
+    <Content Include="assets\yummy-login\jquery\test\unit\serialize.js" />
+    <Content Include="assets\yummy-login\jquery\test\unit\support.js" />
+    <Content Include="assets\yummy-login\jquery\test\unit\traversing.js" />
+    <Content Include="assets\yummy-login\jquery\test\unit\wrap.js" />
+    <Content Include="assets\yummy-login\PRUEBAA.html" />
+    <Content Include="ckeditor\images\abajo.gif" />
+    <Content Include="ckeditor\images\AceptarDisabled.gif" />
+    <Content Include="ckeditor\images\AceptarEnabled.gif" />
+    <Content Include="ckeditor\images\AceptarMouseOver.gif" />
+    <Content Include="ckeditor\images\AdicionalDisabled.gif" />
+    <Content Include="ckeditor\images\AdicionalEnabled.gif" />
+    <Content Include="ckeditor\images\AdicionalMouseOver.gif" />
+    <Content Include="ckeditor\images\Agendita.ico" />
+    <Content Include="ckeditor\images\AltaTramiteDisabled.gif" />
+    <Content Include="ckeditor\images\AltaTramiteEnabled.gif" />
+    <Content Include="ckeditor\images\AltaTramiteMouseOver.gif" />
+    <Content Include="ckeditor\images\Anular.ico" />
+    <Content Include="ckeditor\images\arriba.gif" />
+    <Content Include="ckeditor\images\AtrasDisabled.gif" />
+    <Content Include="ckeditor\images\AtrasEnabled.gif" />
+    <Content Include="ckeditor\images\AtrasMouseOver.gif" />
+    <Content Include="ckeditor\images\att.png" />
+    <Content Include="ckeditor\images\AutorizacionAlta.ico" />
+    <Content Include="ckeditor\images\Ayuda.ico" />
+    <Content Include="ckeditor\images\ayuda.jpg" />
+    <Content Include="ckeditor\images\Ayuda1.ico" />
+    <Content Include="ckeditor\images\AyudaDisabled.gif" />
+    <Content Include="ckeditor\images\AyudaEnabled.gif" />
+    <Content Include="ckeditor\images\AyudaMouseOver.gif" />
+    <Content Include="ckeditor\images\ayuda_rollover.jpg" />
+    <Content Include="ckeditor\images\back.jpg" />
+    <Content Include="ckeditor\images\backtabla.gif" />
+    <Content Include="ckeditor\images\blanco.gif" />
+    <Content Include="ckeditor\images\Borrar.ico" />
+    <Content Include="ckeditor\images\BorrarDisabled.gif" />
+    <Content Include="ckeditor\images\BorrarEnabled.gif" />
+    <Content Include="ckeditor\images\BorrarMouseOver.gif" />
+    <Content Include="ckeditor\images\botonBuscar.png" />
+    <Content Include="ckeditor\images\buscar.ico" />
+    <Content Include="ckeditor\images\BuscarDisabled.gif" />
+    <Content Include="ckeditor\images\BuscarEnabled.gif" />
+    <Content Include="ckeditor\images\BuscarMouseOver.gif" />
+    <Content Include="ckeditor\images\buscarPorTelefono.ico" />
+    <Content Include="ckeditor\images\buscarPorTelefonoDisabled.ico" />
+    <Content Include="ckeditor\images\BusquedaCliente.ico" />
+    <Content Include="ckeditor\images\CalculadorCuotas.ico" />
+    <Content Include="ckeditor\images\CalculadorMontoMaximo.ico" />
+    <Content Include="ckeditor\images\CancelarDisabled.gif" />
+    <Content Include="ckeditor\images\CancelarEnabled.gif" />
+    <Content Include="ckeditor\images\CancelarMouseOver.gif" />
+    <Content Include="ckeditor\images\cargando.gif" />
+    <Content Include="ckeditor\images\CargandoPanel.gif" />
+    <Content Include="ckeditor\images\ClienteAlta.ico" />
+    <Content Include="ckeditor\images\ClienteBusqueda.ico" />
+    <Content Include="ckeditor\images\CobranzaDisabled.gif" />
+    <Content Include="ckeditor\images\CobranzaEnabled.gif" />
+    <Content Include="ckeditor\images\CobranzaMouseOver.gif" />
+    <Content Include="ckeditor\images\Copia de Menu1.gif" />
+    <Content Include="ckeditor\images\Copia de Menu2.gif" />
+    <Content Include="ckeditor\images\Copia de Menu3.gif" />
+    <Content Include="ckeditor\images\Copia de Menu4.gif" />
+    <Content Include="ckeditor\images\Copia de Menu5.gif" />
+    <Content Include="ckeditor\images\Copia de Menu6.gif" />
+    <Content Include="ckeditor\images\Copia de Menu7.gif" />
+    <Content Include="ckeditor\images\Copia de Menu8.gif" />
+    <Content Include="ckeditor\images\Copia de Menu9.gif" />
+    <Content Include="ckeditor\images\crear.ico" />
+    <Content Include="ckeditor\images\CTHM-3.0.png" />
+    <Content Include="ckeditor\images\d26.jpg" />
+    <Content Include="ckeditor\images\di.jpg" />
+    <Content Include="ckeditor\images\di2.jpg" />
+    <Content Include="ckeditor\images\di2_rollover.jpg" />
+    <Content Include="ckeditor\images\di_rollover.jpg" />
+    <Content Include="ckeditor\images\EjecutarCampaniaPreview.ico" />
+    <Content Include="ckeditor\images\EjecutarCampaniaTelefonica.ico" />
+    <Content Include="ckeditor\images\Encabezado1.gif" />
+    <Content Include="ckeditor\images\Encabezado2.bmp" />
+    <Content Include="ckeditor\images\Encabezado2.gif" />
+    <Content Include="ckeditor\images\Encabezado3.gif" />
+    <Content Include="ckeditor\images\Encabezado55552.gif" />
+    <Content Include="ckeditor\images\enviar.jpg" />
+    <Content Include="ckeditor\images\err.png" />
+    <Content Include="ckeditor\images\GestionarPreview.ico" />
+    <Content Include="ckeditor\images\gestionoperador.ico" />
+    <Content Include="ckeditor\images\GuardarDisabled.gif" />
+    <Content Include="ckeditor\images\GuardarEnabled.gif" />
+    <Content Include="ckeditor\images\GuardarMouseOver.gif" />
+    <Content Include="ckeditor\images\iconoReportesOnLine.gif" />
+    <Content Include="ckeditor\images\iconoRiesgoNet.gif" />
+    <Content Include="ckeditor\images\IconoSiisa.gif" />
+    <Content Include="ckeditor\images\imagenes_ImagenHerramientas2.gif" />
+    <Content Include="ckeditor\images\ImagenHerramientas.gif" />
+    <Content Include="ckeditor\images\ImagenHerramientas2.gif" />
+    <Content Include="ckeditor\images\ImagenHerramientas3.gif" />
+    <Content Include="ckeditor\images\ImagenHerramientas4.GIF" />
+    <Content Include="ckeditor\images\ImagenHerramientas5.GIF" />
+    <Content Include="ckeditor\images\ImprimirDisabled.gif" />
+    <Content Include="ckeditor\images\ImprimirEnabled.gif" />
+    <Content Include="ckeditor\images\ImprimirMouseOver.gif" />
+    <Content Include="ckeditor\images\ImprimirrMouseOver.gif" />
+    <Content Include="ckeditor\images\inf.png" />
+    <Content Include="ckeditor\images\InformesDigitales.ico" />
+    <Content Include="ckeditor\images\ingresar.jpg" />
+    <Content Include="ckeditor\images\ingresar2.jpg" />
+    <Content Include="ckeditor\images\ingresar2_rollover.jpg" />
+    <Content Include="ckeditor\images\ingresar_rollover.jpg" />
+    <Content Include="ckeditor\images\Left1.gif" />
+    <Content Include="ckeditor\images\Left2.gif" />
+    <Content Include="ckeditor\images\LegajoDisabled.gif" />
+    <Content Include="ckeditor\images\LegajoEnabled.gif" />
+    <Content Include="ckeditor\images\LegajoMouseOver.gif" />
+    <Content Include="ckeditor\images\liderarResumen.jpg" />
+    <Content Include="ckeditor\images\Llamar.ico" />
+    <Content Include="ckeditor\images\LlenarConInformesDigitales.ico" />
+    <Content Include="ckeditor\images\Load.gif" />
+    <Content Include="ckeditor\images\Loading.gif" />
+    <Content Include="ckeditor\images\login-box%281%29.jpg" />
+    <Content Include="ckeditor\images\login-box-new.jpg" />
+    <Content Include="ckeditor\images\login-box-reset.jpg" />
+    <Content Include="ckeditor\images\login-box.gif" />
+    <Content Include="ckeditor\images\login-box.JPG" />
+    <Content Include="ckeditor\images\login-box2.gif" />
+    <Content Include="ckeditor\images\login-box2.jpg" />
+    <Content Include="ckeditor\images\Login1.gif" />
+    <Content Include="ckeditor\images\Login10.gif" />
+    <Content Include="ckeditor\images\Login11.gif" />
+    <Content Include="ckeditor\images\Login2.gif" />
+    <Content Include="ckeditor\images\Login3.gif" />
+    <Content Include="ckeditor\images\Login4.gif" />
+    <Content Include="ckeditor\images\Login5.gif" />
+    <Content Include="ckeditor\images\Login6.gif" />
+    <Content Include="ckeditor\images\Login7.gif" />
+    <Content Include="ckeditor\images\Login8.gif" />
+    <Content Include="ckeditor\images\Login9.gif" />
+    <Content Include="ckeditor\images\LoginCambiar.jpg" />
+    <Content Include="ckeditor\images\LoginContraseña.gif" />
+    <Content Include="ckeditor\images\LoginIngresar.gif" />
+    <Content Include="ckeditor\images\LoginLogo.gif" />
+    <Content Include="ckeditor\images\LoginNombre3.gif" />
+    <Content Include="ckeditor\images\LoginNombre4.GIF" />
+    <Content Include="ckeditor\images\LoginNuevaContraseña.jpg" />
+    <Content Include="ckeditor\images\LoginRepetirContraseña.jpg" />
+    <Content Include="ckeditor\images\LoginUsuario.gif" />
+    <Content Include="ckeditor\images\Logo.gif" />
+    <Content Include="ckeditor\images\logo.jpg" />
+    <Content Include="ckeditor\images\Logo59.gif" />
+    <Content Include="ckeditor\images\LogoCabal.jpg" />
+    <Content Include="ckeditor\images\LogoSolicitudCompleta.jpg" />
+    <Content Include="ckeditor\images\logoTramite.png" />
+    <Content Include="ckeditor\images\Logout.gif" />
+    <Content Include="ckeditor\images\Logout_RollOver.gif" />
+    <Content Include="ckeditor\images\logo_collection_blanco.png" />
+    <Content Include="ckeditor\images\MailDisabled.gif" />
+    <Content Include="ckeditor\images\MailDisabled.jpg" />
+    <Content Include="ckeditor\images\MailEnabled.gif" />
+    <Content Include="ckeditor\images\MailEnabled.jpg" />
+    <Content Include="ckeditor\images\MailMouseOver.gif" />
+    <Content Include="ckeditor\images\MailMouseOver.jpg" />
+    <Content Include="ckeditor\images\Menu1.gif" />
+    <Content Include="ckeditor\images\Menu2.gif" />
+    <Content Include="ckeditor\images\Menu3.gif" />
+    <Content Include="ckeditor\images\Menu4.gif" />
+    <Content Include="ckeditor\images\Menu5.gif" />
+    <Content Include="ckeditor\images\Menu6.gif" />
+    <Content Include="ckeditor\images\Menu7.gif" />
+    <Content Include="ckeditor\images\Menu8.gif" />
+    <Content Include="ckeditor\images\Menu9.gif" />
+    <Content Include="ckeditor\images\ModifClienteDisabled.gif" />
+    <Content Include="ckeditor\images\ModifClienteEnabled.gif" />
+    <Content Include="ckeditor\images\ModifClienteMouseOver.gif" />
+    <Content Include="ckeditor\images\Modificar.ico" />
+    <Content Include="ckeditor\images\monitorgestion.ico" />
+    <Content Include="ckeditor\images\P&amp;P.gif" />
+    <Content Include="ckeditor\images\proximamente.jpg" />
+    <Content Include="ckeditor\images\proximamente.png" />
+    <Content Include="ckeditor\images\PyP.gif" />
+    <Content Include="ckeditor\images\semaforoAmarillo.GIF" />
+    <Content Include="ckeditor\images\semaforoApagado.GIF" />
+    <Content Include="ckeditor\images\semaforoEncendido.gif" />
+    <Content Include="ckeditor\images\semaforoRojo.GIF" />
+    <Content Include="ckeditor\images\semaforoVerde.GIF" />
+    <Content Include="ckeditor\images\shim.gif" />
+    <Content Include="ckeditor\images\SiguienteDisabled.gif" />
+    <Content Include="ckeditor\images\SiguienteEnabled.gif" />
+    <Content Include="ckeditor\images\SiguienteMouseOver.gif" />
+    <Content Include="ckeditor\images\SolicitudAlta.ico" />
+    <Content Include="ckeditor\images\SolicitudDisabled.gif" />
+    <Content Include="ckeditor\images\SolicitudEnabled.gif" />
+    <Content Include="ckeditor\images\SolicitudMouseOver.gif" />
+    <Content Include="ckeditor\images\SolicitudPorPasos.ico" />
+    <Content Include="ckeditor\images\spacer.gif" />
+    <Content Include="ckeditor\images\suc.png" />
+    <Content Include="ckeditor\images\TodosLosCreditosDisabled.gif" />
+    <Content Include="ckeditor\images\TodosLosCreditosEnabled.gif" />
+    <Content Include="ckeditor\images\TodosLosCreditosMouseOver.gif" />
+    <Content Include="ckeditor\images\TramiteAlta.ico" />
+    <Content Include="ckeditor\images\TramiteComercioAlta.ico" />
+    <Content Include="ckeditor\images\TramiteDisabled.gif" />
+    <Content Include="ckeditor\images\TramiteEnabled.gif" />
+    <Content Include="ckeditor\images\TramiteMouseOver.gif" />
+    <Content Include="ckeditor\images\Veraz.gif" />
+    <Content Include="ckeditor\images\WikiEnabled.gif" />
+    <Content Include="ckeditor\images\WikiOver.gif" />
+    <Content Include="Content\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="Content\bootstrap-theme.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\css\font-awesome.css" />
+    <Content Include="Content\css\font-awesome.min.css" />
+    <Content Include="Content\fonts\fontawesome-webfont.eot" />
+    <Content Include="Content\fonts\fontawesome-webfont.svg" />
+    <Content Include="Content\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Content\fonts\fontawesome-webfont.woff" />
+    <Content Include="Content\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Content\fonts\FontAwesome.otf" />
+    <Content Include="ControlRegional\USCCuil.ascx" />
+    <Content Include="ControlRegional\USCDocumento.ascx" />
+    <Content Include="ControlRegional\USCTelefono.ascx" />
+    <Content Include="DashboardIframe.aspx" />
+    <Content Include="ErrorGenerico.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="HojaEstilos.css" />
+    <Content Include="Imagenes\abajo.gif" />
+    <Content Include="Imagenes\AceptarDisabled.gif" />
+    <Content Include="Imagenes\AceptarEnabled.gif" />
+    <Content Include="Imagenes\AceptarMouseOver.gif" />
+    <Content Include="Imagenes\AdicionalDisabled.gif" />
+    <Content Include="Imagenes\AdicionalEnabled.gif" />
+    <Content Include="Imagenes\AdicionalMouseOver.gif" />
+    <Content Include="Imagenes\Agendita.ico" />
+    <Content Include="Imagenes\AltaTramiteDisabled.gif" />
+    <Content Include="Imagenes\AltaTramiteEnabled.gif" />
+    <Content Include="Imagenes\AltaTramiteMouseOver.gif" />
+    <Content Include="Imagenes\Anular.ico" />
+    <Content Include="Imagenes\arriba.gif" />
+    <Content Include="Imagenes\AtrasDisabled.gif" />
+    <Content Include="Imagenes\AtrasEnabled.gif" />
+    <Content Include="Imagenes\AtrasMouseOver.gif" />
+    <Content Include="Imagenes\att.png" />
+    <Content Include="Imagenes\AutorizacionAlta.ico" />
+    <Content Include="Imagenes\Ayuda.ico" />
+    <Content Include="Imagenes\ayuda.jpg" />
+    <Content Include="Imagenes\Ayuda1.ico" />
+    <Content Include="Imagenes\AyudaDisabled.gif" />
+    <Content Include="Imagenes\AyudaEnabled.gif" />
+    <Content Include="Imagenes\AyudaMouseOver.gif" />
+    <Content Include="Imagenes\ayuda_rollover.jpg" />
+    <Content Include="Imagenes\back.jpg" />
+    <Content Include="Imagenes\backtabla.gif" />
+    <Content Include="Imagenes\blanco.gif" />
+    <Content Include="Imagenes\Borrar.ico" />
+    <Content Include="Imagenes\BorrarDisabled.gif" />
+    <Content Include="Imagenes\BorrarEnabled.gif" />
+    <Content Include="Imagenes\BorrarMouseOver.gif" />
+    <Content Include="Imagenes\botonBuscar.png" />
+    <Content Include="Imagenes\buscar.ico" />
+    <Content Include="Imagenes\BuscarDisabled.gif" />
+    <Content Include="Imagenes\BuscarEnabled.gif" />
+    <Content Include="Imagenes\BuscarMouseOver.gif" />
+    <Content Include="Imagenes\buscarPorTelefono.ico" />
+    <Content Include="Imagenes\buscarPorTelefonoDisabled.ico" />
+    <Content Include="Imagenes\BusquedaCliente.ico" />
+    <Content Include="Imagenes\CalculadorCuotas.ico" />
+    <Content Include="Imagenes\CalculadorMontoMaximo.ico" />
+    <Content Include="Imagenes\CancelarDisabled.gif" />
+    <Content Include="Imagenes\CancelarEnabled.gif" />
+    <Content Include="Imagenes\CancelarMouseOver.gif" />
+    <Content Include="Imagenes\cargando.gif" />
+    <Content Include="Imagenes\CargandoPanel.gif" />
+    <Content Include="Imagenes\cbu.png" />
+    <Content Include="Imagenes\certificado_solicitudcompleta.png" />
+    <Content Include="Imagenes\check-icono.png" />
+    <Content Include="Imagenes\ClienteAlta.ico" />
+    <Content Include="Imagenes\ClienteBusqueda.ico" />
+    <Content Include="Imagenes\CobranzaDisabled.gif" />
+    <Content Include="Imagenes\CobranzaEnabled.gif" />
+    <Content Include="Imagenes\CobranzaMouseOver.gif" />
+    <Content Include="Imagenes\comprobante.png" />
+    <Content Include="Imagenes\Copia de Menu1.gif" />
+    <Content Include="Imagenes\Copia de Menu2.gif" />
+    <Content Include="Imagenes\Copia de Menu3.gif" />
+    <Content Include="Imagenes\Copia de Menu4.gif" />
+    <Content Include="Imagenes\Copia de Menu5.gif" />
+    <Content Include="Imagenes\Copia de Menu6.gif" />
+    <Content Include="Imagenes\Copia de Menu7.gif" />
+    <Content Include="Imagenes\Copia de Menu8.gif" />
+    <Content Include="Imagenes\Copia de Menu9.gif" />
+    <Content Include="Imagenes\crear.ico" />
+    <Content Include="Imagenes\CTHM-3.0.png" />
+    <Content Include="Imagenes\d26.jpg" />
+    <Content Include="Imagenes\di.jpg" />
+    <Content Include="Imagenes\di2.jpg" />
+    <Content Include="Imagenes\di2_rollover.jpg" />
+    <Content Include="Imagenes\di_rollover.jpg" />
+    <Content Include="Imagenes\dni_dorso.png" />
+    <Content Include="Imagenes\dni_frente.png" />
+    <Content Include="Imagenes\dorso.png" />
+    <Content Include="Imagenes\EjecutarCampaniaPreview.ico" />
+    <Content Include="Imagenes\EjecutarCampaniaTelefonica.ico" />
+    <Content Include="Imagenes\Encabezado1.gif" />
+    <Content Include="Imagenes\Encabezado2.bmp" />
+    <Content Include="Imagenes\Encabezado2.gif" />
+    <Content Include="Imagenes\Encabezado3.gif" />
+    <Content Include="Imagenes\Encabezado55552.gif" />
+    <Content Include="Imagenes\enviar.jpg" />
+    <Content Include="Imagenes\err.png" />
+    <Content Include="Imagenes\firma.png" />
+    <Content Include="Imagenes\foto-cargada.png" />
+    <Content Include="Imagenes\fotos.png" />
+    <Content Include="Imagenes\frente.png" />
+    <Content Include="Imagenes\GestionarPreview.ico" />
+    <Content Include="Imagenes\gestionoperador.ico" />
+    <Content Include="Imagenes\GuardarDisabled.gif" />
+    <Content Include="Imagenes\GuardarEnabled.gif" />
+    <Content Include="Imagenes\GuardarMouseOver.gif" />
+    <Content Include="Imagenes\HojaEstilos.css" />
+    <Content Include="Imagenes\iconoReportesOnLine.gif" />
+    <Content Include="Imagenes\iconoRiesgoNet.gif" />
+    <Content Include="Imagenes\IconoSiisa.gif" />
+    <Content Include="Imagenes\imagenes_ImagenHerramientas2.gif" />
+    <Content Include="Imagenes\ImagenHerramientas.gif" />
+    <Content Include="Imagenes\ImagenHerramientas2.gif" />
+    <Content Include="Imagenes\ImagenHerramientas3.gif" />
+    <Content Include="Imagenes\ImagenHerramientas4.GIF" />
+    <Content Include="Imagenes\ImagenHerramientas5.GIF" />
+    <Content Include="Imagenes\ImprimirDisabled.gif" />
+    <Content Include="Imagenes\ImprimirEnabled.gif" />
+    <Content Include="Imagenes\ImprimirMouseOver.gif" />
+    <Content Include="Imagenes\ImprimirrMouseOver.gif" />
+    <Content Include="Imagenes\inf.png" />
+    <Content Include="Imagenes\InformesDigitales.ico" />
+    <Content Include="Imagenes\ingresar.jpg" />
+    <Content Include="Imagenes\ingresar2.jpg" />
+    <Content Include="Imagenes\ingresar2_rollover.jpg" />
+    <Content Include="Imagenes\ingresar_rollover.jpg" />
+    <Content Include="Imagenes\Left1.gif" />
+    <Content Include="Imagenes\Left2.gif" />
+    <Content Include="Imagenes\LegajoDisabled.gif" />
+    <Content Include="Imagenes\LegajoEnabled.gif" />
+    <Content Include="Imagenes\LegajoMouseOver.gif" />
+    <Content Include="Imagenes\liderarResumen.jpg" />
+    <Content Include="Imagenes\Llamar.ico" />
+    <Content Include="Imagenes\LlenarConInformesDigitales.ico" />
+    <Content Include="Imagenes\Load.gif" />
+    <Content Include="Imagenes\Loading.gif" />
+    <Content Include="Imagenes\login-box%281%29.jpg" />
+    <Content Include="Imagenes\login-box-new.jpg" />
+    <Content Include="Imagenes\login-box-reset.jpg" />
+    <Content Include="Imagenes\login-box.gif" />
+    <Content Include="Imagenes\login-box.JPG" />
+    <Content Include="Imagenes\login-box2.gif" />
+    <Content Include="Imagenes\login-box2.jpg" />
+    <Content Include="Imagenes\Login1.gif" />
+    <Content Include="Imagenes\Login10.gif" />
+    <Content Include="Imagenes\Login11.gif" />
+    <Content Include="Imagenes\Login2.gif" />
+    <Content Include="Imagenes\Login3.gif" />
+    <Content Include="Imagenes\Login4.gif" />
+    <Content Include="Imagenes\Login5.gif" />
+    <Content Include="Imagenes\Login6.gif" />
+    <Content Include="Imagenes\Login7.gif" />
+    <Content Include="Imagenes\Login8.gif" />
+    <Content Include="Imagenes\Login9.gif" />
+    <Content Include="Imagenes\LoginCambiar.jpg" />
+    <Content Include="Imagenes\LoginContraseña.gif" />
+    <Content Include="Imagenes\LoginIngresar.gif" />
+    <Content Include="Imagenes\LoginLogo.gif" />
+    <Content Include="Imagenes\LoginNombre3.gif" />
+    <Content Include="Imagenes\LoginNombre4.GIF" />
+    <Content Include="Imagenes\LoginNuevaContraseña.jpg" />
+    <Content Include="Imagenes\LoginRepetirContraseña.jpg" />
+    <Content Include="Imagenes\LoginUsuario.gif" />
+    <Content Include="Imagenes\Logo.gif" />
+    <Content Include="Imagenes\logo.jpg" />
+    <Content Include="Imagenes\Logo59.gif" />
+    <Content Include="Imagenes\LogoCabal.jpg" />
+    <Content Include="Imagenes\logodefault.png" />
+    <Content Include="Imagenes\LogoSolicitudCompleta.jpg" />
+    <Content Include="Imagenes\logoTramite.png" />
+    <Content Include="Imagenes\Logout.gif" />
+    <Content Include="Imagenes\Logout_RollOver.gif" />
+    <Content Include="Imagenes\logo_collection_blanco.png" />
+    <Content Include="Imagenes\MailDisabled.gif" />
+    <Content Include="Imagenes\MailDisabled.jpg" />
+    <Content Include="Imagenes\MailEnabled.gif" />
+    <Content Include="Imagenes\MailEnabled.jpg" />
+    <Content Include="Imagenes\MailMouseOver.gif" />
+    <Content Include="Imagenes\MailMouseOver.jpg" />
+    <Content Include="Imagenes\Menu1.gif" />
+    <Content Include="Imagenes\Menu2.gif" />
+    <Content Include="Imagenes\Menu3.gif" />
+    <Content Include="Imagenes\Menu4.gif" />
+    <Content Include="Imagenes\Menu5.gif" />
+    <Content Include="Imagenes\Menu6.gif" />
+    <Content Include="Imagenes\Menu7.gif" />
+    <Content Include="Imagenes\Menu8.gif" />
+    <Content Include="Imagenes\Menu9.gif" />
+    <Content Include="Imagenes\ModifClienteDisabled.gif" />
+    <Content Include="Imagenes\ModifClienteEnabled.gif" />
+    <Content Include="Imagenes\ModifClienteMouseOver.gif" />
+    <Content Include="Imagenes\Modificar.ico" />
+    <Content Include="Imagenes\monitorgestion.ico" />
+    <Content Include="Imagenes\otros.png" />
+    <Content Include="Imagenes\otros_2.png" />
+    <Content Include="Imagenes\P&amp;P.gif" />
+    <Content Include="Imagenes\proximamente.jpg" />
+    <Content Include="Imagenes\proximamente.png" />
+    <Content Include="Imagenes\PyP.gif" />
+    <Content Include="Imagenes\recibo.png" />
+    <Content Include="Imagenes\selfie.png" />
+    <Content Include="Imagenes\semaforoAmarillo.png" />
+    <Content Include="Imagenes\semaforoApagado.png" />
+    <Content Include="Imagenes\semaforoEncendido.png" />
+    <Content Include="Imagenes\semaforoRojo.png" />
+    <Content Include="Imagenes\semaforoVerde.png" />
+    <Content Include="Imagenes\servicio.png" />
+    <Content Include="Imagenes\shim.gif" />
+    <Content Include="Imagenes\SiguienteDisabled.gif" />
+    <Content Include="Imagenes\SiguienteEnabled.gif" />
+    <Content Include="Imagenes\SiguienteMouseOver.gif" />
+    <Content Include="Imagenes\solicitud.png" />
+    <Content Include="Imagenes\SolicitudAlta.ico" />
+    <Content Include="Imagenes\SolicitudDisabled.gif" />
+    <Content Include="Imagenes\SolicitudEnabled.gif" />
+    <Content Include="Imagenes\SolicitudMouseOver.gif" />
+    <Content Include="Imagenes\SolicitudPorPasos.ico" />
+    <Content Include="Imagenes\spacer.gif" />
+    <Content Include="Imagenes\suc.png" />
+    <Content Include="Imagenes\TodosLosCreditosDisabled.gif" />
+    <Content Include="Imagenes\TodosLosCreditosEnabled.gif" />
+    <Content Include="Imagenes\TodosLosCreditosMouseOver.gif" />
+    <Content Include="Imagenes\TramiteAlta.ico" />
+    <Content Include="Imagenes\TramiteComercioAlta.ico" />
+    <Content Include="Imagenes\TramiteDisabled.gif" />
+    <Content Include="Imagenes\TramiteEnabled.gif" />
+    <Content Include="Imagenes\TramiteMouseOver.gif" />
+    <Content Include="Imagenes\Veraz.gif" />
+    <Content Include="Imagenes\White.png" />
+    <Content Include="Imagenes\WikiEnabled.gif" />
+    <Content Include="Imagenes\WikiOver.gif" />
+    <Content Include="IndexIframe.aspx" />
+    <Content Include="Login.aspx" />
+    <Content Include="Pagina.aspx" />
+    <Content Include="PaginaError.aspx" />
+    <Content Include="PaginaFondoIframe.aspx" />
+    <Content Include="PaginaLogueo.aspx" />
+    <Content Include="PopUpModal.js" />
+    <Content Include="Referenciasdll\AjaxControlToolkit.dll" />
+    <Content Include="Referenciasdll\CarlosAg.ExcelXmlWriter.dll" />
+    <Content Include="Referenciasdll\CKEditor.NET.dll" />
+    <Content Include="Referenciasdll\ClosedXML.dll" />
+    <Content Include="Referenciasdll\DocumentFormat.OpenXml.dll" />
+    <Content Include="Referenciasdll\EPPlus.dll" />
+    <Content Include="Referenciasdll\FreeTextBox.dll" />
+    <Content Include="Referenciasdll\ICSharpCode.SharpZipLib.dll" />
+    <Content Include="Referenciasdll\itextsharp.dll" />
+    <Content Include="Referenciasdll\MySql.Data.dll" />
+    <Content Include="Referenciasdll\Panoramic.DLL" />
+    <Content Include="Referenciasdll\SharpZipLib.dll" />
+    <Content Include="Referenciasdll\WinSCP.dll" />
+    <Content Include="Referenciasdll\WinSCP.exe" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaseIncludes.Master.designer.vb">
+      <DependentUpon>BaseIncludes.Master</DependentUpon>
+    </Compile>
+    <Compile Include="BaseIncludes.Master.vb">
+      <DependentUpon>BaseIncludes.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlRegional\USCCuil.ascx.designer.vb">
+      <DependentUpon>USCCuil.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlRegional\USCCuil.ascx.vb">
+      <DependentUpon>USCCuil.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlRegional\USCDocumento.ascx.designer.vb">
+      <DependentUpon>USCDocumento.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlRegional\USCDocumento.ascx.vb">
+      <DependentUpon>USCDocumento.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlRegional\USCTelefono.ascx.designer.vb">
+      <DependentUpon>USCTelefono.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlRegional\USCTelefono.ascx.vb">
+      <DependentUpon>USCTelefono.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DashboardIframe.aspx.designer.vb">
+      <DependentUpon>DashboardIframe.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DashboardIframe.aspx.vb">
+      <DependentUpon>DashboardIframe.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ErrorGenerico.aspx.designer.vb">
+      <DependentUpon>ErrorGenerico.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ErrorGenerico.aspx.vb">
+      <DependentUpon>ErrorGenerico.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Global.asax.vb">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="IndexIframe.aspx.designer.vb">
+      <DependentUpon>IndexIframe.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IndexIframe.aspx.vb">
+      <DependentUpon>IndexIframe.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.vb">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.vb">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\MyExtensions\MyWebExtension.vb">
+      <VBMyExtensionTemplateID>Microsoft.VisualBasic.Web.MyExtension</VBMyExtensionTemplateID>
+      <VBMyExtensionTemplateVersion>1.0.0.0</VBMyExtensionTemplateVersion>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Pagina.aspx.designer.vb">
+      <DependentUpon>Pagina.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pagina.aspx.vb">
+      <DependentUpon>Pagina.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PaginaError.aspx.designer.vb">
+      <DependentUpon>PaginaError.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PaginaError.aspx.vb">
+      <DependentUpon>PaginaError.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PaginaFondoIframe.aspx.designer.vb">
+      <DependentUpon>PaginaFondoIframe.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PaginaFondoIframe.aspx.vb">
+      <DependentUpon>PaginaFondoIframe.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PaginaLogueo.aspx.designer.vb">
+      <DependentUpon>PaginaLogueo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PaginaLogueo.aspx.vb">
+      <DependentUpon>PaginaLogueo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="BaseIncludes.Master" />
+    <Content Include="ckeditor\images\vssver2.scc" />
+    <Content Include="Imagenes\vssver2.scc" />
+    <Content Include="assets\css\bootstrap-select.css.map" />
+    <Content Include="assets\css\bootstrap.min.css.map" />
+    <Content Include="assets\css\now-ui-dashboard.css.map" />
+    <Content Include="assets\fonts\gijgo-material.eot" />
+    <Content Include="assets\fonts\gijgo-material.ttf" />
+    <Content Include="assets\fonts\gijgo-material.woff" />
+    <Content Include="assets\fonts\nucleo-license.md" />
+    <Content Include="assets\fonts\nucleo-outline.eot" />
+    <Content Include="assets\fonts\nucleo-outline.ttf" />
+    <Content Include="assets\fonts\nucleo-outline.woff" />
+    <Content Include="assets\fonts\nucleo-outline.woff2" />
+    <Content Include="assets\img\manifest.json" />
+    <Content Include="assets\js\core\bootstrap.min.css.map" />
+    <Content Include="assets\js\core\bootstrap.min.js.map" />
+    <Content Include="assets\js\now-ui-dashboard.js.map" />
+    <Content Include="assets\js\powerbi.js.map" />
+    <Content Include="assets\material\LICENSE" />
+    <Content Include="assets\material\README.md" />
+    <Content Include="assets\scss\now-ui-dashboard.scss" />
+    <Content Include="assets\scss\now-ui-dashboard\cards\_card-background.scss" />
+    <Content Include="assets\scss\now-ui-dashboard\cards\_card-chart.scss" />
+    <Content Include="assets\scss\now-ui-dashboard\cards\_card-collapse.scss" />
+    <Content Include="assets\scss\now-ui-dashboard\cards\_card-contributions.scss" />
+    <Content Include="assets\scss\now-ui-dashboard\cards\_card-info-area.scss" />
+    <Content Include="assets\scss\now-ui-dashboard\cards\_card-lock.scss" />
+    <Content Include="assets\scss\now-ui-dashboard\cards\_card-map.scss" />
+    <Content Include="assets\scss\now-ui-dashboard\cards\_card-plain.scss" />
+    <Content Include="assets\scss\now-ui-dashboard\cards\_card-pricing.scss" />
+    <Content Include="assets\scss\now-ui-dashboard\cards\_card-profile.scss" />
+    <Content Include="assets\scss\now-ui-dashboard\cards\_card-signup.scss" />
+    <Content Include="assets\scss\now-ui-dashboard\cards\_card-stats-mini.scss" />
+    <Content Include="assets\scss\now-ui-dashboard\cards\_card-stats.scss" />
+    <Content Include="assets\scss\now-ui-dashboard\cards\_card-subcategories.scss" />
+    <Content Include="assets\scss\now-ui-dashboard\cards\_card-testimonials.scss" />
+    <Content Include="assets\scss\now-ui-dashboard\cards\_card-user.scss" />
+    <Content Include="assets\scss\now-ui-dashboard\cards\_card-wizard.scss" />
+    <Content Include="assets\scss\now-ui-dashboard\mixins\_badges.scss" />
+    <Content Include="assets\scss\now-ui-dashboard\mixins\_buttons.scss" />
+    <Content Include="assets\scss\now-ui-dashboard\mixins\_cards.scss" />
+    <Content Include="assets\scss\now-ui-dashboard\mixins\_dropdown.scss" />
+    <Content Include="assets\scss\now-ui-dashboard\mixins\_inputs.scss" />
+    <Content Include="assets\scss\now-ui-dashboard\mixins\_modals.scss" />
+    <Content Include="assets\scss\now-ui-dashboard\mixins\_page-header.scss" />
+    <Content Include="assets\scss\now-ui-dashboard\mixins\_popovers.scss" />
+    <Content Include="assets\scss\now-ui-dashboard\mixins\_sidebar.scss" />
+    <Content Include="assets\scss\now-ui-dashboard\mixins\_social-buttons.scss" />
+    <Content Include="assets\scss\now-ui-dashboard\mixins\_tags.scss" />
+    <Content Include="assets\scss\now-ui-dashboard\mixins\_transparency.scss" />
+    <Content Include="assets\scss\now-ui-dashboard\mixins\_vendor-prefixes.scss" />
+    <Content Include="assets\scss\now-ui-dashboard\mixins\_wizard.scss" />
+    <Content Include="assets\scss\now-ui-dashboard\plugins\_plugin-animate-bootstrap-notify.scss" />
+    <Content Include="assets\scss\now-ui-dashboard\plugins\_plugin-bootstrap-select.scss" />
+    <Content Include="assets\scss\now-ui-dashboard\plugins\_plugin-bootstrap-switch.scss" />
+    <Content Include="assets\scss\now-ui-dashboard\plugins\_plugin-card-wizard.scss" />
+    <Content Include="assets\scss\now-ui-dashboard\plugins\_plugin-datatables.net.scss" />
+    <Content Include="assets\scss\now-ui-dashboard\plugins\_plugin-datetimepicker.scss" />
+    <Content Include="assets\scss\now-ui-dashboard\plugins\_plugin-fullcalendar.scss" />
+    <Content Include="assets\scss\now-ui-dashboard\plugins\_plugin-jasny-fileupload.scss" />
+    <Content Include="assets\scss\now-ui-dashboard\plugins\_plugin-jquery.jvectormap.scss" />
+    <Content Include="assets\scss\now-ui-dashboard\plugins\_plugin-nouislider.scss" />
+    <Content Include="assets\scss\now-ui-dashboard\plugins\_plugin-perfect-scrollbar.scss" />
+    <Content Include="assets\scss\now-ui-dashboard\plugins\_plugin-tagsinput.scss" />
+    <Content Include="assets\scss\now-ui-dashboard\_alerts.scss" />
+    <Content Include="assets\scss\now-ui-dashboard\_badges.scss" />
+    <Content Include="assets\scss\now-ui-dashboard\_buttons.scss" />
+    <Content Include="assets\scss\now-ui-dashboard\_cards.scss" />
+    <Content Include="assets\scss\now-ui-dashboard\_carousel.scss" />
+    <Content Include="assets\scss\now-ui-dashboard\_checkboxes-radio.scss" />
+    <Content Include="assets\scss\now-ui-dashboard\_dropdown.scss" />
+    <Content Include="assets\scss\now-ui-dashboard\_example-pages.scss" />
+    <Content Include="assets\scss\now-ui-dashboard\_fixed-plugin.scss" />
+    <Content Include="assets\scss\now-ui-dashboard\_footers.scss" />
+    <Content Include="assets\scss\now-ui-dashboard\_images.scss" />
+    <Content Include="assets\scss\now-ui-dashboard\_info-areas.scss" />
+    <Content Include="assets\scss\now-ui-dashboard\_inputs.scss" />
+    <Content Include="assets\scss\now-ui-dashboard\_media-queries.scss" />
+    <Content Include="assets\scss\now-ui-dashboard\_misc.scss" />
+    <Content Include="assets\scss\now-ui-dashboard\_mixins.scss" />
+    <Content Include="assets\scss\now-ui-dashboard\_modals.scss" />
+    <Content Include="assets\scss\now-ui-dashboard\_navbar.scss" />
+    <Content Include="assets\scss\now-ui-dashboard\_nucleo-outline.scss" />
+    <Content Include="assets\scss\now-ui-dashboard\_page-header.scss" />
+    <Content Include="assets\scss\now-ui-dashboard\_pagination.scss" />
+    <Content Include="assets\scss\now-ui-dashboard\_pills.scss" />
+    <Content Include="assets\scss\now-ui-dashboard\_popups.scss" />
+    <Content Include="assets\scss\now-ui-dashboard\_progress.scss" />
+    <Content Include="assets\scss\now-ui-dashboard\_responsive.scss" />
+    <Content Include="assets\scss\now-ui-dashboard\_rtl.scss" />
+    <Content Include="assets\scss\now-ui-dashboard\_sections.scss" />
+    <Content Include="assets\scss\now-ui-dashboard\_sidebar-and-main-panel.scss" />
+    <Content Include="assets\scss\now-ui-dashboard\_social-buttons.scss" />
+    <Content Include="assets\scss\now-ui-dashboard\_tables.scss" />
+    <Content Include="assets\scss\now-ui-dashboard\_tabs.scss" />
+    <Content Include="assets\scss\now-ui-dashboard\_timeline.scss" />
+    <Content Include="assets\scss\now-ui-dashboard\_typography.scss" />
+    <Content Include="assets\scss\now-ui-dashboard\_variables.scss" />
+    <Content Include="assets\webfonts\fa-brands-400.eot" />
+    <Content Include="assets\webfonts\fa-brands-400.ttf" />
+    <Content Include="assets\webfonts\fa-brands-400.woff" />
+    <Content Include="assets\webfonts\fa-brands-400.woff2" />
+    <Content Include="assets\webfonts\fa-regular-400.eot" />
+    <Content Include="assets\webfonts\fa-regular-400.ttf" />
+    <Content Include="assets\webfonts\fa-regular-400.woff" />
+    <Content Include="assets\webfonts\fa-regular-400.woff2" />
+    <Content Include="assets\webfonts\fa-solid-900.eot" />
+    <Content Include="assets\webfonts\fa-solid-900.ttf" />
+    <Content Include="assets\webfonts\fa-solid-900.woff" />
+    <Content Include="assets\webfonts\fa-solid-900.woff2" />
+    <Content Include="assets\yummy-login\bootstrap-show-password\assets\bootstrap-v3\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="assets\yummy-login\bootstrap-show-password\assets\bootstrap-v3\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="assets\yummy-login\bootstrap-show-password\assets\bootstrap-v3\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="assets\yummy-login\bootstrap-show-password\bootstrap-show-password.jquery.json" />
+    <Content Include="assets\yummy-login\bootstrap-show-password\bower.json" />
+    <Content Include="assets\yummy-login\bootstrap-show-password\package.json" />
+    <Content Include="assets\yummy-login\bootstrap-show-password\README.md" />
+    <Content Include="assets\yummy-login\bootstrap\bower.json" />
+    <Content Include="assets\yummy-login\bootstrap\CHANGELOG.md" />
+    <Content Include="assets\yummy-login\bootstrap\dist\css\bootstrap.css.map" />
+    <Content Include="assets\yummy-login\bootstrap\dist\css\bootstrap.min.css.map" />
+    <Content Include="assets\yummy-login\bootstrap\Gemfile.lock" />
+    <Content Include="assets\yummy-login\bootstrap\grunt\configBridge.json" />
+    <Content Include="assets\yummy-login\bootstrap\grunt\npm-shrinkwrap.json" />
+    <Content Include="assets\yummy-login\bootstrap\grunt\sauce_browsers.yml" />
+    <Content Include="assets\yummy-login\bootstrap\js\dist\alert.js.map" />
+    <Content Include="assets\yummy-login\bootstrap\js\dist\button.js.map" />
+    <Content Include="assets\yummy-login\bootstrap\js\dist\carousel.js.map" />
+    <Content Include="assets\yummy-login\bootstrap\js\dist\collapse.js.map" />
+    <Content Include="assets\yummy-login\bootstrap\js\dist\dropdown.js.map" />
+    <Content Include="assets\yummy-login\bootstrap\js\dist\modal.js.map" />
+    <Content Include="assets\yummy-login\bootstrap\js\dist\popover.js.map" />
+    <Content Include="assets\yummy-login\bootstrap\js\dist\scrollspy.js.map" />
+    <Content Include="assets\yummy-login\bootstrap\js\dist\tab.js.map" />
+    <Content Include="assets\yummy-login\bootstrap\js\dist\tooltip.js.map" />
+    <Content Include="assets\yummy-login\bootstrap\js\dist\util.js.map" />
+    <Content Include="assets\yummy-login\bootstrap\nuget\bootstrap.nuspec" />
+    <Content Include="assets\yummy-login\bootstrap\nuget\bootstrap.sass.nuspec" />
+    <Content Include="assets\yummy-login\bootstrap\nuget\MyGet.ps1" />
+    <Content Include="assets\yummy-login\bootstrap\package.json" />
+    <Content Include="assets\yummy-login\bootstrap\README.md" />
+    <Content Include="assets\yummy-login\bootstrap\sache.json" />
+    <Content Include="assets\yummy-login\bootstrap\scss\bootstrap-flex.scss" />
+    <Content Include="assets\yummy-login\bootstrap\scss\bootstrap-grid.scss" />
+    <Content Include="assets\yummy-login\bootstrap\scss\bootstrap-reboot.scss" />
+    <Content Include="assets\yummy-login\bootstrap\scss\bootstrap.scss" />
+    <Content Include="assets\yummy-login\bootstrap\scss\mixins\_alert.scss" />
+    <Content Include="assets\yummy-login\bootstrap\scss\mixins\_background-variant.scss" />
+    <Content Include="assets\yummy-login\bootstrap\scss\mixins\_border-radius.scss" />
+    <Content Include="assets\yummy-login\bootstrap\scss\mixins\_breakpoints.scss" />
+    <Content Include="assets\yummy-login\bootstrap\scss\mixins\_buttons.scss" />
+    <Content Include="assets\yummy-login\bootstrap\scss\mixins\_cards.scss" />
+    <Content Include="assets\yummy-login\bootstrap\scss\mixins\_center-block.scss" />
+    <Content Include="assets\yummy-login\bootstrap\scss\mixins\_clearfix.scss" />
+    <Content Include="assets\yummy-login\bootstrap\scss\mixins\_forms.scss" />
+    <Content Include="assets\yummy-login\bootstrap\scss\mixins\_gradients.scss" />
+    <Content Include="assets\yummy-login\bootstrap\scss\mixins\_grid-framework.scss" />
+    <Content Include="assets\yummy-login\bootstrap\scss\mixins\_grid.scss" />
+    <Content Include="assets\yummy-login\bootstrap\scss\mixins\_hover.scss" />
+    <Content Include="assets\yummy-login\bootstrap\scss\mixins\_image.scss" />
+    <Content Include="assets\yummy-login\bootstrap\scss\mixins\_label.scss" />
+    <Content Include="assets\yummy-login\bootstrap\scss\mixins\_list-group.scss" />
+    <Content Include="assets\yummy-login\bootstrap\scss\mixins\_lists.scss" />
+    <Content Include="assets\yummy-login\bootstrap\scss\mixins\_nav-divider.scss" />
+    <Content Include="assets\yummy-login\bootstrap\scss\mixins\_navbar-align.scss" />
+    <Content Include="assets\yummy-login\bootstrap\scss\mixins\_pagination.scss" />
+    <Content Include="assets\yummy-login\bootstrap\scss\mixins\_progress.scss" />
+    <Content Include="assets\yummy-login\bootstrap\scss\mixins\_pulls.scss" />
+    <Content Include="assets\yummy-login\bootstrap\scss\mixins\_reset-filter.scss" />
+    <Content Include="assets\yummy-login\bootstrap\scss\mixins\_reset-text.scss" />
+    <Content Include="assets\yummy-login\bootstrap\scss\mixins\_resize.scss" />
+    <Content Include="assets\yummy-login\bootstrap\scss\mixins\_screen-reader.scss" />
+    <Content Include="assets\yummy-login\bootstrap\scss\mixins\_size.scss" />
+    <Content Include="assets\yummy-login\bootstrap\scss\mixins\_tab-focus.scss" />
+    <Content Include="assets\yummy-login\bootstrap\scss\mixins\_table-row.scss" />
+    <Content Include="assets\yummy-login\bootstrap\scss\mixins\_text-emphasis.scss" />
+    <Content Include="assets\yummy-login\bootstrap\scss\mixins\_text-hide.scss" />
+    <Content Include="assets\yummy-login\bootstrap\scss\mixins\_text-truncate.scss" />
+    <Content Include="assets\yummy-login\bootstrap\scss\_alert.scss" />
+    <Content Include="assets\yummy-login\bootstrap\scss\_animation.scss" />
+    <Content Include="assets\yummy-login\bootstrap\scss\_breadcrumb.scss" />
+    <Content Include="assets\yummy-login\bootstrap\scss\_button-group.scss" />
+    <Content Include="assets\yummy-login\bootstrap\scss\_buttons.scss" />
+    <Content Include="assets\yummy-login\bootstrap\scss\_card.scss" />
+    <Content Include="assets\yummy-login\bootstrap\scss\_carousel.scss" />
+    <Content Include="assets\yummy-login\bootstrap\scss\_close.scss" />
+    <Content Include="assets\yummy-login\bootstrap\scss\_code.scss" />
+    <Content Include="assets\yummy-login\bootstrap\scss\_custom-forms.scss" />
+    <Content Include="assets\yummy-login\bootstrap\scss\_dropdown.scss" />
+    <Content Include="assets\yummy-login\bootstrap\scss\_forms.scss" />
+    <Content Include="assets\yummy-login\bootstrap\scss\_grid.scss" />
+    <Content Include="assets\yummy-login\bootstrap\scss\_images.scss" />
+    <Content Include="assets\yummy-login\bootstrap\scss\_input-group.scss" />
+    <Content Include="assets\yummy-login\bootstrap\scss\_jumbotron.scss" />
+    <Content Include="assets\yummy-login\bootstrap\scss\_labels.scss" />
+    <Content Include="assets\yummy-login\bootstrap\scss\_list-group.scss" />
+    <Content Include="assets\yummy-login\bootstrap\scss\_media.scss" />
+    <Content Include="assets\yummy-login\bootstrap\scss\_mixins.scss" />
+    <Content Include="assets\yummy-login\bootstrap\scss\_modal.scss" />
+    <Content Include="assets\yummy-login\bootstrap\scss\_nav.scss" />
+    <Content Include="assets\yummy-login\bootstrap\scss\_navbar.scss" />
+    <Content Include="assets\yummy-login\bootstrap\scss\_normalize.scss" />
+    <Content Include="assets\yummy-login\bootstrap\scss\_pager.scss" />
+    <Content Include="assets\yummy-login\bootstrap\scss\_pagination.scss" />
+    <Content Include="assets\yummy-login\bootstrap\scss\_popover.scss" />
+    <Content Include="assets\yummy-login\bootstrap\scss\_print.scss" />
+    <Content Include="assets\yummy-login\bootstrap\scss\_progress.scss" />
+    <Content Include="assets\yummy-login\bootstrap\scss\_reboot.scss" />
+    <Content Include="assets\yummy-login\bootstrap\scss\_responsive-embed.scss" />
+    <Content Include="assets\yummy-login\bootstrap\scss\_tables.scss" />
+    <Content Include="assets\yummy-login\bootstrap\scss\_tooltip.scss" />
+    <Content Include="assets\yummy-login\bootstrap\scss\_type.scss" />
+    <Content Include="assets\yummy-login\bootstrap\scss\_utilities-background.scss" />
+    <Content Include="assets\yummy-login\bootstrap\scss\_utilities-responsive.scss" />
+    <Content Include="assets\yummy-login\bootstrap\scss\_utilities-spacing.scss" />
+    <Content Include="assets\yummy-login\bootstrap\scss\_utilities.scss" />
+    <Content Include="assets\yummy-login\bootstrap\scss\_variables.scss" />
+    <Content Include="assets\yummy-login\common\fonts\fontawesome-webfont.eot" />
+    <Content Include="assets\yummy-login\common\fonts\fontawesome-webfont.otf" />
+    <Content Include="assets\yummy-login\common\fonts\fontawesome-webfont.ttf" />
+    <Content Include="assets\yummy-login\common\fonts\fontawesome-webfont.woff" />
+    <Content Include="assets\yummy-login\common\fonts\fontawesome-webfont.woff2" />
+    <Content Include="assets\yummy-login\common\fonts\icomoon-ultimate.eot" />
+    <Content Include="assets\yummy-login\common\fonts\icomoon-ultimate.ttf" />
+    <Content Include="assets\yummy-login\common\fonts\icomoon-ultimate.woff" />
+    <Content Include="assets\yummy-login\gsap\bower.json" />
+    <Content Include="assets\yummy-login\gsap\package.json" />
+    <Content Include="assets\yummy-login\gsap\README.md" />
+    <Content Include="assets\yummy-login\html5-form-validation\bower.json" />
+    <Content Include="assets\yummy-login\html5-form-validation\html5-form-validation.jquery.json" />
+    <Content Include="assets\yummy-login\html5-form-validation\package.json" />
+    <Content Include="assets\yummy-login\html5-form-validation\README.md" />
+    <Content Include="assets\yummy-login\jquery\bower.json" />
+    <Content Include="assets\yummy-login\jquery\component.json" />
+    <Content Include="assets\yummy-login\jquery\composer.json" />
+    <Content Include="assets\yummy-login\jquery\CONTRIBUTING.md" />
+    <Content Include="assets\yummy-login\jquery\jquery.min.map" />
+    <Content Include="assets\yummy-login\jquery\package.json" />
+    <Content Include="assets\yummy-login\jquery\README.md" />
+    <Content Include="assets\yummy-login\jquery\test\data\atom+xml.php" />
+    <Content Include="assets\yummy-login\jquery\test\data\echoData.php" />
+    <Content Include="assets\yummy-login\jquery\test\data\echoQuery.php" />
+    <Content Include="assets\yummy-login\jquery\test\data\errorWithJSON.php" />
+    <Content Include="assets\yummy-login\jquery\test\data\errorWithText.php" />
+    <Content Include="assets\yummy-login\jquery\test\data\etag.php" />
+    <Content Include="assets\yummy-login\jquery\test\data\evalScript.php" />
+    <Content Include="assets\yummy-login\jquery\test\data\event\longLoadScript.php" />
+    <Content Include="assets\yummy-login\jquery\test\data\headers.php" />
+    <Content Include="assets\yummy-login\jquery\test\data\if_modified_since.php" />
+    <Content Include="assets\yummy-login\jquery\test\data\json.php" />
+    <Content Include="assets\yummy-login\jquery\test\data\jsonp.php" />
+    <Content Include="assets\yummy-login\jquery\test\data\name.php" />
+    <Content Include="assets\yummy-login\jquery\test\data\nocontent.php" />
+    <Content Include="assets\yummy-login\jquery\test\data\params_html.php" />
+    <Content Include="assets\yummy-login\jquery\test\data\script.php" />
+    <Content Include="assets\yummy-login\jquery\test\data\statusText.php" />
+    <Content Include="assets\yummy-login\jquery\test\data\support\csp.php" />
+    <Content Include="assets\yummy-login\jquery\test\data\test.php" />
+    <Content Include="assets\yummy-login\jquery\test\data\text.php" />
+    <Content Include="assets\yummy-login\jquery\test\data\with_fries_over_jsonp.php" />
+    <Content Include="assets\yummy-login\jquery\test\xhtml.php" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AdministradorTareas\AdministradorTareas.vbproj">
+      <Project>{5d883008-8a07-443f-b7c0-f0bc237f3d43}</Project>
+      <Name>AdministradorTareas</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Comun\Comun.vbproj">
+      <Project>{372672f3-988a-4663-b11e-9e447c822a1c}</Project>
+      <Name>Comun</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ControlesWeb\ControlesWeb.vbproj">
+      <Project>{d9a4e732-20c9-435b-a813-ebc70d441866}</Project>
+      <Name>ControlesWeb</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DatosEsquema\DatosEsquema.csproj">
+      <Project>{f6864247-ade9-4746-aed3-5222ac027c91}</Project>
+      <Name>DatosEsquema</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Datos\Datos.vbproj">
+      <Project>{7776def6-9552-4f93-a9f9-045a073d4c7b}</Project>
+      <Name>Datos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Entidades\Entidades.vbproj">
+      <Project>{0f540e5a-8496-4152-9d78-5703d7ed5c1d}</Project>
+      <Name>Entidades</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Excepciones\Excepciones.vbproj">
+      <Project>{0359fe95-aeb7-4b2d-bcdc-58696c5fdef0}</Project>
+      <Name>Excepciones</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ReglasNegocios\ReglasNegocios.vbproj">
+      <Project>{b1cd28d1-58d6-4e6f-b617-bfe0542275d1}</Project>
+      <Name>ReglasNegocios</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Seguridad\Seguridad.vbproj">
+      <Project>{5e78a74c-e1bb-48e4-8c64-60e913bc1767}</Project>
+      <Name>Seguridad</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tareas\Tareas.vbproj">
+      <Project>{4cd8fe8a-e1bb-4fb9-a574-24e96818d42a}</Project>
+      <Name>Tareas</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Utils\Utils.vbproj">
+      <Project>{c63b3b4c-4515-4d73-94c4-d72cf8bcfa97}</Project>
+      <Name>Utils</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Imagenes\Intranet\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>63349</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44346/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Este proyecto hace referencia a los paquetes NuGet que faltan en este equipo. Use la restauración de paquetes NuGet para descargarlos. Para obtener más información, consulte http://go.microsoft.com/fwlink/?LinkID=322105. El archivo que falta es {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.1.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.1.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.targets'))" />
+  </Target>
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
