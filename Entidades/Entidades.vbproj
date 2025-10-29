@@ -133,6 +133,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CI.vb" />
+    <Compile Include="ComprobanteCompra.vb" />
     <Compile Include="ConfiguracionProcesosAutomaticos.vb" />
     <Compile Include="Contador.vb" />
     <Compile Include="CUIT.vb" />

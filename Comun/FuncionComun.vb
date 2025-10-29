@@ -3086,7 +3086,7 @@ Public Class FuncionComun
     Public Shared Sub obtenerComun(ByVal eFechaAUtilizar As Date, Optional ByVal eLogin As Boolean = False, Optional eAccesoDatos As accesoDatos = Nothing)
         Dim iFecha As Date
         Try
-            iFecha = CDate("15/01/2024")
+            iFecha = CDate("15/01/2026")
             If iFecha <= eFechaAUtilizar Then
                 If eLogin Then marcaComun(eAccesoDatos)
                 Throw New ComunException("Consulte a soporte tecnico")

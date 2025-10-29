@@ -1,0 +1,1293 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+WebResponsive
+</name>
+</assembly>
+<members>
+<member name="F:di.financiera.webResponsive.BaseIncludes._Head">
+<summary>
+Control Head.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:di.financiera.webResponsive.BaseIncludes._Body">
+<summary>
+Control Body.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:di.financiera.webResponsive.BaseIncludes._ScriptManager2">
+<summary>
+Control ScriptManager2.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:di.financiera.webResponsive.BaseIncludes._Script">
+<summary>
+Control Script.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:di.financiera.webResponsive.ComprobanteCompraAdministrador._formPrincipal">
+<summary>
+Control formPrincipal.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:di.financiera.webResponsive.ComprobanteCompraAdministrador._btnBuscar">
+<summary>
+Control btnBuscar.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:di.financiera.webResponsive.ComprobanteCompraAdministrador._btnAyuda">
+<summary>
+Control btnAyuda.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:di.financiera.webResponsive.ComprobanteCompraAdministrador._ScriptManager1">
+<summary>
+Control ScriptManager1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:di.financiera.webResponsive.ComprobanteCompraAdministrador._btnAlta">
+<summary>
+Control btnAlta.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:di.financiera.webResponsive.ComprobanteCompraAdministrador._lblCodigo">
+<summary>
+Control lblCodigo.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:di.financiera.webResponsive.ComprobanteCompraAdministrador._intCodigo">
+<summary>
+Control intCodigo.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:di.financiera.webResponsive.ComprobanteCompraAdministrador._lblNombre">
+<summary>
+Control lblNombre.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:di.financiera.webResponsive.ComprobanteCompraAdministrador._txtNombre">
+<summary>
+Control txtNombre.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:di.financiera.webResponsive.ComprobanteCompraAdministrador._lblTipoFactura">
+<summary>
+Control lblTipoFactura.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:di.financiera.webResponsive.ComprobanteCompraAdministrador._lstTipoFactura">
+<summary>
+Control lstTipoFactura.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:di.financiera.webResponsive.ComprobanteCompraAdministrador._lblFormaPago">
+<summary>
+Control lblFormaPago.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:di.financiera.webResponsive.ComprobanteCompraAdministrador._lstFormaPago">
+<summary>
+Control lstFormaPago.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:di.financiera.webResponsive.ComprobanteCompraAdministrador._grillaComprobanteConsulta">
+<summary>
+Control grillaComprobanteConsulta.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="P:di.financiera.webResponsive.ComprobanteCompraAdministrador.Master">
+<summary>
+Propiedad Master.
+</summary>
+<remarks>
+Propiedad generada automáticamente.
+</remarks>
+</member>
+<member name="F:di.financiera.webResponsive.ComprobanteCompraAlta._formPrincipal">
+<summary>
+Control formPrincipal.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:di.financiera.webResponsive.ComprobanteCompraAlta._btnAtras">
+<summary>
+Control btnAtras.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:di.financiera.webResponsive.ComprobanteCompraAlta._btnAceptar">
+<summary>
+Control btnAceptar.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:di.financiera.webResponsive.ComprobanteCompraAlta._btnAyuda">
+<summary>
+Control btnAyuda.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:di.financiera.webResponsive.ComprobanteCompraAlta._ValidationSummary">
+<summary>
+Control ValidationSummary.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:di.financiera.webResponsive.ComprobanteCompraAlta._ScriptManager">
+<summary>
+Control ScriptManager.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:di.financiera.webResponsive.ComprobanteCompraAlta._lblTitulo">
+<summary>
+Control lblTitulo.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:di.financiera.webResponsive.ComprobanteCompraAlta._lbdatos">
+<summary>
+Control lbdatos.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:di.financiera.webResponsive.ComprobanteCompraAlta._lblCodigoProveedor">
+<summary>
+Control lblCodigoProveedor.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:di.financiera.webResponsive.ComprobanteCompraAlta._txtCodigoProveedor">
+<summary>
+Control txtCodigoProveedor.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:di.financiera.webResponsive.ComprobanteCompraAlta._valtxtCodigoProveedor">
+<summary>
+Control valtxtCodigoProveedor.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:di.financiera.webResponsive.ComprobanteCompraAlta._lblRazonSocial">
+<summary>
+Control lblRazonSocial.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:di.financiera.webResponsive.ComprobanteCompraAlta._txtRazonSocial">
+<summary>
+Control txtRazonSocial.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:di.financiera.webResponsive.ComprobanteCompraAlta._lblCUIT">
+<summary>
+Control lblCUIT.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:di.financiera.webResponsive.ComprobanteCompraAlta._txtCUIT">
+<summary>
+Control txtCUIT.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:di.financiera.webResponsive.ComprobanteCompraAlta._lblTipoIVA">
+<summary>
+Control lblTipoIVA.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:di.financiera.webResponsive.ComprobanteCompraAlta._txtTipoIVA">
+<summary>
+Control txtTipoIVA.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:di.financiera.webResponsive.ComprobanteCompraAlta._lblTipoFactura">
+<summary>
+Control lblTipoFactura.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:di.financiera.webResponsive.ComprobanteCompraAlta._lstTipoFactura">
+<summary>
+Control lstTipoFactura.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:di.financiera.webResponsive.ComprobanteCompraAlta._lblFecha">
+<summary>
+Control lblFecha.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:di.financiera.webResponsive.ComprobanteCompraAlta._dtbFecha">
+<summary>
+Control dtbFecha.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:di.financiera.webResponsive.ComprobanteCompraAlta._valdtbFecha">
+<summary>
+Control valdtbFecha.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:di.financiera.webResponsive.ComprobanteCompraAlta._lblFechaContable">
+<summary>
+Control lblFechaContable.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:di.financiera.webResponsive.ComprobanteCompraAlta._dtbFechaContable">
+<summary>
+Control dtbFechaContable.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:di.financiera.webResponsive.ComprobanteCompraAlta._valdtbFechaContable">
+<summary>
+Control valdtbFechaContable.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:di.financiera.webResponsive.ComprobanteCompraAlta._lblNumeroFactura">
+<summary>
+Control lblNumeroFactura.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:di.financiera.webResponsive.ComprobanteCompraAlta._intNumeroFactura">
+<summary>
+Control intNumeroFactura.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:di.financiera.webResponsive.ComprobanteCompraAlta._valintNumeroFactura">
+<summary>
+Control valintNumeroFactura.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:di.financiera.webResponsive.ComprobanteCompraAlta._lblFormaPago">
+<summary>
+Control lblFormaPago.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:di.financiera.webResponsive.ComprobanteCompraAlta._lstFormaPago">
+<summary>
+Control lstFormaPago.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:di.financiera.webResponsive.ComprobanteCompraAlta._lblCondicionCompra">
+<summary>
+Control lblCondicionCompra.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:di.financiera.webResponsive.ComprobanteCompraAlta._lstCondicionCompra">
+<summary>
+Control lstCondicionCompra.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:di.financiera.webResponsive.ComprobanteCompraAlta._lblTerminoDePago">
+<summary>
+Control lblTerminoDePago.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:di.financiera.webResponsive.ComprobanteCompraAlta._lstTerminoPago">
+<summary>
+Control lstTerminoPago.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:di.financiera.webResponsive.ComprobanteCompraAlta._lblAsientosModelos">
+<summary>
+Control lblAsientosModelos.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:di.financiera.webResponsive.ComprobanteCompraAlta._lstAsientosModelos">
+<summary>
+Control lstAsientosModelos.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:di.financiera.webResponsive.ComprobanteCompraAlta._lblnetos">
+<summary>
+Control lblnetos.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:di.financiera.webResponsive.ComprobanteCompraAlta._lblImporteNetoGrav105">
+<summary>
+Control lblImporteNetoGrav105.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:di.financiera.webResponsive.ComprobanteCompraAlta._dcbImporteNetoGravado105">
+<summary>
+Control dcbImporteNetoGravado105.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:di.financiera.webResponsive.ComprobanteCompraAlta._lblImporteNetoGrav21">
+<summary>
+Control lblImporteNetoGrav21.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:di.financiera.webResponsive.ComprobanteCompraAlta._dcbImporteNetoGravado21">
+<summary>
+Control dcbImporteNetoGravado21.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:di.financiera.webResponsive.ComprobanteCompraAlta._lblImporteNetoGrav27">
+<summary>
+Control lblImporteNetoGrav27.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:di.financiera.webResponsive.ComprobanteCompraAlta._dcbImporteNetoGravado27">
+<summary>
+Control dcbImporteNetoGravado27.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:di.financiera.webResponsive.ComprobanteCompraAlta._lblMontoNetoGravadoTotal">
+<summary>
+Control lblMontoNetoGravadoTotal.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:di.financiera.webResponsive.ComprobanteCompraAlta._dcbMontoNetoGravadoTotal">
+<summary>
+Control dcbMontoNetoGravadoTotal.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:di.financiera.webResponsive.ComprobanteCompraAlta._inpMontoNetoGravadoTotal">
+<summary>
+Control inpMontoNetoGravadoTotal.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:di.financiera.webResponsive.ComprobanteCompraAlta._lbliva">
+<summary>
+Control lbliva.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:di.financiera.webResponsive.ComprobanteCompraAlta._lblMontoIVA">
+<summary>
+Control lblMontoIVA.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:di.financiera.webResponsive.ComprobanteCompraAlta._dcbImporteMontoIVA">
+<summary>
+Control dcbImporteMontoIVA.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:di.financiera.webResponsive.ComprobanteCompraAlta._inpImporteMontoIVA">
+<summary>
+Control inpImporteMontoIVA.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:di.financiera.webResponsive.ComprobanteCompraAlta._lblnogravado">
+<summary>
+Control lblnogravado.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:di.financiera.webResponsive.ComprobanteCompraAlta._lblMontoNoGravado">
+<summary>
+Control lblMontoNoGravado.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:di.financiera.webResponsive.ComprobanteCompraAlta._dcbMontoNoGravado">
+<summary>
+Control dcbMontoNoGravado.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:di.financiera.webResponsive.ComprobanteCompraAlta._lblpercepciones">
+<summary>
+Control lblpercepciones.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:di.financiera.webResponsive.ComprobanteCompraAlta._lblMontoPercepIVA">
+<summary>
+Control lblMontoPercepIVA.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:di.financiera.webResponsive.ComprobanteCompraAlta._dcbMontoPercepIVA">
+<summary>
+Control dcbMontoPercepIVA.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:di.financiera.webResponsive.ComprobanteCompraAlta._lblMontoPercepIIBB">
+<summary>
+Control lblMontoPercepIIBB.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:di.financiera.webResponsive.ComprobanteCompraAlta._dcbMontoPercepIIBB">
+<summary>
+Control dcbMontoPercepIIBB.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:di.financiera.webResponsive.ComprobanteCompraAlta._lbltituloretenciones">
+<summary>
+Control lbltituloretenciones.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:di.financiera.webResponsive.ComprobanteCompraAlta._lblMontoRetenSicreb">
+<summary>
+Control lblMontoRetenSicreb.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:di.financiera.webResponsive.ComprobanteCompraAlta._dcbMontoRetenSicreb">
+<summary>
+Control dcbMontoRetenSicreb.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:di.financiera.webResponsive.ComprobanteCompraAlta._lblMontoRetenIIBB">
+<summary>
+Control lblMontoRetenIIBB.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:di.financiera.webResponsive.ComprobanteCompraAlta._dcbMontoRetenIIBB">
+<summary>
+Control dcbMontoRetenIIBB.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:di.financiera.webResponsive.ComprobanteCompraAlta._lblMontoRetenIVA">
+<summary>
+Control lblMontoRetenIVA.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:di.financiera.webResponsive.ComprobanteCompraAlta._dcbMontoRetenIVA">
+<summary>
+Control dcbMontoRetenIVA.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:di.financiera.webResponsive.ComprobanteCompraAlta._lblMontoRetenSuss">
+<summary>
+Control lblMontoRetenSuss.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:di.financiera.webResponsive.ComprobanteCompraAlta._dcbMontoRetenSuss">
+<summary>
+Control dcbMontoRetenSuss.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:di.financiera.webResponsive.ComprobanteCompraAlta._lblMontoRetenGanancias">
+<summary>
+Control lblMontoRetenGanancias.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:di.financiera.webResponsive.ComprobanteCompraAlta._dcbMontoRetenGanancias">
+<summary>
+Control dcbMontoRetenGanancias.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:di.financiera.webResponsive.ComprobanteCompraAlta._lbltitulototal">
+<summary>
+Control lbltitulototal.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:di.financiera.webResponsive.ComprobanteCompraAlta._lblMontoTotal">
+<summary>
+Control lblMontoTotal.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:di.financiera.webResponsive.ComprobanteCompraAlta._dcbMontoTotal">
+<summary>
+Control dcbMontoTotal.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:di.financiera.webResponsive.ComprobanteCompraAlta._inpMontoTotal">
+<summary>
+Control inpMontoTotal.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:di.financiera.webResponsive.ComprobanteCompraAlta._lblDetalle">
+<summary>
+Control lblDetalle.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:di.financiera.webResponsive.ComprobanteCompraAlta._txtDetalle">
+<summary>
+Control txtDetalle.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="P:di.financiera.webResponsive.ComprobanteCompraAlta.Master">
+<summary>
+Propiedad Master.
+</summary>
+<remarks>
+Propiedad generada automáticamente.
+</remarks>
+</member>
+<member name="F:di.financiera.webResponsive.USCCuil._lblCuil">
+<summary>
+Control lblCuil.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:di.financiera.webResponsive.USCCuil._intCuil1">
+<summary>
+Control intCuil1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:di.financiera.webResponsive.USCCuil._txtDocumentoCuil">
+<summary>
+Control txtDocumentoCuil.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:di.financiera.webResponsive.USCCuil._intCuil2">
+<summary>
+Control intCuil2.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:di.financiera.webResponsive.USCCuil._valCuil1">
+<summary>
+Control valCuil1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:di.financiera.webResponsive.USCCuil._valDocumentoCuil">
+<summary>
+Control valDocumentoCuil.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:di.financiera.webResponsive.USCCuil._valCuil2">
+<summary>
+Control valCuil2.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:di.financiera.webResponsive.USCDocumento._lblDocumento">
+<summary>
+Control lblDocumento.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:di.financiera.webResponsive.USCDocumento._intDocumento">
+<summary>
+Control intDocumento.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:di.financiera.webResponsive.USCDocumento._valintDocumento">
+<summary>
+Control valintDocumento.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:di.financiera.webResponsive.USCTelefono._lblTelefono">
+<summary>
+Control lblTelefono.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:di.financiera.webResponsive.USCTelefono._intTelefonoCodigoArea">
+<summary>
+Control intTelefonoCodigoArea.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:di.financiera.webResponsive.USCTelefono._intTelefonoCaracteristica">
+<summary>
+Control intTelefonoCaracteristica.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:di.financiera.webResponsive.USCTelefono._intTelefonoNumero">
+<summary>
+Control intTelefonoNumero.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:di.financiera.webResponsive.USCTelefono._valTelefonoCodigoArea">
+<summary>
+Control valTelefonoCodigoArea.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:di.financiera.webResponsive.USCTelefono._valTelefonoCaracteristica">
+<summary>
+Control valTelefonoCaracteristica.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:di.financiera.webResponsive.USCTelefono._valTelefonoNumero">
+<summary>
+Control valTelefonoNumero.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:di.financiera.webResponsive.USCTelefono._intTelefonoCodigoArea_AutoCompleteExtender">
+<summary>
+Control intTelefonoCodigoArea_AutoCompleteExtender.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:di.financiera.webResponsive.USCTelefono._intTelefonoCaracteristica_AutoCompleteExtender">
+<summary>
+Control intTelefonoCaracteristica_AutoCompleteExtender.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:di.financiera.webResponsive.DashboardIframe._graficos">
+<summary>
+Control graficos.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="P:di.financiera.webResponsive.DashboardIframe.Master">
+<summary>
+Propiedad Master.
+</summary>
+<remarks>
+Propiedad generada automáticamente.
+</remarks>
+</member>
+<member name="F:di.financiera.webResponsive.ErrorGenerico._form">
+<summary>
+Control form.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:di.financiera.webResponsive.ErrorGenerico._btnAtras">
+<summary>
+Control btnAtras.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:di.financiera.webResponsive.ErrorGenerico._lblTituloErrorGenerico">
+<summary>
+Control lblTituloErrorGenerico.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="P:di.financiera.webResponsive.ErrorGenerico.Master">
+<summary>
+Propiedad Master.
+</summary>
+<remarks>
+Propiedad generada automáticamente.
+</remarks>
+</member>
+<member name="F:di.financiera.webResponsive.IndexIframe._logo">
+<summary>
+Control logo.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:di.financiera.webResponsive.IndexIframe._btnSalir">
+<summary>
+Control btnSalir.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:di.financiera.webResponsive.Login._Panel2">
+<summary>
+Control Panel2.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:di.financiera.webResponsive.Login._logo">
+<summary>
+Control logo.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:di.financiera.webResponsive.Login._txtLogin">
+<summary>
+Control txtLogin.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:di.financiera.webResponsive.Login._txtContrasenia">
+<summary>
+Control txtContrasenia.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:di.financiera.webResponsive.Login._txtNuevaContrasenia">
+<summary>
+Control txtNuevaContrasenia.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:di.financiera.webResponsive.Login._txtRepetirContrasenia">
+<summary>
+Control txtRepetirContrasenia.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:di.financiera.webResponsive.Login._btnOlvidoContrasenia">
+<summary>
+Control btnOlvidoContrasenia.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:di.financiera.webResponsive.Login._btnIngresar">
+<summary>
+Control btnIngresar.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="T:di.financiera.webResponsive.My.MyWebExtension">
+ <summary>
+ Módulo usado para definir las propiedades que están disponibles en el espacio de nombres My para proyectos web.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:di.financiera.webResponsive.My.MyWebExtension.Computer">
+ <summary>
+ Devuelve información sobre el equipo host.
+ </summary>
+</member>
+<member name="P:di.financiera.webResponsive.My.MyWebExtension.User">
+ <summary>
+ Devuelve información del usuario web actual.
+ </summary>
+</member>
+<member name="P:di.financiera.webResponsive.My.MyWebExtension.Request">
+ <summary>
+ Devuelve un objeto Request.
+ </summary>
+</member>
+<member name="P:di.financiera.webResponsive.My.MyWebExtension.Response">
+ <summary>
+ Devuelve un objeto Response.
+ </summary>
+</member>
+<member name="P:di.financiera.webResponsive.My.MyWebExtension.Log">
+ <summary>
+ Devuelve el objeto de registro Asp.
+ </summary>
+</member>
+<member name="T:di.financiera.webResponsive.My.Resources.Resources">
+<summary>
+  Clase de recurso fuertemente tipado, para buscar cadenas traducidas, etc.
+</summary>
+</member>
+<member name="P:di.financiera.webResponsive.My.Resources.Resources.ResourceManager">
+<summary>
+  Devuelve la instancia de ResourceManager almacenada en caché utilizada por esta clase.
+</summary>
+</member>
+<member name="P:di.financiera.webResponsive.My.Resources.Resources.Culture">
+<summary>
+  Reemplaza la propiedad CurrentUICulture del subproceso actual para todas las
+  búsquedas de recursos mediante esta clase de recurso fuertemente tipado.
+</summary>
+</member>
+<member name="F:di.financiera.webResponsive.Pagina._Form1">
+<summary>
+Control Form1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:di.financiera.webResponsive.PaginaError._form">
+<summary>
+Control form.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:di.financiera.webResponsive.PaginaError._btnAtras">
+<summary>
+Control btnAtras.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:di.financiera.webResponsive.PaginaError._btnAyuda">
+<summary>
+Control btnAyuda.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:di.financiera.webResponsive.PaginaError._lblMotivoDetalle">
+<summary>
+Control lblMotivoDetalle.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="P:di.financiera.webResponsive.PaginaError.Master">
+<summary>
+Propiedad Master.
+</summary>
+<remarks>
+Propiedad generada automáticamente.
+</remarks>
+</member>
+<member name="P:di.financiera.webResponsive.PaginaFondoIframe.Master">
+<summary>
+Propiedad Master.
+</summary>
+<remarks>
+Propiedad generada automáticamente.
+</remarks>
+</member>
+<member name="F:di.financiera.webResponsive.PaginaLogueo._Form1">
+<summary>
+Control Form1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+</members>
+</doc>

@@ -871,6 +871,8 @@
     <Content Include="ckeditor\images\Veraz.gif" />
     <Content Include="ckeditor\images\WikiEnabled.gif" />
     <Content Include="ckeditor\images\WikiOver.gif" />
+    <Content Include="ComprobanteCompraAdministrador.aspx" />
+    <Content Include="ComprobanteCompraAlta.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -1139,6 +1141,20 @@
     </Compile>
     <Compile Include="BaseIncludes.Master.vb">
       <DependentUpon>BaseIncludes.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ComprobanteCompraAdministrador.aspx.designer.vb">
+      <DependentUpon>ComprobanteCompraAdministrador.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ComprobanteCompraAdministrador.aspx.vb">
+      <DependentUpon>ComprobanteCompraAdministrador.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ComprobanteCompraAlta.aspx.designer.vb">
+      <DependentUpon>ComprobanteCompraAlta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ComprobanteCompraAlta.aspx.vb">
+      <DependentUpon>ComprobanteCompraAlta.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="ControlRegional\USCCuil.ascx.designer.vb">
