@@ -1,0 +1,20 @@
+# Visual Studio
+.vs/
+
+# Build results
+bin/
+obj/
+Debug/
+Release/
+
+# User-specific files
+*.suo
+*.user
+*.userosscache
+
+# Database files
+*.mdf
+*.ldf
+
+# NuGet packages
+packages/
