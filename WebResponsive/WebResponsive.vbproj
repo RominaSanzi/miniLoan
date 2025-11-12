@@ -1118,6 +1118,8 @@
     <Content Include="PaginaError.aspx" />
     <Content Include="PaginaFondoIframe.aspx" />
     <Content Include="PaginaLogueo.aspx" />
+    <Content Include="PasanteAdministrador.aspx" />
+    <Content Include="PasanteAlta.aspx" />
     <Content Include="PopUpModal.js" />
     <Content Include="Referenciasdll\AjaxControlToolkit.dll" />
     <Content Include="Referenciasdll\CarlosAg.ExcelXmlWriter.dll" />
@@ -1256,6 +1258,20 @@
     <Compile Include="PaginaLogueo.aspx.vb">
       <DependentUpon>PaginaLogueo.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PasanteAdministrador.aspx.designer.vb">
+      <DependentUpon>PasanteAdministrador.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PasanteAdministrador.aspx.vb">
+      <DependentUpon>PasanteAdministrador.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PasanteAlta.aspx.designer.vb">
+      <DependentUpon>PasanteAlta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PasanteAlta.aspx.vb">
+      <DependentUpon>PasanteAlta.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>

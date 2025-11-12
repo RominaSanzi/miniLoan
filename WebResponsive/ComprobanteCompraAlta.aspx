@@ -472,13 +472,41 @@
                                 <div class="col-md-12">
                                     <div class="form-group">
                                         <asp:Label ID="lblDetalle" runat="server" CssClass="bmd-label-floating" EnableViewState="False" ClientIDMode="Static">Detalle</asp:Label>
-                                        <cc1:TextBoxUp ID="txtDetalle" runat="server" CssClass="form-control" Width="100%" MaxLength="300" TextMode="MultiLine" AutoComplete="False" ClientIDMode="Static"></cc1:TextBoxUp>
-                                    </div>
+<div class="row align-items-end">
+    <div class="col-md-6">
+        <div class="form-group">
+            <asp:Label ID="lblTipoDNI" runat="server"
+                CssClass="bmd-label-floating" EnableViewState="False"
+                ClientIDMode="Static">
+                Tipo de documento
+            </asp:Label>
+            <asp:DropDownList ID="lstTipoDNI" TabIndex="5" runat="server" CssClass="form-control" 
+                Width="100%" AutoPostBack="true" ClientIDMode="Static">
+            </asp:DropDownList>
+        </div>
+    </div>
+
+    <div class="col-md-6">
+        <div class="form-group">
+            <asp:Label ID="lblDNI" runat="server"
+                CssClass="bmd-label-floating" EnableViewState="False"
+                ClientIDMode="Static">
+                Número de documento
+            </asp:Label>
+            <cc1:IntegerBox ID="intDNI" UsaSeparadorPuntos ="true" 
+                TabIndex="8" runat="server" CssClass="form-control input-requerido" 
+                Width="100%" AutoComplete="False" MaxLength="12" ClientIDMode="Static" 
+                required="required">
+            </cc1:IntegerBox>
+        </div>
+    </div>
+</div>                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
             </div>
         </div>
     </form>

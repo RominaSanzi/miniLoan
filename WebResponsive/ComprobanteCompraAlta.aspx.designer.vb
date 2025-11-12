@@ -680,13 +680,40 @@ Partial Public Class ComprobanteCompraAlta
     Protected WithEvents lblDetalle As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''Control txtDetalle.
+    '''Control lblTipoDNI.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents txtDetalle As Global.ControlesWeb.TextBoxUp
+    Protected WithEvents lblTipoDNI As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''Control lstTipoDNI.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents lstTipoDNI As Global.System.Web.UI.WebControls.DropDownList
+
+    '''<summary>
+    '''Control lblDNI.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents lblDNI As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''Control intDNI.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents intDNI As Global.ControlesWeb.IntegerBox
 
     '''<summary>
     '''Propiedad Master.

@@ -144,6 +144,7 @@
     <Compile Include="DatoLong.vb" />
     <Compile Include="DatoString.vb" />
     <Compile Include="DNI.vb" />
+    <Compile Include="Escuela.vb" />
     <Compile Include="Grupo.vb" />
     <Compile Include="GrupoComercial.vb" />
     <Compile Include="Icono.vb" />

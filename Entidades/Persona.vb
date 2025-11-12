@@ -426,6 +426,8 @@ Public MustInherit Class Persona
             iDomicilio.crear()
             iDomicilio.accesoDatos = Nothing
 
+            iConexion = obtenerConexion()
+
             iGeneradorSql.agregarColumna("idTipoDocumento")
             iGeneradorSql.agregarColumna("documento")
             iGeneradorSql.agregarColumna("nombre")
