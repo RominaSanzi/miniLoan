@@ -8,3 +8,13 @@ C:\Users\Usuarioi7\source\repos\miniloan\Excepciones\obj\Debug\Excepciones.vbpro
 C:\Users\Usuarioi7\source\repos\miniloan\Excepciones\obj\Debug\Excepciones.dll
 C:\Users\Usuarioi7\source\repos\miniloan\Excepciones\obj\Debug\Excepciones.xml
 C:\Users\Usuarioi7\source\repos\miniloan\Excepciones\obj\Debug\Excepciones.pdb
+C:\Users\Luni\Documents\colegio\prácticas\loan\miniloan\miniloan\Excepciones\bin\Debug\Excepciones.dll
+C:\Users\Luni\Documents\colegio\prácticas\loan\miniloan\miniloan\Excepciones\bin\Debug\Excepciones.pdb
+C:\Users\Luni\Documents\colegio\prácticas\loan\miniloan\miniloan\Excepciones\bin\Debug\Excepciones.xml
+C:\Users\Luni\Documents\colegio\prácticas\loan\miniloan\miniloan\Excepciones\obj\Debug\Excepciones.vbproj.AssemblyReference.cache
+C:\Users\Luni\Documents\colegio\prácticas\loan\miniloan\miniloan\Excepciones\obj\Debug\di.financiera.excepciones.Resources.resources
+C:\Users\Luni\Documents\colegio\prácticas\loan\miniloan\miniloan\Excepciones\obj\Debug\Excepciones.vbproj.GenerateResource.cache
+C:\Users\Luni\Documents\colegio\prácticas\loan\miniloan\miniloan\Excepciones\obj\Debug\Excepciones.vbproj.CoreCompileInputs.cache
+C:\Users\Luni\Documents\colegio\prácticas\loan\miniloan\miniloan\Excepciones\obj\Debug\Excepciones.dll
+C:\Users\Luni\Documents\colegio\prácticas\loan\miniloan\miniloan\Excepciones\obj\Debug\Excepciones.xml
+C:\Users\Luni\Documents\colegio\prácticas\loan\miniloan\miniloan\Excepciones\obj\Debug\Excepciones.pdb

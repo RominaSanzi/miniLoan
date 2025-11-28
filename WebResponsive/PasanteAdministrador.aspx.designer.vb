@@ -23,6 +23,33 @@ Partial Public Class PasanteAdministrador
     Protected WithEvents formPrincipal As Global.System.Web.UI.HtmlControls.HtmlForm
 
     '''<summary>
+    '''Control btnAtras.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents btnAtras As Global.System.Web.UI.WebControls.LinkButton
+
+    '''<summary>
+    '''Control btnBuscar.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents btnBuscar As Global.System.Web.UI.WebControls.LinkButton
+
+    '''<summary>
+    '''Control btnAyuda.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents btnAyuda As Global.System.Web.UI.WebControls.LinkButton
+
+    '''<summary>
     '''Control ScriptManager1.
     '''</summary>
     '''<remarks>
@@ -39,6 +66,51 @@ Partial Public Class PasanteAdministrador
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents BtnAlta As Global.System.Web.UI.WebControls.LinkButton
+
+    '''<summary>
+    '''Control lblDNI.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents lblDNI As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''Control intDNI.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents intDNI As Global.ControlesWeb.IntegerBox
+
+    '''<summary>
+    '''Control lblNombre.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents lblNombre As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''Control txtNombre.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents txtNombre As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''Control grillaPasante.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents grillaPasante As Global.System.Web.UI.WebControls.DataGrid
 
     '''<summary>
     '''Propiedad Master.

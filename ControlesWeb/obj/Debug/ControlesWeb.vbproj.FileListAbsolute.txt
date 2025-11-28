@@ -8,3 +8,13 @@ C:\Users\Usuarioi7\source\repos\miniloan\ControlesWeb\obj\Debug\ControlesWeb.vbp
 C:\Users\Usuarioi7\source\repos\miniloan\ControlesWeb\obj\Debug\ControlesWeb.dll
 C:\Users\Usuarioi7\source\repos\miniloan\ControlesWeb\obj\Debug\ControlesWeb.xml
 C:\Users\Usuarioi7\source\repos\miniloan\ControlesWeb\obj\Debug\ControlesWeb.pdb
+C:\Users\Luni\Documents\colegio\prácticas\loan\miniloan\miniloan\ControlesWeb\bin\Debug\ControlesWeb.dll
+C:\Users\Luni\Documents\colegio\prácticas\loan\miniloan\miniloan\ControlesWeb\bin\Debug\ControlesWeb.pdb
+C:\Users\Luni\Documents\colegio\prácticas\loan\miniloan\miniloan\ControlesWeb\bin\Debug\ControlesWeb.xml
+C:\Users\Luni\Documents\colegio\prácticas\loan\miniloan\miniloan\ControlesWeb\obj\Debug\ControlesWeb.vbproj.AssemblyReference.cache
+C:\Users\Luni\Documents\colegio\prácticas\loan\miniloan\miniloan\ControlesWeb\obj\Debug\ControlesWeb.Resources.resources
+C:\Users\Luni\Documents\colegio\prácticas\loan\miniloan\miniloan\ControlesWeb\obj\Debug\ControlesWeb.vbproj.GenerateResource.cache
+C:\Users\Luni\Documents\colegio\prácticas\loan\miniloan\miniloan\ControlesWeb\obj\Debug\ControlesWeb.vbproj.CoreCompileInputs.cache
+C:\Users\Luni\Documents\colegio\prácticas\loan\miniloan\miniloan\ControlesWeb\obj\Debug\ControlesWeb.dll
+C:\Users\Luni\Documents\colegio\prácticas\loan\miniloan\miniloan\ControlesWeb\obj\Debug\ControlesWeb.xml
+C:\Users\Luni\Documents\colegio\prácticas\loan\miniloan\miniloan\ControlesWeb\obj\Debug\ControlesWeb.pdb

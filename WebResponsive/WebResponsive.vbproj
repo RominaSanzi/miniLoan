@@ -1120,6 +1120,8 @@
     <Content Include="PaginaLogueo.aspx" />
     <Content Include="PasanteAdministrador.aspx" />
     <Content Include="PasanteAlta.aspx" />
+    <Content Include="PasanteDetalles.aspx" />
+    <Content Include="PasanteModificar.aspx" />
     <Content Include="PopUpModal.js" />
     <Content Include="Referenciasdll\AjaxControlToolkit.dll" />
     <Content Include="Referenciasdll\CarlosAg.ExcelXmlWriter.dll" />
@@ -1271,6 +1273,20 @@
     </Compile>
     <Compile Include="PasanteAlta.aspx.vb">
       <DependentUpon>PasanteAlta.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="PasanteDetalles.aspx.designer.vb">
+      <DependentUpon>PasanteDetalles.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PasanteDetalles.aspx.vb">
+      <DependentUpon>PasanteDetalles.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="PasanteModificar.aspx.designer.vb">
+      <DependentUpon>PasanteModificar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PasanteModificar.aspx.vb">
+      <DependentUpon>PasanteModificar.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
   </ItemGroup>

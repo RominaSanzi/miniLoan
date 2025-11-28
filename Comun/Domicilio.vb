@@ -326,9 +326,9 @@ Public Class Domicilio
     Public Sub modificar()
         Dim iGeneradorSql As New GeneradorSql
         Try
-            iConexion = obtenerConexion()
-
             validarModificar()
+
+            iConexion = obtenerConexion()
 
             If calle <> Nothing Then
                 iGeneradorSql.agregarSet("calle=" & FuncionComun.nuloSiEsNothing(Trim(calle.Replace("'", "%"))))

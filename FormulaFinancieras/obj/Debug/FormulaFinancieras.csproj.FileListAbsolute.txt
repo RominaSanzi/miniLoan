@@ -4,3 +4,9 @@ C:\Users\Usuarioi7\source\repos\miniloan\FormulaFinancieras\obj\Debug\FormulaFin
 C:\Users\Usuarioi7\source\repos\miniloan\FormulaFinancieras\obj\Debug\FormulaFinancieras.csproj.CoreCompileInputs.cache
 C:\Users\Usuarioi7\source\repos\miniloan\FormulaFinancieras\obj\Debug\FormulaFinancieras.dll
 C:\Users\Usuarioi7\source\repos\miniloan\FormulaFinancieras\obj\Debug\FormulaFinancieras.pdb
+C:\Users\Luni\Documents\colegio\prácticas\loan\miniloan\miniloan\FormulaFinancieras\bin\Debug\FormulaFinancieras.dll
+C:\Users\Luni\Documents\colegio\prácticas\loan\miniloan\miniloan\FormulaFinancieras\bin\Debug\FormulaFinancieras.pdb
+C:\Users\Luni\Documents\colegio\prácticas\loan\miniloan\miniloan\FormulaFinancieras\obj\Debug\FormulaFinancieras.csproj.AssemblyReference.cache
+C:\Users\Luni\Documents\colegio\prácticas\loan\miniloan\miniloan\FormulaFinancieras\obj\Debug\FormulaFinancieras.csproj.CoreCompileInputs.cache
+C:\Users\Luni\Documents\colegio\prácticas\loan\miniloan\miniloan\FormulaFinancieras\obj\Debug\FormulaFinancieras.dll
+C:\Users\Luni\Documents\colegio\prácticas\loan\miniloan\miniloan\FormulaFinancieras\obj\Debug\FormulaFinancieras.pdb

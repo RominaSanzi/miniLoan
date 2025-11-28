@@ -5,12 +5,6 @@ Imports di.financiera.seguridad
 
 Partial Class ComprobanteCompraAdministrador
     Inherits Pagina
-
-
-
-
-
-
 #Region "Ayuda"
     Private Overloads Sub btnayuda_Click(ByVal sender As System.Object, ByVal e As EventArgs) Handles btnAyuda.Click
         Master.ayuda(Request.UrlReferrer.AbsoluteUri.Split("/")(Request.UrlReferrer.AbsoluteUri.Split("/").Length - 1))
