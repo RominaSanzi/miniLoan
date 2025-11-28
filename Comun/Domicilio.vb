@@ -11,6 +11,8 @@ Public Class Domicilio
     Private iId As Long
     Private iCalle As String = ""
     Private iNumero As String = ""
+    Private iPiso As String = ""
+    Private iBarrio As String = ""
     Private iCodigoPostal As String = ""
     Private iLocalidad As Localidad
 
@@ -57,6 +59,24 @@ Public Class Domicilio
         End Get
         Set(value As Localidad)
             iLocalidad = value
+        End Set
+    End Property
+
+    Public Property piso() As String
+        Get
+            Return iPiso
+        End Get
+        Set(ByVal Value As String)
+            iPiso = Value
+        End Set
+    End Property
+
+    Public Property barrio() As String
+        Get
+            Return iBarrio
+        End Get
+        Set(ByVal Value As String)
+            iBarrio = Value
         End Set
     End Property
 #End Region
@@ -174,6 +194,7 @@ Public Class Domicilio
             iGeneradorSql.agregarColumna("numero")
             iGeneradorSql.agregarColumna("codigoPostal")
             iGeneradorSql.agregarColumna("idLocalidad")
+            iGeneradorSql.agregarColumna("idBarrio")
 
             If calle <> Nothing Then
                 iGeneradorSql.agregarValue(FuncionComun.nuloSiEsNothing(Trim(calle.Replace("'", "%"))))
@@ -183,6 +204,7 @@ Public Class Domicilio
             iGeneradorSql.agregarValue(FuncionComun.nuloSiEsNothing(numero))
             iGeneradorSql.agregarValue(FuncionComun.nuloSiEsNothing(Trim(codigoPostal)))
             iGeneradorSql.agregarValue(FuncionComun.nuloSiEsNothing(localidad.id))
+            iGeneradorSql.agregarValue(FuncionComun.nuloSiEsNothing(barrio))
 
             If iId <> Nothing Then
                 iGeneradorSql.agregarColumna("id")
@@ -196,10 +218,10 @@ Public Class Domicilio
         Catch excepcion As Exception
             Throw New DomicilioNoCreadoException(excepcion)
         Finally
-            If (IsNothing(MyBase.accesoDatos)) Then
-                iConexion.cerrar()
-                iConexion = Nothing
-            End If
+            'If (IsNothing(MyBase.accesoDatos)) Then
+            '    iConexion.cerrar()
+            '    iConexion = Nothing
+            'End If
         End Try
 
     End Sub
@@ -304,9 +326,9 @@ Public Class Domicilio
     Public Sub modificar()
         Dim iGeneradorSql As New GeneradorSql
         Try
-            iConexion = obtenerConexion()
-
             validarModificar()
+
+            iConexion = obtenerConexion()
 
             If calle <> Nothing Then
                 iGeneradorSql.agregarSet("calle=" & FuncionComun.nuloSiEsNothing(Trim(calle.Replace("'", "%"))))

@@ -871,6 +871,8 @@
     <Content Include="ckeditor\images\Veraz.gif" />
     <Content Include="ckeditor\images\WikiEnabled.gif" />
     <Content Include="ckeditor\images\WikiOver.gif" />
+    <Content Include="ComprobanteCompraAdministrador.aspx" />
+    <Content Include="ComprobanteCompraAlta.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -1116,6 +1118,10 @@
     <Content Include="PaginaError.aspx" />
     <Content Include="PaginaFondoIframe.aspx" />
     <Content Include="PaginaLogueo.aspx" />
+    <Content Include="PasanteAdministrador.aspx" />
+    <Content Include="PasanteAlta.aspx" />
+    <Content Include="PasanteDetalles.aspx" />
+    <Content Include="PasanteModificar.aspx" />
     <Content Include="PopUpModal.js" />
     <Content Include="Referenciasdll\AjaxControlToolkit.dll" />
     <Content Include="Referenciasdll\CarlosAg.ExcelXmlWriter.dll" />
@@ -1139,6 +1145,20 @@
     </Compile>
     <Compile Include="BaseIncludes.Master.vb">
       <DependentUpon>BaseIncludes.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ComprobanteCompraAdministrador.aspx.designer.vb">
+      <DependentUpon>ComprobanteCompraAdministrador.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ComprobanteCompraAdministrador.aspx.vb">
+      <DependentUpon>ComprobanteCompraAdministrador.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ComprobanteCompraAlta.aspx.designer.vb">
+      <DependentUpon>ComprobanteCompraAlta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ComprobanteCompraAlta.aspx.vb">
+      <DependentUpon>ComprobanteCompraAlta.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="ControlRegional\USCCuil.ascx.designer.vb">
@@ -1240,6 +1260,34 @@
     <Compile Include="PaginaLogueo.aspx.vb">
       <DependentUpon>PaginaLogueo.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PasanteAdministrador.aspx.designer.vb">
+      <DependentUpon>PasanteAdministrador.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PasanteAdministrador.aspx.vb">
+      <DependentUpon>PasanteAdministrador.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PasanteAlta.aspx.designer.vb">
+      <DependentUpon>PasanteAlta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PasanteAlta.aspx.vb">
+      <DependentUpon>PasanteAlta.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="PasanteDetalles.aspx.designer.vb">
+      <DependentUpon>PasanteDetalles.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PasanteDetalles.aspx.vb">
+      <DependentUpon>PasanteDetalles.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="PasanteModificar.aspx.designer.vb">
+      <DependentUpon>PasanteModificar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PasanteModificar.aspx.vb">
+      <DependentUpon>PasanteModificar.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>

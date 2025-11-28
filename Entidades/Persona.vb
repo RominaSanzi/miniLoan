@@ -10,7 +10,7 @@ Public MustInherit Class Persona
 
     Private iId As Long
     Private iTipoDocumento As TipoDocumento
-    Private iDocumento As Long
+    Private iDocumento As Nullable(Of Long)
     Private iNombre As String = ""
     Private iFechaNacimiento As Date
     Private iFechaAlta As Date
@@ -34,14 +34,16 @@ Public MustInherit Class Persona
             iId = Value
         End Set
     End Property
-    Public Property documento() As Long
+
+    Public Property documento As Nullable(Of Long)
         Get
             Return iDocumento
         End Get
-        Set(ByVal Value As Long)
-            iDocumento = Value
+        Set(value As Nullable(Of Long))
+            iDocumento = value
         End Set
     End Property
+
     Public Property nombre() As String
         Get
             Return iNombre
@@ -426,6 +428,8 @@ Public MustInherit Class Persona
             iDomicilio.crear()
             iDomicilio.accesoDatos = Nothing
 
+            iConexion = obtenerConexion()
+
             iGeneradorSql.agregarColumna("idTipoDocumento")
             iGeneradorSql.agregarColumna("documento")
             iGeneradorSql.agregarColumna("nombre")
@@ -490,10 +494,9 @@ Public MustInherit Class Persona
                 Throw New PersonaNoModificadaException("El sexo no puede ser nulo")
             End If
 
-            If iNombre <> Nothing Then
-                If Not FuncionComun.validarNombre(iNombre) Then Throw New PersonaNoModificadaException("El nombre de la persona debe tener el formato Apellido/s,Nombre/s")
-
-            End If
+            'If iNombre <> Nothing Then
+            '    If Not FuncionComun.validarNombre(iNombre) Then Throw New PersonaNoModificadaException("El nombre de la persona debe tener el formato Apellido/s,Nombre/s")
+            'End If
 
             iGeneradorSql.agregarColumna("id")
             iGeneradorSql.agregarTabla("persona")
@@ -531,31 +534,33 @@ Public MustInherit Class Persona
     End Sub
     Public Overridable Sub modificar()
         Dim iGeneradorSql As New GeneradorSql
-        Dim iComillas As String = Chr(34)
         Dim iDatoAnexo As New DatoAnexo
 
         Try
 
-            iConexion = obtenerConexion()
-
             validarModificar()
 
+            ' Modificar domicilio
             iDomicilio.accesoDatos = iConexion
             iDomicilio.modificar()
             iDomicilio.accesoDatos = Nothing
 
-            iGeneradorSql.agregarTabla("persona")
+            iConexion = obtenerConexion()
 
+            ' UPDATE persona
+            iGeneradorSql.agregarTabla("persona")
             iGeneradorSql.agregarSet("nombre='" & FuncionComun.vacioSiEsNothing(Trim(nombre)) & "'")
             iGeneradorSql.agregarSet("fechaNacimiento=" & FuncionComun.nuloSiEsNothing(fechaNacimiento))
             iGeneradorSql.agregarSet("fechaAlta=" & FuncionComun.nuloSiEsNothing(fechaAlta))
             iGeneradorSql.agregarSet("cuil1=" & FuncionComun.nuloSiEsNothing(cuil1))
             iGeneradorSql.agregarSet("cuil2=" & FuncionComun.nuloSiEsNothing(cuil2))
+
             If iTipoDocumento.isCI Then iGeneradorSql.agregarSet("idTipoDocumento=" & TipoDocumento.CI)
             If iTipoDocumento.isDNI Then iGeneradorSql.agregarSet("idTipoDocumento=" & TipoDocumento.DNI)
             If iTipoDocumento.isLC Then iGeneradorSql.agregarSet("idTipoDocumento=" & TipoDocumento.LC)
             If iTipoDocumento.isLE Then iGeneradorSql.agregarSet("idTipoDocumento=" & TipoDocumento.LE)
             If iTipoDocumento.isPAS Then iGeneradorSql.agregarSet("idTipoDocumento=" & TipoDocumento.PAS)
+
             iGeneradorSql.agregarSet("idDomicilio=" & iDomicilio.id)
             iGeneradorSql.agregarSet("idSexo=" & iSexo.id)
             iGeneradorSql.agregarSet("idEstado=" & IIf(iEstado.isAlta, Estado.ALTA, Estado.BAJA))
@@ -564,33 +569,39 @@ Public MustInherit Class Persona
 
             iConexion.ejecutar(iGeneradorSql.generarUpdate, iGeneradorSql.parametrosSQL)
 
+            ' DATOS ANEXOS
             If Not IsNothing(datosAnexos) Then
+
                 With iDatoAnexo
                     .entidad = Me
-                    .tipoEntidad = New TipoEntidad
-                    .tipoEntidad.id = TipoEntidad.CLIENTE
+                    .tipoEntidad = New TipoEntidad With {.id = TipoEntidad.CLIENTE}
                     .accesoDatos = iConexion
                     .eliminar()
                     .accesoDatos = Nothing
                 End With
 
-                For Each iDatoAnexo In datosAnexos
-                    iDatoAnexo.accesoDatos = iConexion
-                    iDatoAnexo.entidad = Me
-                    iDatoAnexo.crear()
-                    iDatoAnexo.accesoDatos = Nothing
+                For Each iDato In datosAnexos
+                    iDato.accesoDatos = iConexion
+                    iDato.entidad = Me
+                    iDato.crear()
+                    iDato.accesoDatos = Nothing
                 Next
+
             End If
 
         Catch excepcion As Exception
             Throw New PersonaNoModificadaException(excepcion)
+
         Finally
-            If (IsNothing(MyBase.accesoDatos)) Then
+            ' CORRECCIÓN: cerrar solo si existe
+            If Not IsNothing(iConexion) Then
                 iConexion.cerrar()
                 iConexion = Nothing
             End If
+
         End Try
     End Sub
+
     Private Sub validarEliminar()
 
         If id = Nothing Then
@@ -627,9 +638,9 @@ Public MustInherit Class Persona
         Dim iGeneradorSql As New GeneradorSql
 
         Try
-            iConexion = obtenerConexion()
-
             validarEliminar()
+
+            iConexion = obtenerConexion()
 
             iGeneradorSql.agregarTabla("persona")
             iGeneradorSql.agregarCondicionWhere("id=" & id)

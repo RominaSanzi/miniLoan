@@ -49,6 +49,34 @@ Public Class Localidad
 #End Region
 
 #Region "Metodos"
+    Public Function obtenerListaLocalidad() As List(Of Localidad)
+        Dim iLista As New List(Of Localidad)
+        Dim iLocalidad As Localidad
+        Dim iGeneradorSql As New GeneradorSql
+        Dim iDataset As DataSet
+
+        Try
+            iConexion = obtenerConexion()
+            iGeneradorSql.agregarColumna("Id")
+            iGeneradorSql.agregarColumna("Descripcion")
+            iGeneradorSql.agregarColumna("CodigoPostal")
+            iGeneradorSql.agregarTabla("Localidad")
+            iDataset = iConexion.getDataSet(iGeneradorSql.generarSelect, iGeneradorSql.parametrosSQL, "Localidades")
+
+            For Each fila As DataRow In iDataset.Tables("Localidades").Rows
+                iLocalidad = New Localidad
+                iLocalidad.id = fila("Id")
+                iLocalidad.descripcion = FuncionComun.vacioSiEsNulo(fila("Descripcion"))
+                iLocalidad.codigoPostal = FuncionComun.vacioSiEsNulo(fila("CodigoPostal"))
+                iLista.Add(iLocalidad)
+            Next
+
+            Return iLista
+
+        Catch ex As Exception
+            Throw New Exception("Error al obtener las localidades. " & ex.Message)
+        End Try
+    End Function
     Public Function obtenerLocalidad() As Localidad
         Dim iGeneradorSql As New GeneradorSql()
         Dim iDataReader As IDataReader
